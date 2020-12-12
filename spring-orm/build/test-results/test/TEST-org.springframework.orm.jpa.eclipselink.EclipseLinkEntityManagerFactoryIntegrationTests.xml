@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" tests="20" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:12" hostname="DESKTOP-TMNPDT1" time="1.288">
+  <properties/>
+  <testcase name="testJdbcTx2()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.596"/>
+  <testcase name="testEntityManagerProxyRejectsProgrammaticTxManagement()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.003"/>
+  <testcase name="testQueryNoPersons()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.016"/>
+  <testcase name="testEntityManagerFactoryImplementsEntityManagerFactoryInfo()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.006"/>
+  <testcase name="testMultipleResults()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.079"/>
+  <testcase name="testStateClean()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.003"/>
+  <testcase name="testGetReferenceWhenNoRow()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.086"/>
+  <testcase name="testInstantiateAndSaveWithSharedEmProxy()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.028"/>
+  <testcase name="testQueryNoPersonsSharedNotTransactional()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.039"/>
+  <testcase name="testJdbcTx1_1()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.087"/>
+  <testcase name="testJdbcTx1_2()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.005"/>
+  <testcase name="testJdbcTx1_3()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.006"/>
+  <testcase name="testCanSerializeProxies()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.172"/>
+  <testcase name="testQueryNoPersonsShared()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.008"/>
+  <testcase name="testQueryNoPersonsNotTransactional()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.015"/>
+  <testcase name="testEntityManagerProxyIsProxy()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.034"/>
+  <testcase name="testBogusQuery()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.019"/>
+  <testcase name="testLazyLoading()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.013"/>
+  <testcase name="testCanCastSharedEntityManagerProxyToEclipseLinkEntityManager()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.002"/>
+  <testcase name="testCanCastNativeEntityManagerFactoryToEclipseLinkEntityManagerFactoryImpl()" classname="org.springframework.orm.jpa.eclipselink.EclipseLinkEntityManagerFactoryIntegrationTests" time="0.001"/>
+  <system-out><![CDATA[[EL Info]: 2020-12-12 14:27:12.964--ServerSession(2035473213)--EclipseLink, version: Eclipse Persistence Services - 2.7.7.v20200504-69f2c2b80d
+[EL Warning]: metadata: 2020-12-12 14:27:12.968--ServerSession(2035473213)--Reverting the lazy setting on the OneToOne or ManyToOne attribute [driversLicense] for the entity class [class org.springframework.orm.jpa.domain.Person] since weaving was not enabled or did not occur.
+[EL Fine]: sql: 2020-12-12 14:27:12.979--ServerSession(2035473213)--Connection(1040636323)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2020-12-12 14:27:13.141--ServerSession(2035473213)--Connection(1437553351)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.143--ServerSession(2035473213)--Connection(1972387262)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.216--ClientSession(2018610627)--Connection(1865855750)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.333--ClientSession(963692315)--Connection(1420836403)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON WHERE (ID = ?)
+	bind => [666]
+[EL Fine]: sql: 2020-12-12 14:27:13.364--ClientSession(1270798642)--Connection(1829324933)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+[EL Fine]: sql: 2020-12-12 14:27:13.365--ClientSession(1270798642)--Connection(1829324933)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+[EL Fine]: sql: 2020-12-12 14:27:13.367--ClientSession(1270798642)--Connection(1829324933)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+	bind => [101, Tony, Blair, null]
+[EL Fine]: sql: 2020-12-12 14:27:13.405--ServerSession(2035473213)--Connection(1225631332)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.409--ServerSession(2035473213)--Connection(677364455)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.688--ClientSession(1654911131)--Connection(1959872401)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.692--ClientSession(1654911131)--Connection(1959872401)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.704--ServerSession(2035473213)--Connection(709885077)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.709--ServerSession(2035473213)--Connection(715236791)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.742--ClientSession(493161345)--Connection(986614151)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+[EL Fine]: sql: 2020-12-12 14:27:13.767--ClientSession(146896480)--Connection(335399969)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+[EL Fine]: sql: 2020-12-12 14:27:13.769--ClientSession(146896480)--Connection(335399969)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+[EL Fine]: sql: 2020-12-12 14:27:13.771--ClientSession(146896480)--Connection(335399969)--INSERT INTO DRIVERS_LICENSE (ID, SERIAL_NUMBER) VALUES (?, ?)
+	bind => [0, 8439DK]
+[EL Fine]: sql: 2020-12-12 14:27:13.772--ClientSession(146896480)--Connection(335399969)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+	bind => [101, Tony, Blair, 0]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

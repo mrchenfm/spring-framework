@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.rsocket.PayloadUtilsTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:43" hostname="DESKTOP-TMNPDT1" time="0.016">
+  <properties/>
+  <testcase name="retainAndReleaseWithNettyFactory()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.002"/>
+  <testcase name="createWithNettyAndDefaultBuffers()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.004"/>
+  <testcase name="retainAndReleaseWithDefaultFactory()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.001"/>
+  <testcase name="createWithDefaultBuffer()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.0"/>
+  <testcase name="createWithNettyBuffer()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.001"/>
+  <testcase name="createWithNettyBuffers()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.001"/>
+  <testcase name="createWithDefaultBuffers()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.001"/>
+  <testcase name="createWithDefaultAndNettyBuffers()" classname="org.springframework.messaging.rsocket.PayloadUtilsTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

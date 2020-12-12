@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:28:28" hostname="DESKTOP-TMNPDT1" time="5.807">
+  <properties/>
+  <testcase name="dataWithType with Flow()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="3.045"/>
+  <testcase name="dataWithType with CompletableFuture()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.933"/>
+  <testcase name="dataFlowWithoutType()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.013"/>
+  <testcase name="connectAndAwait()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="1.0"/>
+  <testcase name="dataWithType with Publisher()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.026"/>
+  <testcase name="retrieveAndAwaitOrNull()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.016"/>
+  <testcase name="connectWebSocketAndAwait()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.153"/>
+  <testcase name="sendAndAwait()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.01"/>
+  <testcase name="retrieveFlow()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.514"/>
+  <testcase name="retrieveFlux()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.011"/>
+  <testcase name="retrieveMono()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.011"/>
+  <testcase name="retrieveAndAwait()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.01"/>
+  <testcase name="connectTcpAndAwait()" classname="org.springframework.messaging.rsocket.RSocketRequesterExtensionsTests" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

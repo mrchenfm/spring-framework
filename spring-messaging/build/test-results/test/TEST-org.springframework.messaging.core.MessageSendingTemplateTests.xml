@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.core.MessageSendingTemplateTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:38" hostname="DESKTOP-TMNPDT1" time="0.019">
+  <properties/>
+  <testcase name="convertAndSendNoMatchingConverter()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.004"/>
+  <testcase name="sendToDestination()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="convertAndSendPayloadWithPostProcessorToDestination()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="convertAndSendPayloadToDestination()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="send()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.0"/>
+  <testcase name="convertAndSendPayloadAndHeadersToDestination()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.0"/>
+  <testcase name="convertAndSendPayloadWithPostProcessor()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="convertAndSendPayload()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="convertAndSend()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="sendMissingDestination()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.001"/>
+  <testcase name="convertAndSendPayloadAndMutableHeadersToDestination()" classname="org.springframework.messaging.core.MessageSendingTemplateTests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

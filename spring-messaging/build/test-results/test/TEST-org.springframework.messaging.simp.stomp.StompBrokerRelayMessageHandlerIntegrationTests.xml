@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:57" hostname="DESKTOP-TMNPDT1" time="29.354">
+  <properties/>
+  <testcase name="messageDeliveryExceptionIfSystemSessionForwardFails()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="4.105"/>
+  <testcase name="publishSubscribe()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="4.049"/>
+  <testcase name="brokerAvailabilityEventWhenStopped()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="4.091"/>
+  <testcase name="relayReconnectsIfBrokerComesBackUp()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="9.026"/>
+  <testcase name="brokerBecomingUnavailableTriggersErrorFrame()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="4.045"/>
+  <testcase name="disconnectWithReceipt()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="4.038"/>
+  <system-out><![CDATA[14:27:57.025 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:27:57.026 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:2) is starting
+14:27:57.026 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:62603
+14:27:57.027 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:62603 Started
+14:27:57.027 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:2) started
+14:27:57.027 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:27:57.072 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:2) is shutting down
+14:27:59.057 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:62603 Stopped
+14:27:59.058 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:2) uptime 2.033 seconds
+14:27:59.058 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:2) is shutdown
+14:28:01.128 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:28:01.129 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:3) is starting
+14:28:01.130 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64516
+14:28:01.130 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64516 Started
+14:28:01.130 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:3) started
+14:28:01.131 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:28:03.280 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:3) is shutting down
+14:28:05.175 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64516 Stopped
+14:28:05.176 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:3) uptime 4.047 seconds
+14:28:05.176 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:3) is shutdown
+14:28:05.178 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:28:05.179 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:4) is starting
+14:28:05.179 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64062
+14:28:05.179 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64062 Started
+14:28:05.180 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:4) started
+14:28:05.180 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:28:05.211 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:4) is shutting down
+14:28:07.212 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64062 Stopped
+14:28:07.213 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:4) uptime 2.035 seconds
+14:28:07.213 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:4) is shutdown
+14:28:09.269 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:28:09.270 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:5) is starting
+14:28:09.270 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:63618
+14:28:09.271 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63618 Started
+14:28:09.271 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:5) started
+14:28:09.271 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:28:09.325 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:5) is shutting down
+14:28:11.318 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63618 Stopped
+14:28:11.318 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:5) uptime 2.049 seconds
+14:28:11.318 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:5) is shutdown
+14:28:11.319 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:28:11.320 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:6) is starting
+14:28:11.320 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:63618
+14:28:11.320 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63618 Started
+14:28:11.321 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:6) started
+14:28:11.321 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:28:16.316 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:6) is shutting down
+14:28:16.327 [tcp-client-scheduler-35] WARN  i.n.c.AbstractChannel - Force-closing a channel whose registration task was not accepted by an event loop: [id: 0x6dafd2cc]
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:926) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:353) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:346) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:828) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:818) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:471) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:87) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:81) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at reactor.netty.resources.ColocatedEventLoopGroup.register(ColocatedEventLoopGroup.java:71) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:323) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:155) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:116) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at reactor.netty.resources.PooledConnectionProvider$PooledConnectionAllocator.lambda$connectChannel$0(PooledConnectionProvider.java:243) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57) ~[reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213) ~[reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4324) ~[reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4184) ~[reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4120) ~[reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4092) ~[reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.drainLoop(SimpleDequePool.java:318) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.drain(SimpleDequePool.java:261) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.doAcquire(SimpleDequePool.java:256) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.request(AbstractPool.java:382) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.resources.PooledConnectionProvider$DisposableAcquire.onSubscribe(PooledConnectionProvider.java:532) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool$QueueBorrowerMono.subscribe(SimpleDequePool.java:578) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.resources.PooledConnectionProvider.disposableAcquire(PooledConnectionProvider.java:218) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.netty.resources.PooledConnectionProvider.lambda$acquire$3(PooledConnectionProvider.java:182) ~[reactor-netty-0.9.13.RELEASE.jar:0.9.13.RELEASE]
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:79) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.FluxRepeatWhen$RepeatWhenMainSubscriber.resubscribe(FluxRepeatWhen.java:180) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.FluxRepeatWhen$RepeatWhenOtherSubscriber.onNext(FluxRepeatWhen.java:229) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:535) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:999) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:117) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) [reactor-core-3.3.11.RELEASE.jar:3.3.11.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_191]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+14:28:18.292 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63618 Stopped
+14:28:18.292 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:6) uptime 6.973 seconds
+14:28:18.292 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:6) is shutdown
+14:28:18.295 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:28:18.295 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:7) is starting
+14:28:18.295 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:63206
+14:28:18.296 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63206 Started
+14:28:18.296 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:7) started
+14:28:18.296 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:28:18.323 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:7) is shutting down
+14:28:20.320 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63206 Stopped
+14:28:20.320 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:7) uptime 2.025 seconds
+14:28:20.321 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:7) is shutdown
+14:28:22.339 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+14:28:22.340 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:8) is starting
+14:28:22.341 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64591
+14:28:22.341 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64591 Started
+14:28:22.342 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:8) started
+14:28:22.342 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+14:28:24.405 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:8) is shutting down
+14:28:26.376 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64591 Stopped
+14:28:26.376 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:8) uptime 4.037 seconds
+14:28:26.376 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-TMNPDT1-54343-1607754474277-0:8) is shutdown
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

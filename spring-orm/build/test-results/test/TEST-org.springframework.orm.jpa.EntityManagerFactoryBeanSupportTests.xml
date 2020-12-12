@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.orm.jpa.EntityManagerFactoryBeanSupportTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:13" hostname="DESKTOP-TMNPDT1" time="0.053">
+  <properties/>
+  <testcase name="testHookIsCalled()" classname="org.springframework.orm.jpa.EntityManagerFactoryBeanSupportTests" time="0.053"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

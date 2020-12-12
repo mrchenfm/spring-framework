@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:40" hostname="DESKTOP-TMNPDT1" time="0.042">
+  <properties/>
+  <testcase name="customConversion()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.02"/>
+  <testcase name="overrideArgumentResolvers()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.002"/>
+  <testcase name="customArgumentResolver()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.001"/>
+  <testcase name="customConversionServiceFailure()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.002"/>
+  <testcase name="customValidation()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.008"/>
+  <testcase name="customMessageConverterFailure()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.004"/>
+  <testcase name="noValidationByDefault()" classname="org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactoryTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
