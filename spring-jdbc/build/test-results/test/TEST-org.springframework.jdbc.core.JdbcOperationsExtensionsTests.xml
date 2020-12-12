@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:25:36" hostname="DESKTOP-TMNPDT1" time="13.027">
+  <properties/>
+  <testcase name="queryForObject with nullable RowMapper-like function()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="10.991"/>
+  <testcase name="queryForObject with reified type parameters()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.099"/>
+  <testcase name="queryForObject with RowMapper-like function()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.016"/>
+  <testcase name="queryForList with reified type parameters and argTypes()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="1.539"/>
+  <testcase name="query with ResultSetExtractor-like function()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.058"/>
+  <testcase name="queryForList with reified type parameters()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.026"/>
+  <testcase name="query with nullable ResultSetExtractor-like function()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.059"/>
+  <testcase name="queryForObject with reified type parameters and argTypes()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.038"/>
+  <testcase name="queryForObject with reified type parameters and args()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.069"/>
+  <testcase name="query with RowMapper-like function()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.034"/>
+  <testcase name="queryForList with reified type parameters and args()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.038"/>
+  <testcase name="query with RowCallbackHandler-like function()" classname="org.springframework.jdbc.core.JdbcOperationsExtensionsTests" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jdbc.core.BeanPropertyRowMapperTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:25:09" hostname="DESKTOP-TMNPDT1" time="2.19">
+  <properties/>
+  <testcase name="testOverridingSameClassDefinedForMapping()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.005"/>
+  <testcase name="testMappingWithInheritance()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="2.081"/>
+  <testcase name="testMappingWithNoUnpopulatedFieldsFound()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.008"/>
+  <testcase name="testQueryWithSpaceInColumnNameAndLocalDateTime()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.023"/>
+  <testcase name="testMappingNullValue()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.013"/>
+  <testcase name="testQueryWithSpaceInColumnNameAndLocalDate()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.012"/>
+  <testcase name="testMappingWithUnpopulatedFieldsNotChecked()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.008"/>
+  <testcase name="testOverridingDifferentClassDefinedForMapping()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.002"/>
+  <testcase name="testStaticQueryWithRowMapper()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.008"/>
+  <testcase name="testMappingWithUnpopulatedFieldsNotAccepted()" classname="org.springframework.jdbc.core.BeanPropertyRowMapperTests" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
