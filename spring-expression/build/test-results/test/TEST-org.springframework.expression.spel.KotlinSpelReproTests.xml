@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.expression.spel.KotlinSpelReproTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:50:52" hostname="DESKTOP-TMNPDT1" time="5.689">
+  <properties/>
+  <testcase name="gh-23812 SpEL cannot invoke Kotlin synthetic classes()" classname="org.springframework.expression.spel.KotlinSpelReproTests" time="5.689"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
