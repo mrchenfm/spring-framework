@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:26:57" hostname="DESKTOP-TMNPDT1" time="0.794">
+  <properties/>
+  <testcase name="testAutowiredConfigurationDependencies()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.047"/>
+  <testcase name="testValueInjectionWithProviderFields()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.02"/>
+  <testcase name="testValueInjectionWithProviderConstructorArguments()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.039"/>
+  <testcase name="testAutowiredConfigurationMethodDependencies()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.04"/>
+  <testcase name="testAutowiredSingleConstructorSupported()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.069"/>
+  <testcase name="testValueInjectionWithAliasedMetaAnnotation()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.118"/>
+  <testcase name="testObjectFactoryConstructorWithTypeVariable()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.026"/>
+  <testcase name="testAutowiredAnnotatedConstructorSupported()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.042"/>
+  <testcase name="testValueInjectionWithMetaAnnotation()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.046"/>
+  <testcase name="testAutowiredConfigurationMethodDependenciesWithOptionalAndAvailable()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.028"/>
+  <testcase name="testValueInjectionWithProviderMethodArguments()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.02"/>
+  <testcase name="testCustomPropertiesWithGenericContext()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.137"/>
+  <testcase name="testAutowiredConfigurationMethodDependenciesWithOptionalAndNotAvailable()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.005"/>
+  <testcase name="testValueInjection()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.062"/>
+  <testcase name="testCustomPropertiesWithClassPathContext()" classname="org.springframework.context.annotation.configuration.AutowiredConfigurationTests" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

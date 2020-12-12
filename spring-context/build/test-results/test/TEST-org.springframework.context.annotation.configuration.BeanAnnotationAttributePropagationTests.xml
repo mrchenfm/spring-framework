@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:26:58" hostname="DESKTOP-TMNPDT1" time="0.128">
+  <properties/>
+  <testcase name="defaultLazyConfigurationPropagatesToIndividualBeans()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.004"/>
+  <testcase name="autowireMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.004"/>
+  <testcase name="initMethodMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.003"/>
+  <testcase name="eagerBeanOverridesDefaultLazyConfiguration()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.003"/>
+  <testcase name="lazyMetadataIsFalseByDefault()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.019"/>
+  <testcase name="primaryMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.006"/>
+  <testcase name="dependsOnMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.004"/>
+  <testcase name="lazyMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.053"/>
+  <testcase name="primaryMetadataIsFalseByDefault()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.005"/>
+  <testcase name="eagerConfigurationProducesEagerBeanDefinitions()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.005"/>
+  <testcase name="autowireCandidateMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.003"/>
+  <testcase name="destroyMethodMetadataIsPropagated()" classname="org.springframework.context.annotation.configuration.BeanAnnotationAttributePropagationTests" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

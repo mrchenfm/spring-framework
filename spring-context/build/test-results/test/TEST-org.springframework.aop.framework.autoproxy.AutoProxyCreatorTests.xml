@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:26:02" hostname="DESKTOP-TMNPDT1" time="0.203">
+  <properties/>
+  <testcase name="testCustomAutoProxyCreator()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.057"/>
+  <testcase name="testAutoProxyCreatorWithPackageVisibleMethod()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.021"/>
+  <testcase name="testAutoProxyCreatorWithFactoryBeanAndProxyObjectOnly()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.021"/>
+  <testcase name="testAutoProxyCreatorWithFallbackToTargetClass()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.002"/>
+  <testcase name="testAutoProxyCreatorWithFactoryBeanAndPrototype()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.034"/>
+  <testcase name="testBeanNameAutoProxyCreatorWithFactoryBeanProxy()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.008"/>
+  <testcase name="testBeanNameAutoProxyCreator()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.016"/>
+  <testcase name="testAutoProxyCreatorWithFactoryBeanAndProxyFactoryBeanOnly()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.004"/>
+  <testcase name="testAutoProxyCreatorWithFallbackToDynamicProxy()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.029"/>
+  <testcase name="testAutoProxyCreatorWithFactoryBean()" classname="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

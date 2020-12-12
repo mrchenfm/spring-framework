@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:49" hostname="DESKTOP-TMNPDT1" time="0.632">
+  <properties/>
+  <testcase name="testDescriptionNotNull()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.009"/>
+  <testcase name="testGetMBeanAttributeInfo()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.1"/>
+  <testcase name="testSetAttribute()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.009"/>
+  <testcase name="testAttributeInfoHasDescriptors()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.012"/>
+  <testcase name="testGetMBeanInfo()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.053"/>
+  <testcase name="testGetMBeanOperationInfo()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.031"/>
+  <testcase name="testRegisterOperations()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.135"/>
+  <testcase name="testRegisterAttributes()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.011"/>
+  <testcase name="testNotificationMetadata()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.11"/>
+  <testcase name="testAttributeHasCorrespondingOperations()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.011"/>
+  <testcase name="testMBeanRegistration()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.11"/>
+  <testcase name="testGetAttribute()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.017"/>
+  <testcase name="testOperationInvocation()" classname="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssemblerTests" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jmx.support.ConnectorServerFactoryBeanTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:54" hostname="DESKTOP-TMNPDT1" time="0.14">
+  <properties/>
+  <testcase name="startupWithSuppliedServer()" classname="org.springframework.jmx.support.ConnectorServerFactoryBeanTests" time="0.071"/>
+  <testcase name="noRegisterWithMBeanServer()" classname="org.springframework.jmx.support.ConnectorServerFactoryBeanTests" time="0.005"/>
+  <testcase name="registerWithMBeanServer()" classname="org.springframework.jmx.support.ConnectorServerFactoryBeanTests" time="0.01"/>
+  <testcase name="startupWithLocatedServer()" classname="org.springframework.jmx.support.ConnectorServerFactoryBeanTests" time="0.054"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

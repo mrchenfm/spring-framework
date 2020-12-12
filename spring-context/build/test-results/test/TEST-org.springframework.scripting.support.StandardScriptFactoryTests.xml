@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.scripting.support.StandardScriptFactoryTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:28:07" hostname="DESKTOP-TMNPDT1" time="0.661">
+  <properties/>
+  <testcase name="testRefreshableJsr223FromTagWithInterface()" classname="org.springframework.scripting.support.StandardScriptFactoryTests" time="0.589"/>
+  <testcase name="testJsr223FromTagWithInterface()" classname="org.springframework.scripting.support.StandardScriptFactoryTests" time="0.039"/>
+  <testcase name="testInlineJsr223FromTagWithInterface()" classname="org.springframework.scripting.support.StandardScriptFactoryTests" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
