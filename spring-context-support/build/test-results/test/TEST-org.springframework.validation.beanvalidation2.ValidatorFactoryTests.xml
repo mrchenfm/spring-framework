@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:27:21" hostname="DESKTOP-TMNPDT1" time="3.248">
+  <properties/>
+  <testcase name="testValidationWithOptionalField()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.101"/>
+  <testcase name="testSpringValidationFieldType()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.405"/>
+  <testcase name="testSpringValidationWithErrorInListElement()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.374"/>
+  <testcase name="testSpringValidationWithClassLevel()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.13"/>
+  <testcase name="testInnerBeanValidation()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.115"/>
+  <testcase name="testSpringValidationWithErrorInSetElement()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.16"/>
+  <testcase name="testSpringValidationWithAutowiredValidator()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.918"/>
+  <testcase name="testSimpleValidation()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.57"/>
+  <testcase name="testListValidation()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.024"/>
+  <testcase name="testSimpleValidationWithClassLevel()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.12"/>
+  <testcase name="testSimpleValidationWithCustomProvider()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.207"/>
+  <testcase name="testSpringValidation()" classname="org.springframework.validation.beanvalidation2.ValidatorFactoryTests" time="0.109"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

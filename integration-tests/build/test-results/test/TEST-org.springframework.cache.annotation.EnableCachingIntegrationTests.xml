@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cache.annotation.EnableCachingIntegrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:24:46" hostname="DESKTOP-TMNPDT1" time="0.377">
+  <properties/>
+  <testcase name="repositoryUsesAspectJAdviceMode()" classname="org.springframework.cache.annotation.EnableCachingIntegrationTests" time="0.037"/>
+  <testcase name="repositoryIsClassBasedCacheProxy()" classname="org.springframework.cache.annotation.EnableCachingIntegrationTests" time="0.339"/>
+  <system-out><![CDATA[14:24:46.341 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@38850959
+14:24:46.346 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:46.357 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [org.springframework.cache.annotation.EnableCachingIntegrationTests$AspectJCacheConfig]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/cache/aspectj/AspectJCachingConfiguration.class] cannot be opened because it does not exist
+14:24:46.363 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5b013d87
+14:24:46.364 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:24:46.418 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:24:46.420 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:24:46.427 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:24:46.429 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:24:46.430 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+14:24:46.431 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+14:24:46.437 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'enableCachingIntegrationTests.Config'
+14:24:46.447 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.cache.config.internalCacheAdvisor'
+14:24:46.448 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.cache.annotation.ProxyCachingConfiguration'
+14:24:46.518 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'cacheOperationSource'
+14:24:46.536 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'cacheInterceptor'
+14:24:46.569 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'enableCachingIntegrationTests.ProxyTargetClassCachingConfig'
+14:24:46.572 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'fooRepository'
+14:24:46.637 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mgr'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

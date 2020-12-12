@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-12T06:24:01" hostname="DESKTOP-TMNPDT1" time="0.543">
+  <properties/>
+  <testcase name="clearFail()" classname="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" time="0.192"/>
+  <testcase name="getFailPutExceptionFail()" classname="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" time="0.046"/>
+  <testcase name="evictFail()" classname="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" time="0.08"/>
+  <testcase name="putFail()" classname="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" time="0.091"/>
+  <testcase name="getFail()" classname="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" time="0.066"/>
+  <testcase name="getPutNewElementFail()" classname="org.springframework.cache.jcache.interceptor.JCacheErrorHandlerTests" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
