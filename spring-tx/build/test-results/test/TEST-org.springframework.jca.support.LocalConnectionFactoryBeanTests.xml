@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jca.support.LocalConnectionFactoryBeanTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:53:27" hostname="DESKTOP-TMNPDT1" time="0.055">
+  <properties/>
+  <testcase name="testIsSingleton()" classname="org.springframework.jca.support.LocalConnectionFactoryBeanTests" time="0.003"/>
+  <testcase name="testGetObjectTypeIsNullIfConnectionFactoryHasNotBeenConfigured()" classname="org.springframework.jca.support.LocalConnectionFactoryBeanTests" time="0.006"/>
+  <testcase name="testCreatesVanillaConnectionFactoryIfNoConnectionManagerHasBeenConfigured()" classname="org.springframework.jca.support.LocalConnectionFactoryBeanTests" time="0.029"/>
+  <testcase name="testCreatesManagedConnectionFactoryIfAConnectionManagerHasBeenConfigured()" classname="org.springframework.jca.support.LocalConnectionFactoryBeanTests" time="0.011"/>
+  <testcase name="testManagedConnectionFactoryIsRequired()" classname="org.springframework.jca.support.LocalConnectionFactoryBeanTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
