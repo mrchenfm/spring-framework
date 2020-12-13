@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.resource.ResourceUrlProviderTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:45" hostname="DESKTOP-TMNPDT1" time="0.041">
+  <properties/>
+  <testcase name="getStaticResourceUrl()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.001"/>
+  <testcase name="getStaticResourceUrlRequestWithQueryOrHash()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.001"/>
+  <testcase name="getFingerprintedResourceUrl()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.009"/>
+  <testcase name="bestPatternMatch()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.003"/>
+  <testcase name="getForLookupPathShouldNotFailIfPathContainsDoubleSlashes()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.001"/>
+  <testcase name="getStaticResourceWithMissingContextPath()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.001"/>
+  <testcase name="initializeOnce()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderTests" time="0.02"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

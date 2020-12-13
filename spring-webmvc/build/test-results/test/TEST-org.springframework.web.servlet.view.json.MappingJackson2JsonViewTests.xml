@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:57" hostname="DESKTOP-TMNPDT1" time="0.468">
+  <properties/>
+  <testcase name="renderSimpleBean()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.284"/>
+  <testcase name="renderOnlyIncludedAttributes()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.02"/>
+  <testcase name="renderSimpleBeanWithFilters()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.02"/>
+  <testcase name="renderSimpleBeanWithJsonView()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.008"/>
+  <testcase name="renderCaching()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.005"/>
+  <testcase name="renderSimpleMapPrefixed()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.01"/>
+  <testcase name="isExposePathVars()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.005"/>
+  <testcase name="filterSingleKeyModel()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.007"/>
+  <testcase name="renderWithSelectedContentType()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.005"/>
+  <testcase name="renderSimpleMap()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.008"/>
+  <testcase name="filterTwoKeyModel()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.008"/>
+  <testcase name="renderWithCustomSerializerLocatedByFactory()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.016"/>
+  <testcase name="renderWithCustomSerializerLocatedByAnnotation()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.022"/>
+  <testcase name="renderSimpleBeanPrefixed()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.012"/>
+  <testcase name="renderWithPrettyPrint()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.014"/>
+  <testcase name="renderSimpleBeanNotPrefixed()" classname="org.springframework.web.servlet.view.json.MappingJackson2JsonViewTests" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

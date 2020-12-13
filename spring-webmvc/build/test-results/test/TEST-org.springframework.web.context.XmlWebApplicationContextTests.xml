@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.XmlWebApplicationContextTests" tests="42" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:59:36" hostname="DESKTOP-TMNPDT1" time="5.22">
+  <properties/>
+  <testcase name="factoryIsInitialized()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.131"/>
+  <testcase name="inheritance()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.145"/>
+  <testcase name="factorySingleton()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.105"/>
+  <testcase name="getSharedInstanceByMatchingClassNoCatch()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.12"/>
+  <testcase name="getSharedInstanceByMatchingClass()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.072"/>
+  <testcase name="getSharedInstanceByNonmatchingClass()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.109"/>
+  <testcase name="prototypeInstancesAreIndependent()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.106"/>
+  <testcase name="factoryPrototype()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.11"/>
+  <testcase name="lifecycleCallbacks()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.053"/>
+  <testcase name="typeMismatch()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.188"/>
+  <testcase name="grandparentDefinitionFoundInBeanFactory()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.161"/>
+  <testcase name="validEmpty()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.121"/>
+  <testcase name="findsValidInstance()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.059"/>
+  <testcase name="getFactoryItself()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.084"/>
+  <testcase name="getInstanceByMatchingClass()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.069"/>
+  <testcase name="getInstanceByNonmatchingClass()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.069"/>
+  <testcase name="getBeanWithNullArg()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.097"/>
+  <testcase name="rejectsFactoryGetOnNormalBean()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.091"/>
+  <testcase name="sharedInstancesAreEqual()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.087"/>
+  <testcase name="notThere()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.19"/>
+  <testcase name="aliasing()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.139"/>
+  <testcase name="initializingBeanCallback()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.192"/>
+  <testcase name="containsBeanDefinition()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.085"/>
+  <testcase name="getDefinitionsForNoSuchClass()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.203"/>
+  <testcase name="getCountForFactoryClass()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.134"/>
+  <testcase name="closeTriggersDestroy()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.066"/>
+  <testcase name="grandparentNull()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.057"/>
+  <testcase name="eventsWithNoSource()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.125"/>
+  <testcase name="parentNonNull()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.092"/>
+  <testcase name="grandparentDefinitionFound()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.086"/>
+  <testcase name="messageSource()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.093"/>
+  <testcase name="events()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.076"/>
+  <testcase name="contextAwareSingletonWasCalledBack()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.466"/>
+  <testcase name="contextAwarePrototypeWasCalledBack()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.441"/>
+  <testcase name="overrideWorked()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.078"/>
+  <testcase name="beanAutomaticallyHearsEvents()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.089"/>
+  <testcase name="grandparentTypedDefinitionFound()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.086"/>
+  <testcase name="initializingBeanAndInitMethod()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.084"/>
+  <testcase name="withoutMessageSource()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.137"/>
+  <testcase name="count()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.076"/>
+  <testcase name="environmentMerge()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.094"/>
+  <testcase name="contextNesting()" classname="org.springframework.web.context.XmlWebApplicationContextTests" time="0.09"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

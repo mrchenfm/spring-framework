@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" tests="32" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:32" hostname="DESKTOP-TMNPDT1" time="0.491">
+  <properties/>
+  <testcase name="resolvePartListArgument()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveRequestPart()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.013"/>
+  <testcase name="resolveOptionalMultipartFileList()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="isMultipartRequestPut()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolveRequestPartNotValid()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.073"/>
+  <testcase name="resolveOptionalMultipartFileListWithoutMultipartRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveOptionalPartArgumentNotPresent()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolvePartArgument()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="isMultipartRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="resolveOptionalPartArgumentWithoutMultipartRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolveOptionalMultipartFileListNotPresent()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveOptionalPartArgument()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.023"/>
+  <testcase name="resolveOptionalPartListNotPresent()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolveOptionalRequestPartNotPresent()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.012"/>
+  <testcase name="resolveOptionalMultipartFileArgumentWithoutMultipartRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveOptionalMultipartFileArgumentNotPresent()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.018"/>
+  <testcase name="resolvePartArrayArgument()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.008"/>
+  <testcase name="resolveMultipartFileArray()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveNamedRequestPart()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.013"/>
+  <testcase name="resolveMultipartFile()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.008"/>
+  <testcase name="resolveOptionalRequestPart()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.114"/>
+  <testcase name="resolveRequestPartRequired()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.013"/>
+  <testcase name="resolveNamedRequestPartNotPresent()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.038"/>
+  <testcase name="resolveRequestPartNotRequired()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.036"/>
+  <testcase name="resolveOptionalPartList()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveOptionalRequestPartWithoutMultipartRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveOptionalPartListWithoutMultipartRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="resolveOptionalMultipartFileArgument()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveRequestPartValid()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.045"/>
+  <testcase name="resolveMultipartFileList()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="resolveMultipartFileNotAnnotArgument()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolverTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

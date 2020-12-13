@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.annotation.JdkProxyControllerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:24" hostname="DESKTOP-TMNPDT1" time="0.255">
+  <properties/>
+  <testcase name="methodLevel()" classname="org.springframework.web.servlet.mvc.annotation.JdkProxyControllerTests" time="0.122"/>
+  <testcase name="typeLevel()" classname="org.springframework.web.servlet.mvc.annotation.JdkProxyControllerTests" time="0.075"/>
+  <testcase name="typeAndMethodLevel()" classname="org.springframework.web.servlet.mvc.annotation.JdkProxyControllerTests" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

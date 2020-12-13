@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.function.RouterFunctionTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:23" hostname="DESKTOP-TMNPDT1" time="0.014">
+  <properties/>
+  <testcase name="filter()" classname="org.springframework.web.servlet.function.RouterFunctionTests" time="0.004"/>
+  <testcase name="andOther()" classname="org.springframework.web.servlet.function.RouterFunctionTests" time="0.004"/>
+  <testcase name="andRoute()" classname="org.springframework.web.servlet.function.RouterFunctionTests" time="0.002"/>
+  <testcase name="and()" classname="org.springframework.web.servlet.function.RouterFunctionTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

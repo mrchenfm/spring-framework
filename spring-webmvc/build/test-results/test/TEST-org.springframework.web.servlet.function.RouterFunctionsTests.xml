@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.function.RouterFunctionsTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:23" hostname="DESKTOP-TMNPDT1" time="0.047">
+  <properties/>
+  <testcase name="routeNoMatch()" classname="org.springframework.web.servlet.function.RouterFunctionsTests" time="0.028"/>
+  <testcase name="nestNoMatch()" classname="org.springframework.web.servlet.function.RouterFunctionsTests" time="0.007"/>
+  <testcase name="routeMatch()" classname="org.springframework.web.servlet.function.RouterFunctionsTests" time="0.003"/>
+  <testcase name="nestMatch()" classname="org.springframework.web.servlet.function.RouterFunctionsTests" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

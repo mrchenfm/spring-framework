@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.function.RequestPredicatesTests" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:23" hostname="DESKTOP-TMNPDT1" time="0.065">
+  <properties/>
+  <testcase name="allMethods()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.03"/>
+  <testcase name="accept()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.005"/>
+  <testcase name="method()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="pathPredicates()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.0"/>
+  <testcase name="contentType()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.003"/>
+  <testcase name="all()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="path()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.0"/>
+  <testcase name="param()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.004"/>
+  <testcase name="pathNoLeadingSlash()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="pathEncoded()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="headers()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.002"/>
+  <testcase name="servletPath()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="methods()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="methodCorsPreFlight()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.001"/>
+  <testcase name="headersCors()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.0"/>
+  <testcase name="pathExtension()" classname="org.springframework.web.servlet.function.RequestPredicatesTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

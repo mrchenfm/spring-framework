@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:24" hostname="DESKTOP-TMNPDT1" time="0.085">
+  <properties/>
+  <testcase name="noAnnotationWithoutOrigin()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.008"/>
+  <testcase name="noAnnotationPostWithOrigin()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.006"/>
+  <testcase name="noAnnotationWithOrigin()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.006"/>
+  <testcase name="preFlightRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.007"/>
+  <testcase name="customOriginDefinedViaPlaceholder()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.004"/>
+  <testcase name="customized()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="defaultAnnotation()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.004"/>
+  <testcase name="classLevelComposedAnnotation()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.005"/>
+  <testcase name="customOriginDefinedViaValueAttribute()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.005"/>
+  <testcase name="classLevel()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.004"/>
+  <testcase name="noAnnotationWithAccessControlRequestMethod()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.007"/>
+  <testcase name="preFlightRequestWithoutRequestMethodHeader()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.001"/>
+  <testcase name="noAnnotationWithPreflightRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="ambiguousHeaderPreFlightRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.005"/>
+  <testcase name="methodLevelComposedAnnotation()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="ambiguousProducesPreFlightRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="bogusAllowCredentialsValue()" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

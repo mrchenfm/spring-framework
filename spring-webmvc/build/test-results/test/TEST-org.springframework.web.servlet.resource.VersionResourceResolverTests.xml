@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.resource.VersionResourceResolverTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:45" hostname="DESKTOP-TMNPDT1" time="0.053">
+  <properties/>
+  <testcase name="getStrategyForPath()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.041"/>
+  <testcase name="resolveResourceNoResourceAfterVersionRemoved()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.001"/>
+  <testcase name="resolveResourceSuccess()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.002"/>
+  <testcase name="shouldConfigureFixedPrefixAutomatically()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.001"/>
+  <testcase name="resolveResourceNoVersionStrategy()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.001"/>
+  <testcase name="resolveResourceNoVersionInPath()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.001"/>
+  <testcase name="resolveResourceExisting()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.002"/>
+  <testcase name="resolveResourceVersionDoesNotMatch()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.002"/>
+  <testcase name="resolveUrlPathNoVersionStrategy()" classname="org.springframework.web.servlet.resource.VersionResourceResolverTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

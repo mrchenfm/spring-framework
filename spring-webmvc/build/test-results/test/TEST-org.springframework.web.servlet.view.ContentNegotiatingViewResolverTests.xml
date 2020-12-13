@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:52" hostname="DESKTOP-TMNPDT1" time="0.081">
+  <properties/>
+  <testcase name="resolveViewNameWithRequestParameter()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.028"/>
+  <testcase name="resolveViewNameRedirectView()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.007"/>
+  <testcase name="resolveViewNameAcceptHeaderWithSuffix()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.004"/>
+  <testcase name="resolveViewNameAcceptHeaderDefaultView()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.003"/>
+  <testcase name="resolveViewNoMatch()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.004"/>
+  <testcase name="resolveViewNameAcceptHeader()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="resolveViewContentTypeNull()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.003"/>
+  <testcase name="resolveViewNameWithInvalidAcceptHeader()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="resolveViewNoMatchUseUnacceptableStatus()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.004"/>
+  <testcase name="resolveViewNameWithAcceptHeader()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="resolveViewNameFilenameDefaultView()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="resolveViewNameWithPathExtension()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="nestedViewResolverIsNotSpringBean()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.001"/>
+  <testcase name="resolveViewNameFilename()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="getMediaTypeAcceptHeaderWithProduces()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="resolveViewNameAcceptHeaderSortByQuality()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.002"/>
+  <testcase name="resolveViewNameWithDefaultContentType()" classname="org.springframework.web.servlet.view.ContentNegotiatingViewResolverTests" time="0.005"/>
+  <system-out><![CDATA[04:00:52.526 [Test worker] WARN  o.s.w.s.v.ContentNegotiatingViewResolver - No ViewResolvers configured
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

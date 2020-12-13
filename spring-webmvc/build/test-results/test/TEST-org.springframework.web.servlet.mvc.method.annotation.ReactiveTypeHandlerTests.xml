@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:27" hostname="DESKTOP-TMNPDT1" time="0.183">
+  <properties/>
+  <testcase name="writeStreamJson()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.036"/>
+  <testcase name="supportsType()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.0"/>
+  <testcase name="writeText()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.003"/>
+  <testcase name="deferredResultSubscriberWithNoValues()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.013"/>
+  <testcase name="doesNotSupportType()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.001"/>
+  <testcase name="deferredResultSubscriberWithMultipleValues()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.002"/>
+  <testcase name="deferredResultSubscriberWithOneValue()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.095"/>
+  <testcase name="writeFluxOfString()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.005"/>
+  <testcase name="deferredResultSubscriberWithError()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.008"/>
+  <testcase name="writeServerSentEventsWithBuilder()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.012"/>
+  <testcase name="mediaTypes()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.002"/>
+  <testcase name="writeServerSentEvents()" classname="org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests" time="0.001"/>
+  <system-out><![CDATA[04:00:27.829 [Test worker] WARN  o.s.w.s.m.m.a.ReactiveTypeHandler - 
+!!!
+Streaming through a reactive type requires an Executor to write to the response.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Controller:	org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$TestController
+Method:		handleFlux
+Returning:	reactor.core.publisher.Flux<org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$Bar>
+!!!
+04:00:27.846 [Test worker] WARN  o.s.w.s.m.m.a.ReactiveTypeHandler - 
+!!!
+Streaming through a reactive type requires an Executor to write to the response.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Controller:	org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$TestController
+Method:		handleFluxString
+Returning:	reactor.core.publisher.Flux<java.lang.String>
+!!!
+04:00:27.965 [Test worker] WARN  o.s.w.s.m.m.a.ReactiveTypeHandler - 
+!!!
+Streaming through a reactive type requires an Executor to write to the response.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Controller:	org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$TestController
+Method:		handleFluxString
+Returning:	reactor.core.publisher.Flux<java.lang.String>
+!!!
+04:00:27.980 [Test worker] WARN  o.s.w.s.m.m.a.ReactiveTypeHandler - 
+!!!
+Streaming through a reactive type requires an Executor to write to the response.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Controller:	org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$TestController
+Method:		handleFluxSseEventBuilder
+Returning:	reactor.core.publisher.Flux<org.springframework.http.codec.ServerSentEvent<java.lang.String>>
+!!!
+04:00:27.990 [Test worker] WARN  o.s.w.s.m.m.a.ReactiveTypeHandler - 
+!!!
+Streaming through a reactive type requires an Executor to write to the response.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Controller:	org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$TestController
+Method:		handleFluxString
+Returning:	reactor.core.publisher.Flux<java.lang.String>
+!!!
+04:00:27.992 [Test worker] WARN  o.s.w.s.m.m.a.ReactiveTypeHandler - 
+!!!
+Streaming through a reactive type requires an Executor to write to the response.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Controller:	org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandlerTests$TestController
+Method:		handleFluxString
+Returning:	reactor.core.publisher.Flux<java.lang.String>
+!!!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

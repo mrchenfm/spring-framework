@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:55" hostname="DESKTOP-TMNPDT1" time="0.008">
+  <properties/>
+  <testcase name="freeMarkerConfigurerWithResourceLoaderPath()" classname="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurerTests" time="0.003"/>
+  <testcase name="freeMarkerConfigurerWithConfigLocation()" classname="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurerTests" time="0.001"/>
+  <testcase name="freeMarkerConfigurerWithNonFileResourceLoaderPath()" classname="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurerTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

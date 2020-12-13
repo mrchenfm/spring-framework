@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.tags.form.OptionsTagTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:50" hostname="DESKTOP-TMNPDT1" time="0.227">
+  <properties/>
+  <testcase name="withoutItems()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.012"/>
+  <testcase name="withItemsNullReference()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.009"/>
+  <testcase name="withCollection()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.113"/>
+  <testcase name="withoutItemsEnumParent()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.02"/>
+  <testcase name="withCollectionAndCustomEditor()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.033"/>
+  <testcase name="withCollectionAndDynamicAttributes()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.012"/>
+  <testcase name="withoutItemsEnumParentWithExplicitLabelsAndValues()" classname="org.springframework.web.servlet.tags.form.OptionsTagTests" time="0.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

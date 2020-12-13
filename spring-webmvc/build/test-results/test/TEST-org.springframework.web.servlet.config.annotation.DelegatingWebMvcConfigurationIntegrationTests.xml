@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:59:42" hostname="DESKTOP-TMNPDT1" time="5.731">
+  <properties/>
+  <testcase name="resourceHandlerMappingWithPrimaryUsesQualifiedPathMatcher()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="2.86"/>
+  <testcase name="requestMappingHandlerAdapterUsesMvcInfrastructureByDefault()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.274"/>
+  <testcase name="requestMappingHandlerMappingUsesMvcInfrastructureByDefault()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.166"/>
+  <testcase name="viewControllerHandlerMappingUsesMvcInfrastructureByDefault()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.187"/>
+  <testcase name="requestMappingHandlerAdapterWithPrimaryUsesQualifiedContentNegotiationManager()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.4"/>
+  <testcase name="resourceHandlerMappingWithPrimaryUsesQualifiedUrlPathHelper()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.43"/>
+  <testcase name="resourceHandlerMappingUsesMvcInfrastructureByDefault()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.16"/>
+  <testcase name="requestMappingHandlerMappingWithPrimaryUsesQualifiedContentNegotiationManager()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.212"/>
+  <testcase name="requestMappingHandlerAdapterWithPrimaryUsesQualifiedValidator()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.34"/>
+  <testcase name="viewControllerHandlerMappingWithPrimaryUsesQualifiedUrlPathHelper()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.28"/>
+  <testcase name="requestMappingHandlerAdapterWithPrimaryUsesQualifiedConversionService()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.207"/>
+  <testcase name="viewControllerHandlerMappingWithPrimaryUsesQualifiedPathMatcher()" classname="org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfigurationIntegrationTests" time="0.205"/>
+  <system-out><![CDATA[03:59:44.126 [Test worker] WARN  o.s.w.s.r.ResourceHttpRequestHandler - Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+03:59:46.314 [Test worker] WARN  o.s.w.s.r.ResourceHttpRequestHandler - Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+03:59:46.506 [Test worker] WARN  o.s.w.s.r.ResourceHttpRequestHandler - Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

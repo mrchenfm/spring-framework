@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.tags.MessageTagTests" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:51" hostname="DESKTOP-TMNPDT1" time="0.175">
+  <properties/>
+  <testcase name="messageTagWithCodeAndObjectArgument()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.008"/>
+  <testcase name="messageWithVar()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.005"/>
+  <testcase name="messageTagWithTextAndHtmlEscapeAndJavaScriptEscape()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.006"/>
+  <testcase name="messageTagWithCodeAndNestedArguments()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.017"/>
+  <testcase name="messageTagWithCode()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.01"/>
+  <testcase name="messageTagWithText()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.008"/>
+  <testcase name="messageTagWithTextAndJavaScriptEscape()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.01"/>
+  <testcase name="messageTagWithCodeAndArgument()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.005"/>
+  <testcase name="messageTagWithCodeAndText()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.006"/>
+  <testcase name="nullMessageSource()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.015"/>
+  <testcase name="requestContext()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.006"/>
+  <testcase name="messageTagWithCodeAndArguments()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.005"/>
+  <testcase name="messageTagWithCodeAndArgumentAndNestedArgument()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.006"/>
+  <testcase name="messageTagWithCodeAndNestedArgument()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.009"/>
+  <testcase name="messageTagWithCodeAndArrayArgument()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.02"/>
+  <testcase name="messageTagWithCodeAndStringArgumentWithCustomSeparator()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.006"/>
+  <testcase name="messageTagWithMessageSourceResolvable()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.006"/>
+  <testcase name="messageTagWithTextEncodingEscaped()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.007"/>
+  <testcase name="messageWithVarAndScope()" classname="org.springframework.web.servlet.tags.MessageTagTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

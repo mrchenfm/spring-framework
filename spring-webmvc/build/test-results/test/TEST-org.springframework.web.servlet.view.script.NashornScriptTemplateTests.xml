@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.view.script.NashornScriptTemplateTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:01:17" hostname="DESKTOP-TMNPDT1" time="1.142">
+  <properties/>
+  <testcase name="renderTemplateWithUrl()" classname="org.springframework.web.servlet.view.script.NashornScriptTemplateTests" time="1.091"/>
+  <testcase name="renderTemplate()" classname="org.springframework.web.servlet.view.script.NashornScriptTemplateTests" time="0.051"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

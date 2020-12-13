@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:00:40" hostname="DESKTOP-TMNPDT1" time="0.932">
+  <properties/>
+  <testcase name="customRegex()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.053"/>
+  <testcase name="simple()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.043"/>
+  <testcase name="extension()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.044"/>
+  <testcase name="menuTree()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.045"/>
+  <testcase name="relative()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.04"/>
+  <testcase name="binding()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.1"/>
+  <testcase name="implicitSubPath()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.036"/>
+  <testcase name="crud()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.047"/>
+  <testcase name="doIt()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.059"/>
+  <testcase name="literalMappingWithPathParams()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.058"/>
+  <testcase name="multiple()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.044"/>
+  <testcase name="pathVarsInModel()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.051"/>
+  <testcase name="multiPaths()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.05"/>
+  <testcase name="typeConversionError()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.046"/>
+  <testcase name="explicitSubPath()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.044"/>
+  <testcase name="variableNames()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.043"/>
+  <testcase name="ambiguous()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.042"/>
+  <testcase name="methodNotSupported()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.037"/>
+  <testcase name="variableNamesWithUrlExtension()" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.035"/>
+  <system-out><![CDATA[04:00:40.925 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is java.lang.IllegalArgumentException: Could not parse date: Unparseable date: "2008-foo-bar"]
+04:00:40.981 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.util.Date': no matching editors or conversion strategy found]
+04:00:41.183 [Test worker] WARN  o.s.w.s.PageNotFound - No mapping for GET /data;foo=bar
+04:00:41.379 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "foo"]
+04:00:41.551 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+04:00:41.552 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
