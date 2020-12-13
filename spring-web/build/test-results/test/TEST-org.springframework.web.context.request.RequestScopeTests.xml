@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.RequestScopeTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:38" hostname="DESKTOP-TMNPDT1" time="0.26">
+  <properties/>
+  <testcase name="destructionAtRequestCompletion()" classname="org.springframework.web.context.request.RequestScopeTests" time="0.031"/>
+  <testcase name="circleLeadsToException()" classname="org.springframework.web.context.request.RequestScopeTests" time="0.049"/>
+  <testcase name="requestScopedInnerBeanDestroyedWhileContainedBySingleton()" classname="org.springframework.web.context.request.RequestScopeTests" time="0.021"/>
+  <testcase name="innerBeanInheritsContainingBeanScopeByDefault()" classname="org.springframework.web.context.request.RequestScopeTests" time="0.022"/>
+  <testcase name="getFromScope()" classname="org.springframework.web.context.request.RequestScopeTests" time="0.107"/>
+  <testcase name="getFromFactoryBeanInScope()" classname="org.springframework.web.context.request.RequestScopeTests" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

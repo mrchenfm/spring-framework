@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.ContextPathIntegrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:11" hostname="DESKTOP-TMNPDT1" time="11.2">
+  <properties/>
+  <testcase name="servletPathMapping()" classname="org.springframework.web.reactive.result.method.annotation.ContextPathIntegrationTests" time="10.083"/>
+  <testcase name="multipleWebFluxApps()" classname="org.springframework.web.reactive.result.method.annotation.ContextPathIntegrationTests" time="1.115"/>
+  <system-out><![CDATA[12:30:13.859 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+12:30:14.736 [Test worker] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.6.Final
+12:30:17.303 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:17.587 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:17.588 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:17.753 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65273(0 millis).
+12:30:17.781 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65273/app/api/test
+12:30:17.782 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:18.197 [http-nio-auto-8-exec-1] DEBUG o.s.h.s.r.ServletHttpHandlerAdapter - Found servlet mapping prefix '/api' for 'httpHandlerServlet'
+12:30:18.197 [http-nio-auto-8-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2412eefc] HTTP GET "/app/api/test"
+12:30:18.203 [http-nio-auto-8-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [2412eefc] Mapped to org.springframework.web.reactive.result.method.annotation.ContextPathIntegrationTests$TestController#handle(ServerHttpRequest)
+12:30:18.272 [http-nio-auto-8-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:30:18.272 [http-nio-auto-8-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [2412eefc] 0..1 [java.lang.String]
+12:30:18.274 [http-nio-auto-8-exec-1] DEBUG o.s.c.c.CharSequenceEncoder - [2412eefc] Writing "Tested in /app/api"
+12:30:18.275 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:18.275 [http-nio-auto-8-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2412eefc] Completed 200 OK
+12:30:18.276 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:30:19.644 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:21.507 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:21.754 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+12:30:21.997 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:22.185 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+12:30:22.415 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:22.485 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:22.504 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:22.508 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:22.510 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65354(0 millis).
+12:30:22.578 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65354/webApp1/test
+12:30:22.581 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:22.608 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1ed3b446-8] HTTP GET "/webApp1/test"
+12:30:22.609 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1ed3b446-8] Mapped to org.springframework.web.reactive.result.method.annotation.ContextPathIntegrationTests$TestController#handle(ServerHttpRequest)
+12:30:22.611 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:30:22.611 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [1ed3b446-8] 0..1 [java.lang.String]
+12:30:22.611 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [1ed3b446-8] Writing "Tested in /webApp1"
+12:30:22.612 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1ed3b446-8] Completed 200 OK
+12:30:22.616 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:22.616 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:30:22.618 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65354/webApp2/test
+12:30:22.618 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:22.622 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1ed3b446-9] HTTP GET "/webApp2/test"
+12:30:22.623 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1ed3b446-9] Mapped to org.springframework.web.reactive.result.method.annotation.ContextPathIntegrationTests$TestController#handle(ServerHttpRequest)
+12:30:22.623 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:30:22.624 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [1ed3b446-9] 0..1 [java.lang.String]
+12:30:22.624 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [1ed3b446-9] Writing "Tested in /webApp2"
+12:30:22.625 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:22.625 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1ed3b446-9] Completed 200 OK
+12:30:22.625 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:30:22.626 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:22.626 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

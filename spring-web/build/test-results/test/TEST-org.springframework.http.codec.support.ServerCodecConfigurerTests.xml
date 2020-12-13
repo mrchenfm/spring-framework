@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.support.ServerCodecConfigurerTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:55:18" hostname="DESKTOP-TMNPDT1" time="0.025">
+  <properties/>
+  <testcase name="maxInMemorySizeWithCustomCodecs()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.003"/>
+  <testcase name="defaultReaders()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.002"/>
+  <testcase name="maxInMemorySize()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.002"/>
+  <testcase name="enableRequestLoggingDetailsWithCustomCodecs()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.001"/>
+  <testcase name="defaultWriters()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.002"/>
+  <testcase name="cloneConfigurer()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.007"/>
+  <testcase name="enableRequestLoggingDetails()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.001"/>
+  <testcase name="jackson2EncoderOverride()" classname="org.springframework.http.codec.support.ServerCodecConfigurerTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

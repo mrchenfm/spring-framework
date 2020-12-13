@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.client.reactive.ReactorResourceFactoryTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:54:54" hostname="DESKTOP-TMNPDT1" time="0.711">
+  <properties/>
+  <testcase name="customShutdownDurations()" classname="org.springframework.http.client.reactive.ReactorResourceFactoryTests" time="0.107"/>
+  <testcase name="localResourcesViaSupplier()" classname="org.springframework.http.client.reactive.ReactorResourceFactoryTests" time="0.005"/>
+  <testcase name="localResources()" classname="org.springframework.http.client.reactive.ReactorResourceFactoryTests" time="0.583"/>
+  <testcase name="globalResources()" classname="org.springframework.http.client.reactive.ReactorResourceFactoryTests" time="0.002"/>
+  <testcase name="globalResourcesWithConsumer()" classname="org.springframework.http.client.reactive.ReactorResourceFactoryTests" time="0.002"/>
+  <testcase name="externalResources()" classname="org.springframework.http.client.reactive.ReactorResourceFactoryTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

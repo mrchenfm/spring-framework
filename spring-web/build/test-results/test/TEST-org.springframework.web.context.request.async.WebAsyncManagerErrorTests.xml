@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:36" hostname="DESKTOP-TMNPDT1" time="0.182">
+  <properties/>
+  <testcase name="startCallableProcessingAfterException()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.117"/>
+  <testcase name="startCallableProcessingErrorAndComplete()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingErrorAndResumeWithDefaultResult()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.003"/>
+  <testcase name="startDeferredResultProcessingAfterException()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.002"/>
+  <testcase name="startDeferredResultProcessingErrorAndResumeThroughInterceptor()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.002"/>
+  <testcase name="startCallableProcessingErrorAndResumeThroughCallback()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.002"/>
+  <testcase name="startCallableProcessingErrorAndResumeThroughInterceptor()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingErrorAndComplete()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.041"/>
+  <testcase name="startDeferredResultProcessingErrorAndResumeThroughCallback()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

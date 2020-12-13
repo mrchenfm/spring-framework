@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.InvalidHttpMethodIntegrationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:44" hostname="DESKTOP-TMNPDT1" time="7.505">
+  <properties/>
+  <testcase name="invalidHttpMethod(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.InvalidHttpMethodIntegrationTests" time="0.636"/>
+  <testcase name="invalidHttpMethod(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.InvalidHttpMethodIntegrationTests" time="0.045"/>
+  <testcase name="invalidHttpMethod(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.InvalidHttpMethodIntegrationTests" time="6.032"/>
+  <testcase name="invalidHttpMethod(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.InvalidHttpMethodIntegrationTests" time="0.774"/>
+  <system-out><![CDATA[12:29:44.137 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:44.137 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:29:44.138 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@21f3d98{/,null,AVAILABLE}
+12:29:44.139 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:29:44.139 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:29:44.180 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@4ed4efe8{HTTP/1.1, (http/1.1)}{0.0.0.0:64837}
+12:29:44.180 [Test worker] INFO  o.e.j.s.Server - Started @71243ms
+12:29:44.180 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 64837(0 millis).
+12:29:44.558 [qtp997882455-566] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [208385b5] HTTP null "/"
+12:29:44.574 [qtp997882455-566] DEBUG o.s.c.c.CharSequenceEncoder - [208385b5] Writing "BAR"
+12:29:44.579 [qtp997882455-566] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [208385b5] Completed 200 OK
+12:29:44.589 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:29:44.589 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@21f3d98{/,null,UNAVAILABLE}
+12:29:44.595 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@4ed4efe8{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:29:44.649 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:29:44.671 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:44.671 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:29:44.673 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 64848(0 millis).
+12:29:44.692 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [b656801d-4] HTTP null "/"
+12:29:44.693 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [b656801d-4] Writing "BAR"
+12:29:44.695 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [b656801d-4] Completed 200 OK
+12:29:44.696 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:29:44.696 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:29:44.771 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:44.773 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:29:44.822 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 64850(0 millis).
+12:29:50.233 [http-nio-auto-4-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5bf95317] HTTP null "/"
+12:29:50.234 [http-nio-auto-4-exec-1] DEBUG o.s.c.c.CharSequenceEncoder - [5bf95317] Writing "BAR"
+12:29:50.240 [http-nio-auto-4-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5bf95317] Completed 200 OK
+12:29:50.242 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:29:50.729 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:29:50.787 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:50.789 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:29:50.790 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:29:50.927 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 64929(0 millis).
+12:29:51.496 [XNIO-4 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1e03a765] HTTP null "/"
+12:29:51.497 [XNIO-4 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [1e03a765] Writing "BAR"
+12:29:51.498 [XNIO-4 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1e03a765] Completed 200 OK
+12:29:51.499 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:29:51.499 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:29:51.519 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

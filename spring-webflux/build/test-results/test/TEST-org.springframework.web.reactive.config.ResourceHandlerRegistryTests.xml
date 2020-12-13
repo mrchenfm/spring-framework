@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:28:46" hostname="DESKTOP-TMNPDT1" time="6.352">
+  <properties/>
+  <testcase name="resourceChainWithVersionResolver()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="2.396"/>
+  <testcase name="cacheControl()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.012"/>
+  <testcase name="hasMappingForPattern()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.003"/>
+  <testcase name="noResourceHandlers()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.002"/>
+  <testcase name="mapPathToLocation()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.636"/>
+  <testcase name="resourceChainWithOverrides()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="1.993"/>
+  <testcase name="order()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.005"/>
+  <testcase name="resourceChainWithoutCaching()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.705"/>
+  <testcase name="resourceChain()" classname="org.springframework.web.reactive.config.ResourceHandlerRegistryTests" time="0.587"/>
+  <system-out><![CDATA[12:28:49.489 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [41353de3] Writing [class path resource [org/springframework/web/reactive/config/testStylesheet.css]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

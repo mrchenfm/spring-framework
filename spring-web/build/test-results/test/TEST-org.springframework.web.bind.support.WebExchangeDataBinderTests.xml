@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.bind.support.WebExchangeDataBinderTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:26" hostname="DESKTOP-TMNPDT1" time="0.335">
+  <properties/>
+  <testcase name="testFieldDefault()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.201"/>
+  <testcase name="testFieldPrefixCausesFieldReset()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.005"/>
+  <testcase name="testBindingWithNestedObjectCreation()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.001"/>
+  <testcase name="testFieldDefaultPreemptsFieldMarker()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.012"/>
+  <testcase name="testMultipart()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.07"/>
+  <testcase name="testFieldDefaultNonBoolean()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.005"/>
+  <testcase name="testBindingWithQueryParams()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.003"/>
+  <testcase name="testFieldPrefixCausesFieldResetWithIgnoreUnknownFields()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.004"/>
+  <testcase name="testWithCommaSeparatedStringArray()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.009"/>
+  <testcase name="testBindingWithNestedObjectCreationAndWrongOrder()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

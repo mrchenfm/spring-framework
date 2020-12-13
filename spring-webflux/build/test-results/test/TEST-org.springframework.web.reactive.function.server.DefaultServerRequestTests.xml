@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.DefaultServerRequestTests" tests="43" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:28:56" hostname="DESKTOP-TMNPDT1" time="2.501">
+  <properties/>
+  <testcase name="checkNotModifiedTimestamp(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.215"/>
+  <testcase name="checkNotModifiedTimestamp(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.005"/>
+  <testcase name="bodyUnacceptable()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.012"/>
+  <testcase name="bodyToFluxParameterizedTypeReference()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.064"/>
+  <testcase name="absentQueryParam()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.005"/>
+  <testcase name="checkNotModifiedWildcardIsIgnored(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.005"/>
+  <testcase name="checkNotModifiedWildcardIsIgnored(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="multipartData()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.209"/>
+  <testcase name="queryParams()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.111"/>
+  <testcase name="header()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.051"/>
+  <testcase name="uriBuilder()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.009"/>
+  <testcase name="method()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagAndModifiedTimestamp(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagAndModifiedTimestamp(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkModifiedTimestamp(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.003"/>
+  <testcase name="checkModifiedTimestamp(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkModifiedETagAndNotModifiedTimestamp(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.003"/>
+  <testcase name="checkModifiedETagAndNotModifiedTimestamp(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="bodyToFlux()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.004"/>
+  <testcase name="bodyToMono()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.007"/>
+  <testcase name="uri()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="body()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.003"/>
+  <testcase name="attribute()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagWithSeparatorChars(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagWithSeparatorChars(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="formData()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.018"/>
+  <testcase name="pathVariableNotFound()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.026"/>
+  <testcase name="checkModifiedETag(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkModifiedETag(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="cookies()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="emptyQueryParam()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagAndTimestamp(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagAndTimestamp(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkModifiedUnpaddedETag(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.002"/>
+  <testcase name="checkModifiedUnpaddedETag(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.004"/>
+  <testcase name="pathVariables()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="pathVariable()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.0"/>
+  <testcase name="checkNotModifiedETag(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.001"/>
+  <testcase name="checkNotModifiedETag(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.033"/>
+  <testcase name="bodyToMonoParameterizedTypeReference()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.011"/>
+  <testcase name="checkNotModifiedUnpaddedETag(String)[1]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.007"/>
+  <testcase name="checkNotModifiedUnpaddedETag(String)[2]" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.009"/>
+  <testcase name="bodyToMonoDecodingException()" classname="org.springframework.web.reactive.function.server.DefaultServerRequestTests" time="0.544"/>
+  <system-out><![CDATA[12:28:57.126 [Test worker] DEBUG o.s.c.c.StringDecoder - [5d21fbb5] Decoded "foo"
+12:28:57.416 [Test worker] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [2530b31] Parsed parts [foo, baz] (content masked)
+12:28:58.117 [Test worker] DEBUG o.s.c.c.StringDecoder - [6c1770e] Decoded "foo"
+12:28:58.199 [Test worker] DEBUG o.s.c.c.StringDecoder - [2230e529] Decoded "foo"
+12:28:58.214 [Test worker] DEBUG o.s.c.c.StringDecoder - [1a02ff75] Decoded "foo"
+12:28:58.296 [Test worker] DEBUG o.s.h.c.FormHttpMessageReader - [4a8edeb4] Read form fields [foo, baz] (content masked)
+12:28:58.598 [Test worker] DEBUG o.s.c.c.StringDecoder - [28de967a] Decoded "foo"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

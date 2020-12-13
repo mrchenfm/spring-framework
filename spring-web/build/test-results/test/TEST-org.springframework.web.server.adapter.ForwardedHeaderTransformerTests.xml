@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:44" hostname="DESKTOP-TMNPDT1" time="0.023">
+  <properties/>
+  <testcase name="forwardedHeader()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.001"/>
+  <testcase name="xForwardedPrefixShouldNotLeadToDecodedPath()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.003"/>
+  <testcase name="xForwardedPrefixTrailingSlash()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.001"/>
+  <testcase name="xForwardedHeaders()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.001"/>
+  <testcase name="removeOnly()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.001"/>
+  <testcase name="xForwardedPrefix()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.008"/>
+  <testcase name="shouldNotDoubleEncode()" classname="org.springframework.web.server.adapter.ForwardedHeaderTransformerTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

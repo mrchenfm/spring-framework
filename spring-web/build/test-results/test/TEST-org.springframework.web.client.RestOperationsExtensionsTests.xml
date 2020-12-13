@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.client.RestOperationsExtensionsTests" tests="24" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:56" hostname="DESKTOP-TMNPDT1" time="3.416">
+  <properties/>
+  <testcase name="postForObject with reified type parameters and String()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="2.09"/>
+  <testcase name="exchange with reified type parameters, String, HttpMethod, HttpEntity and varargs()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.315"/>
+  <testcase name="getForEntity with reified type parameters and Map()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.047"/>
+  <testcase name="patchForObject with reified type parameters()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.019"/>
+  <testcase name="patchForObject with reified type parameters, String and Map()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.04"/>
+  <testcase name="postForEntity with reified type parameters and String()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.011"/>
+  <testcase name="exchange with reified type parameters, String and HttpEntity()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.147"/>
+  <testcase name="patchForObject with reified type parameters and String()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.01"/>
+  <testcase name="exchange with reified type parameters, String and HttpMethod()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.02"/>
+  <testcase name="postForObject with reified type parameters()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.014"/>
+  <testcase name="getForObject with reified type parameters, String and varargs()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.065"/>
+  <testcase name="postForObject with reified type parameters, String and varargs()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.019"/>
+  <testcase name="postForEntity with reified type parameters, String and Map()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.027"/>
+  <testcase name="postForObject with reified type parameters, String and Map()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.039"/>
+  <testcase name="getForEntity with reified type parameters, String and varargs()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.032"/>
+  <testcase name="exchange with reified type parameters, String, HttpMethod and HttpEntity()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.095"/>
+  <testcase name="postForEntity with reified type parameters, String and varargs()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.019"/>
+  <testcase name="getForEntity with reified type parameters, String and URI()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.016"/>
+  <testcase name="getForObject with reified type parameters, String and Map()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.026"/>
+  <testcase name="getForObject with reified type parameters and URI()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.017"/>
+  <testcase name="RestOperations are available()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.168"/>
+  <testcase name="postForEntity with reified type parameters()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.011"/>
+  <testcase name="exchange with reified type parameters, String, HttpMethod, HttpEntity and Map()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.033"/>
+  <testcase name="patchForObject with reified type parameters, String and varargs()" classname="org.springframework.web.client.RestOperationsExtensionsTests" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

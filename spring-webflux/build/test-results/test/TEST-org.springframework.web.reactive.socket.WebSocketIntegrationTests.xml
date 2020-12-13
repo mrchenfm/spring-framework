@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.socket.WebSocketIntegrationTests" tests="80" skipped="0" failures="2" errors="0" timestamp="2020-12-12T04:30:25" hostname="DESKTOP-TMNPDT1" time="97.941">
+  <properties/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[1]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="8.089">
+    <failure message="java.lang.IllegalStateException: Timeout on blocking read for 5000 MILLISECONDS" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Timeout on blocking read for 5000 MILLISECONDS
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:123)
+	at reactor.core.publisher.Mono.block(Mono.java:1704)
+	at org.springframework.web.reactive.socket.WebSocketIntegrationTests.sessionClosing(WebSocketIntegrationTests.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:198)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:106)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:373)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:106)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[2]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.372"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[3]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.155"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[4]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.282"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[5]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="19.905"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[6]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.593"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[7]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.185"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[8]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.53"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[9]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="5.995"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[10]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.081"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[11]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.035"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[12]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.059"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[13]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="19.05"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[14]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.059"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[15]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.039"/>
+  <testcase name="sessionClosing(WebSocketClient, HttpServer, Class)[16]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.049"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[1]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="5.705"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[2]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.25"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[3]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.059"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[4]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.063"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[5]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="4.023"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[6]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.09"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[7]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.052"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[8]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.064"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[9]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="3.296"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[10]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.229"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[11]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.039"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[12]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.059"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[13]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="2.419"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[14]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.058"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[15]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.03"/>
+  <testcase name="cookie(WebSocketClient, HttpServer, Class)[16]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.044"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[1]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="2.212"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[2]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.181"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[3]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.066"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[4]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.066"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[5]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.63"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[6]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.203"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[7]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.243"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[8]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.189"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[9]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="3.381"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[10]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.128"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[11]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.097"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[12]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.14"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[13]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="1.211"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[14]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.134"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[15]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.095"/>
+  <testcase name="echo(WebSocketClient, HttpServer, Class)[16]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.068"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[1]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="6.497">
+    <failure message="java.lang.IllegalStateException: Timeout on blocking read for 5000 MILLISECONDS" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Timeout on blocking read for 5000 MILLISECONDS
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:123)
+	at reactor.core.publisher.Mono.block(Mono.java:1704)
+	at org.springframework.web.reactive.socket.WebSocketIntegrationTests.customHeader(WebSocketIntegrationTests.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:198)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:106)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:373)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:106)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[2]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.181"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[3]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.041"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[4]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.115"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[5]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="1.294"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[6]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.047"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[7]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.111"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[8]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.231"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[9]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="3.893"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[10]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.047"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[11]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.037"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[12]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.05"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[13]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="1.087"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[14]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.061"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[15]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.061"/>
+  <testcase name="customHeader(WebSocketClient, HttpServer, Class)[16]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.066"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[1]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.803"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[2]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.13"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[3]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.031"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[4]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.067"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[5]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.502"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[6]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.057"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[7]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.04"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[8]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.059"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[9]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.442"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[10]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.041"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[11]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.042"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[12]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.049"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[13]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.645"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[14]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.032"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[15]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.02"/>
+  <testcase name="subProtocol(WebSocketClient, HttpServer, Class)[16]" classname="org.springframework.web.reactive.socket.WebSocketIntegrationTests" time="0.03"/>
+  <system-out><![CDATA[12:30:25.238 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:25.323 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:25.328 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:25.441 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65388(0 millis).
+12:30:25.798 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:65388/close
+12:30:32.564 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:33.286 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:33.303 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:33.311 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:33.311 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:33.312 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@7009389b{/,null,AVAILABLE}
+12:30:33.312 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:33.312 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:33.363 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@abd3bf1{HTTP/1.1, (http/1.1)}{0.0.0.0:65465}
+12:30:33.363 [Test worker] INFO  o.e.j.s.Server - Started @121084ms
+12:30:33.364 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65465(0 millis).
+12:30:33.364 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:65465/close
+12:30:33.370 [qtp684765054-360] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [14a9b41d] HTTP GET "/close"
+12:30:33.372 [qtp684765054-360] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [14a9b41d] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@51ab38ec
+12:30:33.537 [qtp684765054-360] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [14a9b41d] Completed 101 SWITCHING_PROTOCOLS
+12:30:33.565 [qtp684765054-360] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [14a9b41d] Session id "631aae40" for http://localhost:65465/close
+12:30:33.600 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [0] Session id "0" for ws://localhost:65465/close
+12:30:33.619 [boundedElastic-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:33.638 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:30:33.639 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7009389b{/,null,UNAVAILABLE}
+12:30:33.639 [WebSocketClient-AsyncIO-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:33.642 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@abd3bf1{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:30:33.659 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:33.674 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:33.685 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:33.686 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:33.687 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65471(0 millis).
+12:30:33.688 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:65471/close
+12:30:33.693 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8e4fe24d-10] HTTP GET "/close"
+12:30:33.693 [reactor-http-nio-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [8e4fe24d-10] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@3eefa030
+12:30:33.759 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [1] Session id "1" for ws://localhost:65471/close
+12:30:33.759 [boundedElastic-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:33.801 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [8e4fe24d-10] Session id "7f95e28c" for http://localhost:65471/close
+12:30:33.808 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8e4fe24d-10] Completed 200 OK
+12:30:33.814 [WebSocketClient-AsyncIO-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:33.815 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:33.815 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:33.832 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:33.840 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:33.840 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:33.840 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:33.853 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65483(0 millis).
+12:30:33.854 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:65483/close
+12:30:33.881 [XNIO-11 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7d623be7] HTTP GET "/close"
+12:30:33.882 [XNIO-11 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [7d623be7] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@795da093
+12:30:33.943 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [2] Session id "2" for ws://localhost:65483/close
+12:30:33.943 [boundedElastic-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:34.001 [XNIO-11 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [7d623be7] Session id "39e530c0" for http://localhost:65483/close
+12:30:34.022 [WebSocketClient-AsyncIO-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:34.022 [XNIO-11 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7d623be7] Completed 101 SWITCHING_PROTOCOLS
+12:30:34.022 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:34.022 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:34.098 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:30:34.121 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:34.123 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:34.124 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:34.142 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65487(0 millis).
+12:30:52.398 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:65487/close
+12:30:52.612 [http-nio-auto-11-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [10ce87c7] HTTP GET "/close"
+12:30:52.613 [http-nio-auto-11-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [10ce87c7] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@55cc0bba
+12:30:52.672 [http-nio-auto-11-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [10ce87c7] Completed 101 SWITCHING_PROTOCOLS
+12:30:52.687 [http-nio-auto-11-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [10ce87c7] Session id "3" for http://localhost:65487/close
+12:30:52.699 [WebSocketClient@2086796252-392] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [c899fc7] Session id "c899fc7" for ws://localhost:65487/close
+12:30:52.699 [WebSocketClient@2086796252-392] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:52.706 [WebSocketClient@2086796252-397] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:52.723 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:54.003 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:54.070 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:54.081 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:54.081 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:54.081 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@48cff105{/,null,AVAILABLE}
+12:30:54.082 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:54.082 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:54.182 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@3c10b030{HTTP/1.1, (http/1.1)}{0.0.0.0:49283}
+12:30:54.182 [Test worker] INFO  o.e.j.s.Server - Started @141903ms
+12:30:54.182 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49283(0 millis).
+12:30:54.300 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49283/close
+12:30:54.470 [qtp1376621065-403] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2dcf6cda] HTTP GET "/close"
+12:30:54.470 [qtp1376621065-403] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2dcf6cda] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@23089713
+12:30:54.542 [qtp1376621065-403] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2dcf6cda] Completed 101 SWITCHING_PROTOCOLS
+12:30:54.542 [qtp1376621065-403] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [2dcf6cda] Session id "21a6267" for http://localhost:49283/close
+12:30:54.546 [WebSocketClient@2086796252-411] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [5843825b] Session id "5843825b" for ws://localhost:49283/close
+12:30:54.546 [WebSocketClient@2086796252-411] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:54.548 [WebSocketClient@2086796252-414] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:54.586 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:30:54.587 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@48cff105{/,null,UNAVAILABLE}
+12:30:54.590 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@3c10b030{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:30:54.596 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:54.615 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:54.618 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:54.618 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:54.620 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49293(0 millis).
+12:30:54.689 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49293/close
+12:30:54.772 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8eeaaaba-11] HTTP GET "/close"
+12:30:54.772 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [8eeaaaba-11] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@3fbe3d3c
+12:30:54.774 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [8eeaaaba-11] Session id "6b00e78" for http://localhost:49293/close
+12:30:54.775 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8eeaaaba-11] Completed 200 OK
+12:30:54.776 [WebSocketClient@2086796252-422] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [65e398ec] Session id "65e398ec" for ws://localhost:49293/close
+12:30:54.776 [WebSocketClient@2086796252-422] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:54.777 [WebSocketClient@2086796252-422] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:54.782 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:54.782 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:54.802 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:54.834 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:54.834 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:54.835 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:54.855 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49311(0 millis).
+12:30:55.249 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49311/close
+12:30:55.284 [XNIO-12 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4dece87d] HTTP GET "/close"
+12:30:55.285 [XNIO-12 I/O-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [4dece87d] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@49d37518
+12:30:55.286 [XNIO-12 I/O-4] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [4dece87d] Session id "5295c100" for http://localhost:49311/close
+12:30:55.286 [XNIO-12 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4dece87d] Completed 101 SWITCHING_PROTOCOLS
+12:30:55.288 [WebSocketClient@2086796252-436] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [7a6e4b8d] Session id "7a6e4b8d" for ws://localhost:49311/close
+12:30:55.288 [WebSocketClient@2086796252-436] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:30:55.290 [WebSocketClient@2086796252-436] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:30:55.309 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:55.309 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:55.313 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:30:55.323 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:30:55.325 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:55.327 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:55.349 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49323(0 millis).
+12:30:55.425 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49323/close
+12:31:00.715 [http-nio-auto-12-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [728ee9a0] HTTP GET "/close"
+12:31:00.715 [http-nio-auto-12-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [728ee9a0] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@7c491981
+12:31:00.719 [http-nio-auto-12-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [728ee9a0] Completed 101 SWITCHING_PROTOCOLS
+12:31:00.721 [http-nio-auto-12-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [728ee9a0] Session id "4" for http://localhost:49323/close
+12:31:00.740 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [59db7f63] Session id "59db7f63" for ws://localhost:49323/close
+12:31:00.740 [reactor-http-nio-3] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '59db7f63' for ws://localhost:49323/close
+12:31:00.740 [reactor-http-nio-3] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:00.757 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:00.760 [reactor-http-nio-3] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:01.309 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:01.319 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:01.321 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:01.322 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:01.322 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@53d52f21{/,null,AVAILABLE}
+12:31:01.322 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:01.322 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:01.351 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@4613c293{HTTP/1.1, (http/1.1)}{0.0.0.0:49387}
+12:31:01.351 [Test worker] INFO  o.e.j.s.Server - Started @149072ms
+12:31:01.351 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49387(0 millis).
+12:31:01.352 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49387/close
+12:31:01.360 [qtp1561426123-459] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [756253c3] HTTP GET "/close"
+12:31:01.360 [qtp1561426123-459] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [756253c3] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@7ba5a31f
+12:31:01.369 [qtp1561426123-459] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [756253c3] Completed 101 SWITCHING_PROTOCOLS
+12:31:01.370 [qtp1561426123-459] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [756253c3] Session id "5ab7566b" for http://localhost:49387/close
+12:31:01.371 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [cc8f878] Session id "cc8f878" for ws://localhost:49387/close
+12:31:01.371 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session 'cc8f878' for ws://localhost:49387/close
+12:31:01.371 [reactor-http-nio-4] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:01.373 [reactor-http-nio-4] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:01.373 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:01.374 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@53d52f21{/,null,UNAVAILABLE}
+12:31:01.376 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@4613c293{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:01.389 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:01.407 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:01.410 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:01.410 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:01.413 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49402(0 millis).
+12:31:01.414 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49402/close
+12:31:01.420 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [541a1704-12] HTTP GET "/close"
+12:31:01.420 [reactor-http-nio-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [541a1704-12] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@494079da
+12:31:01.422 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [541a1704-12] Session id "432153d6" for http://localhost:49402/close
+12:31:01.422 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [2ba49e2e] Session id "2ba49e2e" for ws://localhost:49402/close
+12:31:01.422 [reactor-http-nio-2] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '2ba49e2e' for ws://localhost:49402/close
+12:31:01.422 [reactor-http-nio-2] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:01.423 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [541a1704-12] Completed 200 OK
+12:31:01.424 [reactor-http-nio-2] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:01.425 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:01.426 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:01.437 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:01.440 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:01.440 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:01.440 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:01.459 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49418(0 millis).
+12:31:01.460 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49418/close
+12:31:01.477 [XNIO-13 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2aa9f938] HTTP GET "/close"
+12:31:01.478 [XNIO-13 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2aa9f938] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@2e9678b5
+12:31:01.479 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [4e2793] Session id "4e2793" for ws://localhost:49418/close
+12:31:01.479 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '4e2793' for ws://localhost:49418/close
+12:31:01.479 [reactor-http-nio-4] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:01.480 [XNIO-13 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [2aa9f938] Session id "707488c5" for http://localhost:49418/close
+12:31:01.481 [XNIO-13 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2aa9f938] Completed 101 SWITCHING_PROTOCOLS
+12:31:01.482 [reactor-http-nio-4] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:01.482 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:01.482 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:01.485 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:01.495 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:01.497 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:01.498 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:01.533 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49420(0 millis).
+12:31:01.534 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49420/close
+12:31:20.072 [http-nio-auto-13-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2e39b68d] HTTP GET "/close"
+12:31:20.074 [http-nio-auto-13-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2e39b68d] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@20fe4d3a
+12:31:20.079 [http-nio-auto-13-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2e39b68d] Completed 101 SWITCHING_PROTOCOLS
+12:31:20.082 [http-nio-auto-13-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [2e39b68d] Session id "5" for http://localhost:49420/close
+12:31:20.084 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [8409ec0] Session id "8409ec0" for ws://localhost:49420/close
+12:31:20.085 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:20.086 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:20.087 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:20.536 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:20.554 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:20.556 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:20.557 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:20.558 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@8b6f85a{/,null,AVAILABLE}
+12:31:20.558 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:20.558 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:20.576 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@75dd1699{HTTP/1.1, (http/1.1)}{0.0.0.0:49533}
+12:31:20.576 [Test worker] INFO  o.e.j.s.Server - Started @168296ms
+12:31:20.576 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49533(0 millis).
+12:31:20.576 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49533/close
+12:31:20.581 [qtp1252110820-488] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [39683923] HTTP GET "/close"
+12:31:20.581 [qtp1252110820-488] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [39683923] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@37afc07e
+12:31:20.586 [qtp1252110820-488] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [39683923] Completed 101 SWITCHING_PROTOCOLS
+12:31:20.587 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [4f624d6] Session id "4f624d6" for ws://localhost:49533/close
+12:31:20.587 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:20.587 [qtp1252110820-488] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [39683923] Session id "16bd350a" for http://localhost:49533/close
+12:31:20.593 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:20.593 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@8b6f85a{/,null,UNAVAILABLE}
+12:31:20.594 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:20.595 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@75dd1699{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:20.597 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:20.611 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:20.613 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:20.613 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:20.620 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49539(0 millis).
+12:31:20.620 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49539/close
+12:31:20.625 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [a2181603-13] HTTP GET "/close"
+12:31:20.626 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [a2181603-13] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@17021633
+12:31:20.628 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [a2181603-13] Session id "375cba3a" for http://localhost:49539/close
+12:31:20.629 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [a2181603-13] Completed 200 OK
+12:31:20.635 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [5bd3f3c8] Session id "5bd3f3c8" for ws://localhost:49539/close
+12:31:20.635 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:20.637 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:20.637 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:20.638 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:20.655 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:20.663 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:20.663 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:20.663 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:20.675 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49551(0 millis).
+12:31:20.675 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49551/close
+12:31:20.678 [XNIO-14 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [54a874ef] HTTP GET "/close"
+12:31:20.678 [XNIO-14 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [54a874ef] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SessionClosingHandler@5097eaa2
+12:31:20.679 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [25a21a49] Session id "25a21a49" for ws://localhost:49551/close
+12:31:20.680 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Starting..
+12:31:20.680 [XNIO-14 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [54a874ef] Session id "22d96cbd" for http://localhost:49551/close
+12:31:20.680 [XNIO-14 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [54a874ef] Completed 101 SWITCHING_PROTOCOLS
+12:31:20.681 [XNIO-10 I/O-1] DEBUG o.s.w.r.s.WebSocketIntegrationTests - Completed with: onComplete
+12:31:20.682 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:20.682 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:20.688 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:20.712 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:20.783 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:20.786 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:20.806 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49557(0 millis).
+12:31:20.807 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:49557/cookie
+12:31:23.586 [http-nio-auto-14-exec-9] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f2d3a7e] HTTP GET "/cookie"
+12:31:23.587 [http-nio-auto-14-exec-9] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [7f2d3a7e] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@71eacbeb
+12:31:23.602 [http-nio-auto-14-exec-9] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f2d3a7e] Completed 101 SWITCHING_PROTOCOLS
+12:31:23.604 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [6] Session id "6" for ws://localhost:49557/cookie
+12:31:23.605 [http-nio-auto-14-exec-9] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [7f2d3a7e] Session id "7" for http://localhost:49557/cookie
+12:31:23.633 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:26.406 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:26.418 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:26.421 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:26.421 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:26.422 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@1ddfffa9{/,null,AVAILABLE}
+12:31:26.422 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:26.422 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:26.618 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@3c2fa282{HTTP/1.1, (http/1.1)}{0.0.0.0:49660}
+12:31:26.618 [Test worker] INFO  o.e.j.s.Server - Started @174339ms
+12:31:26.618 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49660(0 millis).
+12:31:26.618 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:49660/cookie
+12:31:26.626 [qtp1392579597-520] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [32573f56] HTTP GET "/cookie"
+12:31:26.626 [qtp1392579597-520] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [32573f56] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@3c90c76c
+12:31:26.630 [qtp1392579597-520] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [32573f56] Completed 101 SWITCHING_PROTOCOLS
+12:31:26.631 [qtp1392579597-520] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [32573f56] Session id "1d823218" for http://localhost:49660/cookie
+12:31:26.631 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [8] Session id "8" for ws://localhost:49660/cookie
+12:31:26.641 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:26.642 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1ddfffa9{/,null,UNAVAILABLE}
+12:31:26.645 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@3c2fa282{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:26.656 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:26.687 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:26.691 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:26.691 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:26.695 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49673(0 millis).
+12:31:26.696 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:49673/cookie
+12:31:26.699 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [834f19a3-14] HTTP GET "/cookie"
+12:31:26.699 [reactor-http-nio-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [834f19a3-14] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@657b18f4
+12:31:26.702 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [834f19a3-14] Session id "27d2f6f5" for http://localhost:49673/cookie
+12:31:26.703 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [834f19a3-14] Completed 200 OK
+12:31:26.704 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [9] Session id "9" for ws://localhost:49673/cookie
+12:31:26.717 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:26.717 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:26.731 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:26.737 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:26.737 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:26.737 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:26.760 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49690(0 millis).
+12:31:26.761 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:49690/cookie
+12:31:26.767 [XNIO-16 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5bae2a5b] HTTP GET "/cookie"
+12:31:26.767 [XNIO-16 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [5bae2a5b] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@5f91a5f6
+12:31:26.773 [XNIO-16 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [5bae2a5b] Session id "4c0dd3bd" for http://localhost:49690/cookie
+12:31:26.773 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [a] Session id "a" for ws://localhost:49690/cookie
+12:31:26.776 [XNIO-16 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5bae2a5b] Completed 101 SWITCHING_PROTOCOLS
+12:31:26.776 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:26.777 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:26.781 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:26.794 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:26.796 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:26.813 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:26.833 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49692(0 millis).
+12:31:29.950 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49692/cookie
+12:31:30.060 [http-nio-auto-15-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [41218abe] HTTP GET "/cookie"
+12:31:30.060 [http-nio-auto-15-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [41218abe] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@4fe67cea
+12:31:30.063 [http-nio-auto-15-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [41218abe] Completed 101 SWITCHING_PROTOCOLS
+12:31:30.065 [http-nio-auto-15-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [41218abe] Session id "b" for http://localhost:49692/cookie
+12:31:30.086 [WebSocketClient@541608334-552] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [41b97e3f] Session id "41b97e3f" for ws://localhost:49692/cookie
+12:31:30.097 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:30.803 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:30.815 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:30.817 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:30.818 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:30.818 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@667e10ba{/,null,AVAILABLE}
+12:31:30.818 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:30.818 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:30.831 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@6fa3e765{HTTP/1.1, (http/1.1)}{0.0.0.0:49746}
+12:31:30.831 [Test worker] INFO  o.e.j.s.Server - Started @178552ms
+12:31:30.832 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49746(0 millis).
+12:31:30.845 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49746/cookie
+12:31:30.860 [qtp1532044065-564] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [679d67fe] HTTP GET "/cookie"
+12:31:30.860 [qtp1532044065-564] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [679d67fe] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@695a957d
+12:31:30.879 [qtp1532044065-564] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [679d67fe] Completed 101 SWITCHING_PROTOCOLS
+12:31:30.880 [qtp1532044065-564] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [679d67fe] Session id "41b884f0" for http://localhost:49746/cookie
+12:31:30.883 [WebSocketClient@541608334-573] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [2cd644a1] Session id "2cd644a1" for ws://localhost:49746/cookie
+12:31:30.891 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:30.891 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@667e10ba{/,null,UNAVAILABLE}
+12:31:30.893 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@6fa3e765{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:30.894 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:30.906 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:30.908 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:30.908 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:30.911 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49756(0 millis).
+12:31:30.927 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49756/cookie
+12:31:30.933 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [199ef4e8-15] HTTP GET "/cookie"
+12:31:30.933 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [199ef4e8-15] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@2b3b0301
+12:31:30.934 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [199ef4e8-15] Session id "785c9dd7" for http://localhost:49756/cookie
+12:31:30.935 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [199ef4e8-15] Completed 200 OK
+12:31:30.938 [WebSocketClient@541608334-581] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [19db50a6] Session id "19db50a6" for ws://localhost:49756/cookie
+12:31:30.945 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:30.946 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:30.960 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:30.962 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:30.962 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:30.962 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:30.974 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49783(0 millis).
+12:31:30.987 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:49783/cookie
+12:31:30.992 [XNIO-17 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [662e5bbd] HTTP GET "/cookie"
+12:31:30.992 [XNIO-17 I/O-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [662e5bbd] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@6211d3a0
+12:31:30.993 [XNIO-17 I/O-3] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [662e5bbd] Session id "62f042fe" for http://localhost:49783/cookie
+12:31:30.994 [XNIO-17 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [662e5bbd] Completed 101 SWITCHING_PROTOCOLS
+12:31:30.996 [WebSocketClient@541608334-592] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [73f63476] Session id "73f63476" for ws://localhost:49783/cookie
+12:31:31.007 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:31.008 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:31.011 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:31.024 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:31.026 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:31.027 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:31.052 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49790(0 millis).
+12:31:31.053 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49790/cookie
+12:31:33.846 [http-nio-auto-16-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4ecd6aef] HTTP GET "/cookie"
+12:31:33.847 [http-nio-auto-16-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [4ecd6aef] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@400a8d46
+12:31:33.850 [http-nio-auto-16-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4ecd6aef] Completed 101 SWITCHING_PROTOCOLS
+12:31:33.853 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [1156a680] Session id "1156a680" for ws://localhost:49790/cookie
+12:31:33.854 [reactor-http-nio-3] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '1156a680' for ws://localhost:49790/cookie
+12:31:33.854 [http-nio-auto-16-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [4ecd6aef] Session id "c" for http://localhost:49790/cookie
+12:31:33.859 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:34.309 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:34.320 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:34.326 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:34.328 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:34.329 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@40e6cf10{/,null,AVAILABLE}
+12:31:34.330 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:34.330 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:34.365 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@260323e1{HTTP/1.1, (http/1.1)}{0.0.0.0:49854}
+12:31:34.366 [Test worker] INFO  o.e.j.s.Server - Started @182086ms
+12:31:34.366 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49854(0 millis).
+12:31:34.368 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49854/cookie
+12:31:34.382 [qtp1085139156-619] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [962ee0f] HTTP GET "/cookie"
+12:31:34.383 [qtp1085139156-619] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [962ee0f] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@7a50153
+12:31:34.510 [qtp1085139156-619] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [962ee0f] Completed 101 SWITCHING_PROTOCOLS
+12:31:34.511 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [7cdd6ce6] Session id "7cdd6ce6" for ws://localhost:49854/cookie
+12:31:34.511 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '7cdd6ce6' for ws://localhost:49854/cookie
+12:31:34.514 [qtp1085139156-619] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [962ee0f] Session id "26b7f427" for http://localhost:49854/cookie
+12:31:34.524 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:34.525 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@40e6cf10{/,null,UNAVAILABLE}
+12:31:34.529 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@260323e1{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:34.538 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:34.562 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:34.565 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:34.565 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:34.569 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49860(0 millis).
+12:31:34.570 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49860/cookie
+12:31:34.578 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [e03c249b-16] HTTP GET "/cookie"
+12:31:34.578 [reactor-http-nio-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [e03c249b-16] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@63c39559
+12:31:34.581 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [e03c249b-16] Session id "2107eb43" for http://localhost:49860/cookie
+12:31:34.581 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [e03c249b-16] Completed 200 OK
+12:31:34.581 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [2f796c75] Session id "2f796c75" for ws://localhost:49860/cookie
+12:31:34.581 [reactor-http-nio-2] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '2f796c75' for ws://localhost:49860/cookie
+12:31:34.584 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:34.584 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:34.601 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:34.604 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:34.604 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:34.604 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:34.619 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49872(0 millis).
+12:31:34.620 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:49872/cookie
+12:31:34.630 [XNIO-18 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2b08d0a9] HTTP GET "/cookie"
+12:31:34.632 [XNIO-18 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2b08d0a9] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@2f375110
+12:31:34.633 [XNIO-18 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [2b08d0a9] Session id "4b0f8069" for http://localhost:49872/cookie
+12:31:34.634 [XNIO-18 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2b08d0a9] Completed 101 SWITCHING_PROTOCOLS
+12:31:34.635 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [48e71594] Session id "48e71594" for ws://localhost:49872/cookie
+12:31:34.635 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '48e71594' for ws://localhost:49872/cookie
+12:31:34.638 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:34.638 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:34.643 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:34.654 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:34.656 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:34.658 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:34.680 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49874(0 millis).
+12:31:34.680 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49874/cookie
+12:31:36.623 [http-nio-auto-17-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [76c34de5] HTTP GET "/cookie"
+12:31:36.624 [http-nio-auto-17-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [76c34de5] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@7804bd4d
+12:31:36.626 [http-nio-auto-17-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [76c34de5] Completed 101 SWITCHING_PROTOCOLS
+12:31:36.660 [XNIO-15 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [33123c40] Session id "33123c40" for ws://localhost:49874/cookie
+12:31:36.662 [http-nio-auto-17-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [76c34de5] Session id "d" for http://localhost:49874/cookie
+12:31:36.669 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:37.062 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:37.077 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:37.080 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:37.080 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:37.081 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@df2b054{/,null,AVAILABLE}
+12:31:37.081 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:37.081 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:37.106 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@3a9f8661{HTTP/1.1, (http/1.1)}{0.0.0.0:49925}
+12:31:37.106 [Test worker] INFO  o.e.j.s.Server - Started @184827ms
+12:31:37.106 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49925(0 millis).
+12:31:37.106 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49925/cookie
+12:31:37.110 [qtp1568782970-650] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7cd477c8] HTTP GET "/cookie"
+12:31:37.110 [qtp1568782970-650] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [7cd477c8] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@72138622
+12:31:37.114 [qtp1568782970-650] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7cd477c8] Completed 101 SWITCHING_PROTOCOLS
+12:31:37.115 [XNIO-15 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [4dde2559] Session id "4dde2559" for ws://localhost:49925/cookie
+12:31:37.115 [qtp1568782970-650] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [7cd477c8] Session id "6114016a" for http://localhost:49925/cookie
+12:31:37.116 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:37.116 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@df2b054{/,null,UNAVAILABLE}
+12:31:37.119 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@3a9f8661{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:37.120 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:37.138 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:37.140 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:37.140 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:37.142 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49931(0 millis).
+12:31:37.143 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49931/cookie
+12:31:37.147 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [feab1fb5-17] HTTP GET "/cookie"
+12:31:37.147 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [feab1fb5-17] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@4fd938b3
+12:31:37.149 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [feab1fb5-17] Session id "1749ca1a" for http://localhost:49931/cookie
+12:31:37.149 [XNIO-15 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [26e6b805] Session id "26e6b805" for ws://localhost:49931/cookie
+12:31:37.149 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [feab1fb5-17] Completed 200 OK
+12:31:37.151 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:37.152 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:37.163 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:37.165 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:37.166 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:37.166 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:37.181 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49943(0 millis).
+12:31:37.181 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:49943/cookie
+12:31:37.188 [XNIO-19 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7b6bd581] HTTP GET "/cookie"
+12:31:37.188 [XNIO-19 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [7b6bd581] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CookieHandler@7f544e34
+12:31:37.189 [XNIO-19 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [7b6bd581] Session id "6fd200dc" for http://localhost:49943/cookie
+12:31:37.190 [XNIO-15 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [129fb96b] Session id "129fb96b" for ws://localhost:49943/cookie
+12:31:37.190 [XNIO-19 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7b6bd581] Completed 101 SWITCHING_PROTOCOLS
+12:31:37.191 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:37.191 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:37.196 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:37.219 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:37.268 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:37.269 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:37.287 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49961(0 millis).
+12:31:37.299 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:49961/echo
+12:31:38.417 [http-nio-auto-18-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bbd93c2] HTTP GET "/echo"
+12:31:38.418 [http-nio-auto-18-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [bbd93c2] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@57a6cc5
+12:31:38.421 [http-nio-auto-18-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bbd93c2] Completed 101 SWITCHING_PROTOCOLS
+12:31:38.423 [http-nio-auto-18-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [bbd93c2] Session id "e" for http://localhost:49961/echo
+12:31:38.424 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [f] Session id "f" for ws://localhost:49961/echo
+12:31:38.550 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:39.421 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:39.433 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:39.437 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:39.437 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:39.438 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@43138e6f{/,null,AVAILABLE}
+12:31:39.438 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:39.438 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:39.466 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@676b0f6b{HTTP/1.1, (http/1.1)}{0.0.0.0:50048}
+12:31:39.467 [Test worker] INFO  o.e.j.s.Server - Started @187187ms
+12:31:39.467 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50048(0 millis).
+12:31:39.467 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50048/echo
+12:31:39.477 [qtp1896907014-681] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [214824e3] HTTP GET "/echo"
+12:31:39.478 [qtp1896907014-681] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [214824e3] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@2f8fceba
+12:31:39.509 [qtp1896907014-681] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [214824e3] Completed 101 SWITCHING_PROTOCOLS
+12:31:39.510 [qtp1896907014-681] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [214824e3] Session id "e9d3bce" for http://localhost:50048/echo
+12:31:39.511 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [10] Session id "10" for ws://localhost:50048/echo
+12:31:39.598 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:39.600 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@43138e6f{/,null,UNAVAILABLE}
+12:31:39.601 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@676b0f6b{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:39.602 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:39.615 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:39.618 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:39.618 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:39.621 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50060(0 millis).
+12:31:39.621 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50060/echo
+12:31:39.625 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [cec25960-18] HTTP GET "/echo"
+12:31:39.625 [reactor-http-nio-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [cec25960-18] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@29bb8abb
+12:31:39.626 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [cec25960-18] Session id "600f6ae1" for http://localhost:50060/echo
+12:31:39.626 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [11] Session id "11" for ws://localhost:50060/echo
+12:31:39.627 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [cec25960-18] Completed 200 OK
+12:31:39.669 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:39.669 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:39.680 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:39.682 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:39.682 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:39.682 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:39.695 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50072(0 millis).
+12:31:39.695 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50072/echo
+12:31:39.702 [XNIO-21 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [139b6977] HTTP GET "/echo"
+12:31:39.702 [XNIO-21 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [139b6977] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@17a4efdc
+12:31:39.703 [XNIO-21 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [139b6977] Session id "3abf35c6" for http://localhost:50072/echo
+12:31:39.703 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [12] Session id "12" for ws://localhost:50072/echo
+12:31:39.703 [XNIO-21 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [139b6977] Completed 101 SWITCHING_PROTOCOLS
+12:31:39.732 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:39.733 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:39.736 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:39.747 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:39.749 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:39.750 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:39.765 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50074(0 millis).
+12:31:39.960 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50074/echo
+12:31:39.973 [http-nio-auto-19-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [121baaba] HTTP GET "/echo"
+12:31:39.974 [http-nio-auto-19-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [121baaba] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@1cdc5689
+12:31:39.976 [http-nio-auto-19-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [121baaba] Completed 101 SWITCHING_PROTOCOLS
+12:31:39.978 [http-nio-auto-19-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [121baaba] Session id "13" for http://localhost:50074/echo
+12:31:39.978 [WebSocketClient@132463320-713] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [d56f79c] Session id "d56f79c" for ws://localhost:50074/echo
+12:31:40.007 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:40.367 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:40.376 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:40.378 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:40.378 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:40.379 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@3679898a{/,null,AVAILABLE}
+12:31:40.379 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:40.379 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:40.408 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@27c22bf3{HTTP/1.1, (http/1.1)}{0.0.0.0:50094}
+12:31:40.408 [Test worker] INFO  o.e.j.s.Server - Started @188129ms
+12:31:40.408 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50094(0 millis).
+12:31:40.438 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50094/echo
+12:31:40.461 [qtp496631697-725] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [58051a99] HTTP GET "/echo"
+12:31:40.461 [qtp496631697-725] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [58051a99] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@56c2ffe9
+12:31:40.465 [qtp496631697-725] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [58051a99] Completed 101 SWITCHING_PROTOCOLS
+12:31:40.466 [qtp496631697-725] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [58051a99] Session id "77d00a9d" for http://localhost:50094/echo
+12:31:40.468 [WebSocketClient@132463320-732] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [3edb1604] Session id "3edb1604" for ws://localhost:50094/echo
+12:31:40.537 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:40.537 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3679898a{/,null,UNAVAILABLE}
+12:31:40.539 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@27c22bf3{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:40.571 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:40.608 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:40.610 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:40.610 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:40.613 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50116(0 millis).
+12:31:40.704 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50116/echo
+12:31:40.729 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bb497275-19] HTTP GET "/echo"
+12:31:40.729 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [bb497275-19] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@31da55bb
+12:31:40.736 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [bb497275-19] Session id "7618dd25" for http://localhost:50116/echo
+12:31:40.736 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bb497275-19] Completed 200 OK
+12:31:40.742 [WebSocketClient@132463320-744] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [7a891b48] Session id "7a891b48" for ws://localhost:50116/echo
+12:31:40.817 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:40.818 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:40.844 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:40.846 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:40.846 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:40.847 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:40.859 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50137(0 millis).
+12:31:40.945 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50137/echo
+12:31:40.952 [XNIO-22 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2b33823f] HTTP GET "/echo"
+12:31:40.952 [XNIO-22 I/O-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2b33823f] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@2f0c1381
+12:31:40.953 [XNIO-22 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [2b33823f] Session id "6da08a40" for http://localhost:50137/echo
+12:31:40.953 [XNIO-22 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2b33823f] Completed 101 SWITCHING_PROTOCOLS
+12:31:40.961 [WebSocketClient@132463320-755] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [3d019819] Session id "3d019819" for ws://localhost:50137/echo
+12:31:41.001 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:41.003 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:41.008 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:41.020 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:41.022 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:41.023 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:42.368 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50193(0 millis).
+12:31:42.368 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50193/echo
+12:31:43.586 [http-nio-auto-20-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [647d999] HTTP GET "/echo"
+12:31:43.586 [http-nio-auto-20-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [647d999] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@8803721
+12:31:43.589 [http-nio-auto-20-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [647d999] Completed 101 SWITCHING_PROTOCOLS
+12:31:43.591 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [40d9bcba] Session id "40d9bcba" for ws://localhost:50193/echo
+12:31:43.591 [reactor-http-nio-3] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '40d9bcba' for ws://localhost:50193/echo
+12:31:43.593 [http-nio-auto-20-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [647d999] Session id "14" for http://localhost:50193/echo
+12:31:43.648 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:44.390 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:44.400 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:44.402 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:44.403 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:44.403 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@1451750d{/,null,AVAILABLE}
+12:31:44.405 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:44.405 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:44.428 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@4b89808b{HTTP/1.1, (http/1.1)}{0.0.0.0:50248}
+12:31:44.429 [Test worker] INFO  o.e.j.s.Server - Started @192150ms
+12:31:44.429 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50248(0 millis).
+12:31:44.430 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50248/echo
+12:31:44.448 [qtp609149174-782] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [667cc8f5] HTTP GET "/echo"
+12:31:44.448 [qtp609149174-782] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [667cc8f5] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@68bb2a4a
+12:31:44.463 [qtp609149174-782] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [667cc8f5] Completed 101 SWITCHING_PROTOCOLS
+12:31:44.464 [qtp609149174-782] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [667cc8f5] Session id "49a9df3e" for http://localhost:50248/echo
+12:31:44.465 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [228b0a31] Session id "228b0a31" for ws://localhost:50248/echo
+12:31:44.465 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '228b0a31' for ws://localhost:50248/echo
+12:31:44.511 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:44.511 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1451750d{/,null,UNAVAILABLE}
+12:31:44.513 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@4b89808b{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:44.518 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:44.542 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:44.544 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:44.544 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:44.546 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50254(0 millis).
+12:31:44.547 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50254/echo
+12:31:44.555 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7513ac1-20] HTTP GET "/echo"
+12:31:44.555 [reactor-http-nio-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [d7513ac1-20] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@357835bf
+12:31:44.557 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [d7513ac1-20] Session id "7d5ae1ea" for http://localhost:50254/echo
+12:31:44.558 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [1a3746ed] Session id "1a3746ed" for ws://localhost:50254/echo
+12:31:44.558 [reactor-http-nio-2] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '1a3746ed' for ws://localhost:50254/echo
+12:31:44.558 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7513ac1-20] Completed 200 OK
+12:31:44.617 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:44.617 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:44.630 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:44.632 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:44.632 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:44.632 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:44.646 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50266(0 millis).
+12:31:44.646 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50266/echo
+12:31:44.694 [XNIO-23 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [21f12a21] HTTP GET "/echo"
+12:31:44.694 [XNIO-23 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [21f12a21] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@25cebac7
+12:31:44.695 [XNIO-23 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [21f12a21] Session id "20701bc1" for http://localhost:50266/echo
+12:31:44.695 [XNIO-23 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [21f12a21] Completed 101 SWITCHING_PROTOCOLS
+12:31:44.697 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [2ff7cd7] Session id "2ff7cd7" for ws://localhost:50266/echo
+12:31:44.697 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '2ff7cd7' for ws://localhost:50266/echo
+12:31:44.754 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:44.754 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:44.758 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:44.771 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:44.773 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:44.773 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:44.790 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50268(0 millis).
+12:31:44.790 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50268/echo
+12:31:45.468 [http-nio-auto-21-exec-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2e10c2be] HTTP GET "/echo"
+12:31:45.468 [http-nio-auto-21-exec-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2e10c2be] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@20d7390c
+12:31:45.470 [http-nio-auto-21-exec-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2e10c2be] Completed 101 SWITCHING_PROTOCOLS
+12:31:45.472 [XNIO-20 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [14019d87] Session id "14019d87" for ws://localhost:50268/echo
+12:31:45.473 [http-nio-auto-21-exec-4] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [2e10c2be] Session id "15" for http://localhost:50268/echo
+12:31:45.520 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:45.970 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:45.981 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:46.006 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:46.006 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:46.006 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@5b8c1df2{/,null,AVAILABLE}
+12:31:46.006 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:46.006 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:46.030 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@65d5bb47{HTTP/1.1, (http/1.1)}{0.0.0.0:50295}
+12:31:46.030 [Test worker] INFO  o.e.j.s.Server - Started @193751ms
+12:31:46.030 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50295(0 millis).
+12:31:46.030 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50295/echo
+12:31:46.043 [qtp1345863864-815] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [60514d65] HTTP GET "/echo"
+12:31:46.044 [qtp1345863864-815] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [60514d65] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@6e96bf1f
+12:31:46.048 [qtp1345863864-815] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [60514d65] Completed 101 SWITCHING_PROTOCOLS
+12:31:46.049 [qtp1345863864-815] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [60514d65] Session id "4f844a6b" for http://localhost:50295/echo
+12:31:46.049 [XNIO-20 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [1ac66177] Session id "1ac66177" for ws://localhost:50295/echo
+12:31:46.077 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:46.077 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5b8c1df2{/,null,UNAVAILABLE}
+12:31:46.080 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@65d5bb47{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:46.105 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:46.130 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:46.142 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:46.142 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:46.147 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50301(0 millis).
+12:31:46.147 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50301/echo
+12:31:46.151 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [c9a6293d-21] HTTP GET "/echo"
+12:31:46.151 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [c9a6293d-21] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@4c3aac96
+12:31:46.153 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [c9a6293d-21] Session id "2b82626e" for http://localhost:50301/echo
+12:31:46.153 [XNIO-20 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [1ef9f6f7] Session id "1ef9f6f7" for ws://localhost:50301/echo
+12:31:46.153 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [c9a6293d-21] Completed 200 OK
+12:31:46.208 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:46.208 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:46.220 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:46.223 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:46.223 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:46.223 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:46.237 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50313(0 millis).
+12:31:46.237 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50313/echo
+12:31:46.248 [XNIO-24 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [68a75e26] HTTP GET "/echo"
+12:31:46.248 [XNIO-24 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [68a75e26] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$EchoWebSocketHandler@6c98c7ea
+12:31:46.249 [XNIO-24 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [68a75e26] Session id "3acababe" for http://localhost:50313/echo
+12:31:46.249 [XNIO-20 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [5bfb6b4c] Session id "5bfb6b4c" for ws://localhost:50313/echo
+12:31:46.249 [XNIO-24 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [68a75e26] Completed 101 SWITCHING_PROTOCOLS
+12:31:46.272 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:46.272 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:46.276 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:46.300 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:46.302 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:46.344 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:46.414 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50319(0 millis).
+12:31:46.415 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50319/custom-header
+12:31:52.768 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:52.786 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:52.801 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:52.803 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:52.803 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:52.807 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@2cc93d87{/,null,AVAILABLE}
+12:31:52.807 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:52.807 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:52.906 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@445031ed{HTTP/1.1, (http/1.1)}{0.0.0.0:50333}
+12:31:52.906 [Test worker] INFO  o.e.j.s.Server - Started @200627ms
+12:31:52.906 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50333(0 millis).
+12:31:52.907 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50333/custom-header
+12:31:52.929 [qtp2146763148-843] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [639691b3] HTTP GET "/custom-header"
+12:31:52.929 [qtp2146763148-843] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [639691b3] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@6d5163b1
+12:31:52.942 [qtp2146763148-843] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [639691b3] Completed 101 SWITCHING_PROTOCOLS
+12:31:52.943 [qtp2146763148-843] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [639691b3] Session id "4c4396c5" for http://localhost:50333/custom-header
+12:31:52.943 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [16] Session id "16" for ws://localhost:50333/custom-header
+12:31:52.958 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:52.962 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2cc93d87{/,null,UNAVAILABLE}
+12:31:52.964 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@445031ed{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:52.968 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:52.983 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:52.985 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:52.986 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:52.988 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50340(0 millis).
+12:31:52.988 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50340/custom-header
+12:31:52.992 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [24e2d486-22] HTTP GET "/custom-header"
+12:31:52.992 [reactor-http-nio-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [24e2d486-22] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@49701640
+12:31:52.994 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [24e2d486-22] Session id "3befe4ca" for http://localhost:50340/custom-header
+12:31:52.994 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [17] Session id "17" for ws://localhost:50340/custom-header
+12:31:52.995 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [24e2d486-22] Completed 200 OK
+12:31:53.011 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:53.011 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:53.023 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:53.025 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:53.026 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:53.026 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:53.055 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50352(0 millis).
+12:31:53.055 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50352/custom-header
+12:31:53.071 [XNIO-26 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [309ed54c] HTTP GET "/custom-header"
+12:31:53.071 [XNIO-26 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [309ed54c] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@34a14787
+12:31:53.072 [XNIO-26 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [309ed54c] Session id "653f2c72" for http://localhost:50352/custom-header
+12:31:53.073 [XNIO-26 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [309ed54c] Completed 101 SWITCHING_PROTOCOLS
+12:31:53.074 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [18] Session id "18" for ws://localhost:50352/custom-header
+12:31:53.084 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:53.085 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:53.127 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:53.139 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:53.141 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:53.169 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:53.206 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50354(0 millis).
+12:31:53.604 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50354/custom-header
+12:31:53.614 [http-nio-auto-23-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [63069ac7] HTTP GET "/custom-header"
+12:31:53.614 [http-nio-auto-23-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [63069ac7] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@6dc168d7
+12:31:53.617 [http-nio-auto-23-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [63069ac7] Completed 101 SWITCHING_PROTOCOLS
+12:31:53.631 [http-nio-auto-23-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [63069ac7] Session id "19" for http://localhost:50354/custom-header
+12:31:53.646 [WebSocketClient@348337842-877] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [1c67a279] Session id "1c67a279" for ws://localhost:50354/custom-header
+12:31:53.654 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:54.422 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:54.433 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:54.434 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:54.435 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:54.435 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@7fda5d9a{/,null,AVAILABLE}
+12:31:54.435 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:54.435 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:54.440 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@20dfd043{HTTP/1.1, (http/1.1)}{0.0.0.0:50397}
+12:31:54.440 [Test worker] INFO  o.e.j.s.Server - Started @202161ms
+12:31:54.440 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50397(0 millis).
+12:31:54.448 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50397/custom-header
+12:31:54.452 [qtp725500940-886] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4e5126c] HTTP GET "/custom-header"
+12:31:54.453 [qtp725500940-886] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [4e5126c] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@a22ec80
+12:31:54.457 [qtp725500940-886] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4e5126c] Completed 101 SWITCHING_PROTOCOLS
+12:31:54.457 [qtp725500940-886] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [4e5126c] Session id "2b3019f4" for http://localhost:50397/custom-header
+12:31:54.460 [WebSocketClient@348337842-894] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [3053b352] Session id "3053b352" for ws://localhost:50397/custom-header
+12:31:54.466 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:54.466 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7fda5d9a{/,null,UNAVAILABLE}
+12:31:54.468 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@20dfd043{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:54.469 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:54.483 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:54.486 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:54.486 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:54.489 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50407(0 millis).
+12:31:54.503 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50407/custom-header
+12:31:54.512 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [899c1aa3-23] HTTP GET "/custom-header"
+12:31:54.512 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [899c1aa3-23] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@5fde58c4
+12:31:54.514 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [899c1aa3-23] Session id "79c1efd8" for http://localhost:50407/custom-header
+12:31:54.514 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [899c1aa3-23] Completed 200 OK
+12:31:54.517 [WebSocketClient@348337842-905] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [252d8fec] Session id "252d8fec" for ws://localhost:50407/custom-header
+12:31:54.581 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:54.581 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:54.596 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:54.601 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:54.601 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:54.602 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:54.616 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50423(0 millis).
+12:31:54.760 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50423/custom-header
+12:31:54.787 [XNIO-27 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [46b77bd0] HTTP GET "/custom-header"
+12:31:54.787 [XNIO-27 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [46b77bd0] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@4288e7de
+12:31:54.788 [XNIO-27 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [46b77bd0] Session id "4e80f681" for http://localhost:50423/custom-header
+12:31:54.789 [XNIO-27 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [46b77bd0] Completed 101 SWITCHING_PROTOCOLS
+12:31:54.790 [WebSocketClient@348337842-915] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [29aa9ec1] Session id "29aa9ec1" for ws://localhost:50423/custom-header
+12:31:54.808 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:54.809 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:54.813 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:54.916 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:54.918 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:54.920 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:54.945 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50429(0 millis).
+12:31:54.946 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50429/custom-header
+12:31:57.540 [http-nio-auto-24-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2a8e2bb] HTTP GET "/custom-header"
+12:31:57.540 [http-nio-auto-24-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2a8e2bb] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@c6f0c9e
+12:31:57.543 [http-nio-auto-24-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2a8e2bb] Completed 101 SWITCHING_PROTOCOLS
+12:31:57.546 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [13a46485] Session id "13a46485" for ws://localhost:50429/custom-header
+12:31:57.546 [reactor-http-nio-3] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '13a46485' for ws://localhost:50429/custom-header
+12:31:57.549 [http-nio-auto-24-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [2a8e2bb] Session id "1a" for http://localhost:50429/custom-header
+12:31:57.557 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:58.711 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:58.721 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:58.723 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:58.723 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:58.724 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@6cbf03f9{/,null,AVAILABLE}
+12:31:58.726 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:58.728 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:58.737 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@16773952{HTTP/1.1, (http/1.1)}{0.0.0.0:50464}
+12:31:58.737 [Test worker] INFO  o.e.j.s.Server - Started @206458ms
+12:31:58.737 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50464(0 millis).
+12:31:58.737 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50464/custom-header
+12:31:58.746 [qtp230591117-943] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [68ac9d3] HTTP GET "/custom-header"
+12:31:58.747 [qtp230591117-943] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [68ac9d3] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@84d2772
+12:31:58.751 [qtp230591117-943] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [68ac9d3] Completed 101 SWITCHING_PROTOCOLS
+12:31:58.752 [qtp230591117-943] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [68ac9d3] Session id "295fd206" for http://localhost:50464/custom-header
+12:31:58.752 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [74386c42] Session id "74386c42" for ws://localhost:50464/custom-header
+12:31:58.752 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '74386c42' for ws://localhost:50464/custom-header
+12:31:58.755 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:58.755 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6cbf03f9{/,null,UNAVAILABLE}
+12:31:58.757 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@16773952{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:58.758 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:58.772 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:58.775 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:58.782 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:58.784 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50470(0 millis).
+12:31:58.784 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50470/custom-header
+12:31:58.791 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d9546117-24] HTTP GET "/custom-header"
+12:31:58.791 [reactor-http-nio-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [d9546117-24] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@32e524b9
+12:31:58.793 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [d9546117-24] Session id "62e70efe" for http://localhost:50470/custom-header
+12:31:58.793 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d9546117-24] Completed 200 OK
+12:31:58.793 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [7b94a313] Session id "7b94a313" for ws://localhost:50470/custom-header
+12:31:58.793 [reactor-http-nio-2] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '7b94a313' for ws://localhost:50470/custom-header
+12:31:58.795 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:58.795 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:58.804 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:58.806 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:58.806 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:58.806 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:58.827 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50482(0 millis).
+12:31:58.828 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50482/custom-header
+12:31:58.839 [XNIO-28 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1652dcb] HTTP GET "/custom-header"
+12:31:58.840 [XNIO-28 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [1652dcb] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@55ab93f
+12:31:58.840 [XNIO-28 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [1652dcb] Session id "48210463" for http://localhost:50482/custom-header
+12:31:58.841 [XNIO-28 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1652dcb] Completed 101 SWITCHING_PROTOCOLS
+12:31:58.842 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [76838911] Session id "76838911" for ws://localhost:50482/custom-header
+12:31:58.842 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '76838911' for ws://localhost:50482/custom-header
+12:31:58.844 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:58.844 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:58.846 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:58.856 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:58.858 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:58.859 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:58.902 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50484(0 millis).
+12:31:58.903 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50484/custom-header
+12:31:59.396 [http-nio-auto-25-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [781c2d7e] HTTP GET "/custom-header"
+12:31:59.397 [http-nio-auto-25-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [781c2d7e] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@76dbcc0d
+12:31:59.398 [http-nio-auto-25-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [781c2d7e] Completed 101 SWITCHING_PROTOCOLS
+12:31:59.399 [XNIO-25 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [3caf4641] Session id "3caf4641" for ws://localhost:50484/custom-header
+12:31:59.409 [http-nio-auto-25-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [781c2d7e] Session id "1b" for http://localhost:50484/custom-header
+12:31:59.413 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:59.934 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:59.945 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:31:59.946 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:59.947 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:59.947 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@639b2a58{/,null,AVAILABLE}
+12:31:59.947 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:59.947 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:59.957 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@1a82c12a{HTTP/1.1, (http/1.1)}{0.0.0.0:50544}
+12:31:59.958 [Test worker] INFO  o.e.j.s.Server - Started @207679ms
+12:31:59.958 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50544(0 millis).
+12:31:59.958 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50544/custom-header
+12:31:59.962 [qtp1130699810-973] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [45bd624c] HTTP GET "/custom-header"
+12:31:59.963 [qtp1130699810-973] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [45bd624c] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@4b7a848b
+12:31:59.975 [qtp1130699810-973] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [45bd624c] Completed 101 SWITCHING_PROTOCOLS
+12:31:59.977 [XNIO-25 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [3268bfa4] Session id "3268bfa4" for ws://localhost:50544/custom-header
+12:31:59.978 [qtp1130699810-973] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [45bd624c] Session id "6a6871ff" for http://localhost:50544/custom-header
+12:31:59.981 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:59.981 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@639b2a58{/,null,UNAVAILABLE}
+12:31:59.985 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@1a82c12a{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:59.993 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:00.021 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:00.041 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.041 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:00.043 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50550(0 millis).
+12:32:00.044 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50550/custom-header
+12:32:00.054 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3feaef69-25] HTTP GET "/custom-header"
+12:32:00.054 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [3feaef69-25] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@35c53f68
+12:32:00.055 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [3feaef69-25] Session id "7c0b8dd6" for http://localhost:50550/custom-header
+12:32:00.056 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3feaef69-25] Completed 200 OK
+12:32:00.057 [XNIO-25 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [36572d31] Session id "36572d31" for ws://localhost:50550/custom-header
+12:32:00.058 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:00.058 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:00.073 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:00.075 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.075 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:00.075 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:00.093 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50562(0 millis).
+12:32:00.093 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50562/custom-header
+12:32:00.119 [XNIO-29 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [419e1ecc] HTTP GET "/custom-header"
+12:32:00.120 [XNIO-29 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [419e1ecc] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$CustomHeaderHandler@45a19227
+12:32:00.121 [XNIO-29 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [419e1ecc] Session id "6394917c" for http://localhost:50562/custom-header
+12:32:00.121 [XNIO-25 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [7355b59f] Session id "7355b59f" for ws://localhost:50562/custom-header
+12:32:00.121 [XNIO-29 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [419e1ecc] Completed 101 SWITCHING_PROTOCOLS
+12:32:00.122 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:00.122 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:00.125 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:00.148 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:00.150 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.151 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:00.182 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50568(0 millis).
+12:32:00.184 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50568/sub-protocol
+12:32:00.208 [http-nio-auto-26-exec-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [37c9c55d] HTTP GET "/sub-protocol"
+12:32:00.208 [http-nio-auto-26-exec-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [37c9c55d] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@390e2dd4
+12:32:00.211 [http-nio-auto-26-exec-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [37c9c55d] Completed 101 SWITCHING_PROTOCOLS
+12:32:00.214 [http-nio-auto-26-exec-4] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [37c9c55d] Session id "1d" for http://localhost:50568/sub-protocol
+12:32:00.213 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [1c] Session id "1c" for ws://localhost:50568/sub-protocol
+12:32:00.221 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:00.939 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:00.956 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:00.959 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.959 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:00.959 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@3e04735a{/,null,AVAILABLE}
+12:32:00.959 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:00.960 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:01.015 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@46119bb4{HTTP/1.1, (http/1.1)}{0.0.0.0:50615}
+12:32:01.015 [Test worker] INFO  o.e.j.s.Server - Started @208737ms
+12:32:01.016 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50615(0 millis).
+12:32:01.016 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50615/sub-protocol
+12:32:01.027 [qtp1777006532-1005] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [dbd8f3c] HTTP GET "/sub-protocol"
+12:32:01.027 [qtp1777006532-1005] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [dbd8f3c] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@37a60fb
+12:32:01.032 [qtp1777006532-1005] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [dbd8f3c] Completed 101 SWITCHING_PROTOCOLS
+12:32:01.034 [qtp1777006532-1005] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [dbd8f3c] Session id "2268958f" for http://localhost:50615/sub-protocol
+12:32:01.036 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [1e] Session id "1e" for ws://localhost:50615/sub-protocol
+12:32:01.039 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:01.039 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3e04735a{/,null,UNAVAILABLE}
+12:32:01.041 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@46119bb4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:01.070 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:01.083 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.085 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.086 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:01.088 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50626(0 millis).
+12:32:01.089 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50626/sub-protocol
+12:32:01.093 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3255ffc8-26] HTTP GET "/sub-protocol"
+12:32:01.094 [reactor-http-nio-4] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [3255ffc8-26] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@731f9296
+12:32:01.095 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [3255ffc8-26] Session id "40f64cb7" for http://localhost:50626/sub-protocol
+12:32:01.095 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [1f] Session id "1f" for ws://localhost:50626/sub-protocol
+12:32:01.095 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3255ffc8-26] Completed 200 OK
+12:32:01.097 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:01.103 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:01.113 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.115 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.116 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:01.116 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:01.136 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50638(0 millis).
+12:32:01.137 [boundedElastic-1] DEBUG o.s.w.r.s.c.StandardWebSocketClient - Connecting to ws://localhost:50638/sub-protocol
+12:32:01.161 [XNIO-31 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6fe54a44] HTTP GET "/sub-protocol"
+12:32:01.162 [XNIO-31 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [6fe54a44] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@6bdad360
+12:32:01.163 [XNIO-31 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [6fe54a44] Session id "3944b359" for http://localhost:50638/sub-protocol
+12:32:01.163 [XNIO-31 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6fe54a44] Completed 101 SWITCHING_PROTOCOLS
+12:32:01.166 [boundedElastic-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [20] Session id "20" for ws://localhost:50638/sub-protocol
+12:32:01.169 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:01.169 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:01.170 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:01.187 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.189 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.190 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:01.203 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50642(0 millis).
+12:32:01.220 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50642/sub-protocol
+12:32:01.256 [http-nio-auto-27-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30e0d5c8] HTTP GET "/sub-protocol"
+12:32:01.257 [http-nio-auto-27-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [30e0d5c8] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@3e272da4
+12:32:01.271 [http-nio-auto-27-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30e0d5c8] Completed 101 SWITCHING_PROTOCOLS
+12:32:01.273 [http-nio-auto-27-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [30e0d5c8] Session id "21" for http://localhost:50642/sub-protocol
+12:32:01.310 [WebSocketClient@631433370-1038] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [2cb89079] Session id "2cb89079" for ws://localhost:50642/sub-protocol
+12:32:01.315 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:01.674 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:01.686 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.688 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.689 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:01.689 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@52b818e1{/,null,AVAILABLE}
+12:32:01.689 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:01.689 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:01.698 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@59f1afac{HTTP/1.1, (http/1.1)}{0.0.0.0:50660}
+12:32:01.698 [Test worker] INFO  o.e.j.s.Server - Started @209419ms
+12:32:01.698 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50660(0 millis).
+12:32:01.708 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50660/sub-protocol
+12:32:01.715 [qtp1544106757-1048] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [66118106] HTTP GET "/sub-protocol"
+12:32:01.715 [qtp1544106757-1048] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [66118106] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@68d663b4
+12:32:01.718 [qtp1544106757-1048] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [66118106] Completed 101 SWITCHING_PROTOCOLS
+12:32:01.719 [qtp1544106757-1048] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [66118106] Session id "49c496c0" for http://localhost:50660/sub-protocol
+12:32:01.721 [WebSocketClient@631433370-1056] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [594ef701] Session id "594ef701" for ws://localhost:50660/sub-protocol
+12:32:01.724 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:01.724 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@52b818e1{/,null,UNAVAILABLE}
+12:32:01.727 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@59f1afac{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:01.728 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:01.744 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.746 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.747 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:01.749 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50670(0 millis).
+12:32:01.760 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50670/sub-protocol
+12:32:01.764 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [9fbcbaaf-27] HTTP GET "/sub-protocol"
+12:32:01.764 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [9fbcbaaf-27] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@51116c65
+12:32:01.767 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [9fbcbaaf-27] Session id "44e9485e" for http://localhost:50670/sub-protocol
+12:32:01.767 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [9fbcbaaf-27] Completed 200 OK
+12:32:01.769 [WebSocketClient@631433370-1066] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [34d28169] Session id "34d28169" for ws://localhost:50670/sub-protocol
+12:32:01.773 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:01.773 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:01.787 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.790 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.790 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:01.790 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:01.804 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50686(0 millis).
+12:32:01.815 [Test worker] DEBUG o.s.w.r.s.c.JettyWebSocketClient - Connecting to ws://localhost:50686/sub-protocol
+12:32:01.820 [XNIO-32 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [57821fed] HTTP GET "/sub-protocol"
+12:32:01.820 [XNIO-32 I/O-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [57821fed] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@53bd91c5
+12:32:01.821 [XNIO-32 I/O-3] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [57821fed] Session id "1c6d7015" for http://localhost:50686/sub-protocol
+12:32:01.822 [XNIO-32 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [57821fed] Completed 101 SWITCHING_PROTOCOLS
+12:32:01.824 [WebSocketClient@631433370-1080] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [70f74c38] Session id "70f74c38" for ws://localhost:50686/sub-protocol
+12:32:01.831 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:01.831 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:01.833 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:01.842 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:01.844 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.845 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:01.860 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50693(0 millis).
+12:32:01.861 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50693/sub-protocol
+12:32:01.870 [http-nio-auto-28-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3e738a73] HTTP GET "/sub-protocol"
+12:32:01.871 [http-nio-auto-28-exec-1] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [3e738a73] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@30b473cd
+12:32:01.873 [http-nio-auto-28-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3e738a73] Completed 101 SWITCHING_PROTOCOLS
+12:32:01.875 [http-nio-auto-28-exec-1] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [3e738a73] Session id "22" for http://localhost:50693/sub-protocol
+12:32:01.875 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [77676729] Session id "77676729" for ws://localhost:50693/sub-protocol
+12:32:01.875 [reactor-http-nio-3] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '77676729' for ws://localhost:50693/sub-protocol
+12:32:01.878 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:02.275 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:02.288 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:02.289 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.290 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:02.290 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@18608f11{/,null,AVAILABLE}
+12:32:02.290 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:02.291 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:02.298 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@49c6267b{HTTP/1.1, (http/1.1)}{0.0.0.0:50731}
+12:32:02.298 [Test worker] INFO  o.e.j.s.Server - Started @210019ms
+12:32:02.298 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50731(0 millis).
+12:32:02.299 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50731/sub-protocol
+12:32:02.306 [qtp1160707611-1107] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [428ffeca] HTTP GET "/sub-protocol"
+12:32:02.306 [qtp1160707611-1107] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [428ffeca] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@4c4808eb
+12:32:02.310 [qtp1160707611-1107] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [428ffeca] Completed 101 SWITCHING_PROTOCOLS
+12:32:02.310 [qtp1160707611-1107] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [428ffeca] Session id "6d5afd9f" for http://localhost:50731/sub-protocol
+12:32:02.311 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [698f3551] Session id "698f3551" for ws://localhost:50731/sub-protocol
+12:32:02.311 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '698f3551' for ws://localhost:50731/sub-protocol
+12:32:02.313 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:02.313 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@18608f11{/,null,UNAVAILABLE}
+12:32:02.315 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@49c6267b{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:02.316 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:02.327 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:02.328 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.329 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:02.332 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50737(0 millis).
+12:32:02.332 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50737/sub-protocol
+12:32:02.355 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [a6cd5350-28] HTTP GET "/sub-protocol"
+12:32:02.355 [reactor-http-nio-3] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [a6cd5350-28] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@48f946ab
+12:32:02.356 [reactor-http-nio-3] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [a6cd5350-28] Session id "1a893ed6" for http://localhost:50737/sub-protocol
+12:32:02.357 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [2202c574] Session id "2202c574" for ws://localhost:50737/sub-protocol
+12:32:02.357 [reactor-http-nio-2] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '2202c574' for ws://localhost:50737/sub-protocol
+12:32:02.357 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [a6cd5350-28] Completed 200 OK
+12:32:02.359 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:02.360 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:02.369 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:02.371 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.371 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:02.371 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:02.384 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50749(0 millis).
+12:32:02.385 [Test worker] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Connecting to ws://localhost:50749/sub-protocol
+12:32:02.402 [XNIO-33 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [59c3d78] HTTP GET "/sub-protocol"
+12:32:02.403 [XNIO-33 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [59c3d78] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@1a3b913
+12:32:02.405 [reactor-http-nio-4] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [2e6e8749] Session id "2e6e8749" for ws://localhost:50749/sub-protocol
+12:32:02.405 [reactor-http-nio-4] DEBUG o.s.w.r.s.c.ReactorNettyWebSocketClient - Started session '2e6e8749' for ws://localhost:50749/sub-protocol
+12:32:02.406 [XNIO-33 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [59c3d78] Session id "627bd4d9" for http://localhost:50749/sub-protocol
+12:32:02.407 [XNIO-33 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [59c3d78] Completed 101 SWITCHING_PROTOCOLS
+12:32:02.408 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:02.408 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:02.409 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:02.420 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:02.422 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.626 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:02.643 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50759(0 millis).
+12:32:02.643 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50759/sub-protocol
+12:32:02.678 [http-nio-auto-29-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [226b0322] HTTP GET "/sub-protocol"
+12:32:02.679 [http-nio-auto-29-exec-10] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [226b0322] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@2cacf91f
+12:32:02.681 [http-nio-auto-29-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [226b0322] Completed 101 SWITCHING_PROTOCOLS
+12:32:02.682 [XNIO-30 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [67b10f91] Session id "67b10f91" for ws://localhost:50759/sub-protocol
+12:32:02.683 [http-nio-auto-29-exec-10] DEBUG o.s.w.r.s.a.TomcatWebSocketSession - [226b0322] Session id "23" for http://localhost:50759/sub-protocol
+12:32:02.686 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:03.055 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:03.066 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:03.068 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:03.068 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:03.069 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@2f91310c{/,null,AVAILABLE}
+12:32:03.069 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:03.069 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:03.076 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@696dd54{HTTP/1.1, (http/1.1)}{0.0.0.0:50781}
+12:32:03.076 [Test worker] INFO  o.e.j.s.Server - Started @210797ms
+12:32:03.076 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50781(0 millis).
+12:32:03.076 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50781/sub-protocol
+12:32:03.079 [qtp1638178918-1135] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f12192c] HTTP GET "/sub-protocol"
+12:32:03.079 [qtp1638178918-1135] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [7f12192c] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@71d5f8be
+12:32:03.083 [qtp1638178918-1135] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f12192c] Completed 101 SWITCHING_PROTOCOLS
+12:32:03.084 [qtp1638178918-1135] DEBUG o.s.w.r.s.a.JettyWebSocketSession - [7f12192c] Session id "50c70dca" for http://localhost:50781/sub-protocol
+12:32:03.084 [XNIO-30 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [6976fd17] Session id "6976fd17" for ws://localhost:50781/sub-protocol
+12:32:03.085 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:03.085 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2f91310c{/,null,UNAVAILABLE}
+12:32:03.087 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@696dd54{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:03.088 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:03.099 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:03.101 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:03.101 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:03.102 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50787(0 millis).
+12:32:03.102 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50787/sub-protocol
+12:32:03.105 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [84d72c73-29] HTTP GET "/sub-protocol"
+12:32:03.105 [reactor-http-nio-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [84d72c73-29] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@3cdf5685
+12:32:03.107 [reactor-http-nio-2] DEBUG o.s.w.r.s.a.ReactorNettyWebSocketSession - [84d72c73-29] Session id "1181d749" for http://localhost:50787/sub-protocol
+12:32:03.107 [XNIO-30 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [6d4964e1] Session id "6d4964e1" for ws://localhost:50787/sub-protocol
+12:32:03.107 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [84d72c73-29] Completed 200 OK
+12:32:03.108 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:03.109 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:03.119 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/close, /echo, /sub-protocol, /cookie, /custom-header] in 'handlerMapping'
+12:32:03.120 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:03.120 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:03.120 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:03.132 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50799(0 millis).
+12:32:03.132 [Test worker] DEBUG o.s.w.r.s.c.UndertowWebSocketClient - Connecting to ws://localhost:50799/sub-protocol
+12:32:03.135 [XNIO-34 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2fb3441] HTTP GET "/sub-protocol"
+12:32:03.135 [XNIO-34 I/O-2] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2fb3441] Mapped to org.springframework.web.reactive.socket.WebSocketIntegrationTests$SubProtocolWebSocketHandler@6c4b0c6
+12:32:03.136 [XNIO-34 I/O-2] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [2fb3441] Session id "4aaa8e7c" for http://localhost:50799/sub-protocol
+12:32:03.136 [XNIO-30 I/O-1] DEBUG o.s.w.r.s.a.UndertowWebSocketSession - [284bf72c] Session id "284bf72c" for ws://localhost:50799/sub-protocol
+12:32:03.136 [XNIO-34 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2fb3441] Completed 101 SWITCHING_PROTOCOLS
+12:32:03.137 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:03.137 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:03.139 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

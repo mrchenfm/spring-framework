@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.RouterFunctionBuilderTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:04" hostname="DESKTOP-TMNPDT1" time="0.084">
+  <properties/>
+  <testcase name="resources()" classname="org.springframework.web.reactive.function.server.RouterFunctionBuilderTests" time="0.028"/>
+  <testcase name="filters()" classname="org.springframework.web.reactive.function.server.RouterFunctionBuilderTests" time="0.018"/>
+  <testcase name="nest()" classname="org.springframework.web.reactive.function.server.RouterFunctionBuilderTests" time="0.004"/>
+  <testcase name="route()" classname="org.springframework.web.reactive.function.server.RouterFunctionBuilderTests" time="0.033"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:51" hostname="DESKTOP-TMNPDT1" time="13.439">
+  <properties/>
+  <testcase name="flux(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.643"/>
+  <testcase name="flux(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.221"/>
+  <testcase name="flux(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="6.519"/>
+  <testcase name="flux(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.249"/>
+  <testcase name="mono(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.271"/>
+  <testcase name="mono(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.189"/>
+  <testcase name="mono(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="2.709"/>
+  <testcase name="mono(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.101"/>
+  <testcase name="postMono(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.143"/>
+  <testcase name="postMono(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.058"/>
+  <testcase name="postMono(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="1.548"/>
+  <testcase name="postMono(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests" time="0.097"/>
+  <system-out><![CDATA[12:29:51.799 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:51.800 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:29:51.801 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@67ce6ff2{/,null,AVAILABLE}
+12:29:51.816 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:29:51.817 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:29:52.049 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@4f063d2d{HTTP/1.1, (http/1.1)}{0.0.0.0:64932}
+12:29:52.049 [Test worker] INFO  o.e.j.s.Server - Started @79113ms
+12:29:52.049 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 64932(0 millis).
+12:29:52.071 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64932/flux
+12:29:52.074 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:29:52.160 [qtp1083292317-599] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4d38dddf] HTTP GET "/flux"
+12:29:52.182 [qtp1083292317-599] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [4d38dddf] Encoding [[Person{name='John'}, Person{name='Jane'}]]
+12:29:52.200 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:29:52.202 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.util.List<org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person>]
+12:29:52.203 [qtp1083292317-599] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4d38dddf] Completed 200 OK
+12:29:52.275 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:29:52.275 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@67ce6ff2{/,null,UNAVAILABLE}
+12:29:52.277 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@4f063d2d{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:29:52.328 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:29:52.480 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:52.481 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:29:52.489 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 64938(0 millis).
+12:29:52.489 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64938/flux
+12:29:52.490 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:29:52.577 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8f11e04b-5] HTTP GET "/flux"
+12:29:52.578 [reactor-http-nio-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [8f11e04b-5] Encoding [[Person{name='John'}, Person{name='Jane'}]]
+12:29:52.580 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8f11e04b-5] Completed 200 OK
+12:29:52.581 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:29:52.581 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.util.List<org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person>]
+12:29:52.582 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:29:52.583 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:29:52.632 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:52.638 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:29:52.681 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 64940(0 millis).
+12:29:52.681 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64940/flux
+12:29:52.745 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:29:58.136 [http-nio-auto-5-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3934cc14] HTTP GET "/flux"
+12:29:58.137 [http-nio-auto-5-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [3934cc14] Encoding [[Person{name='John'}, Person{name='Jane'}]]
+12:29:58.140 [http-nio-auto-5-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3934cc14] Completed 200 OK
+12:29:58.141 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:29:58.142 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.util.List<org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person>]
+12:29:58.144 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:29:59.124 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:29:59.435 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:59.435 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:29:59.435 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:29:59.453 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 64985(0 millis).
+12:29:59.453 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64985/flux
+12:29:59.454 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:29:59.583 [XNIO-5 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2f93961f] HTTP GET "/flux"
+12:29:59.585 [XNIO-5 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [2f93961f] Encoding [[Person{name='John'}, Person{name='Jane'}]]
+12:29:59.586 [XNIO-5 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2f93961f] Completed 200 OK
+12:29:59.587 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:29:59.587 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.util.List<org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person>]
+12:29:59.588 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:29:59.588 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:29:59.607 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:29:59.660 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:29:59.661 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:29:59.661 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@4063e3dc{/,null,AVAILABLE}
+12:29:59.661 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:29:59.661 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:29:59.743 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@7efc1a44{HTTP/1.1, (http/1.1)}{0.0.0.0:64987}
+12:29:59.743 [Test worker] INFO  o.e.j.s.Server - Started @86806ms
+12:29:59.743 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 64987(0 millis).
+12:29:59.745 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64987/mono
+12:29:59.747 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:29:59.779 [qtp2135290519-630] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [124c4170] HTTP GET "/mono"
+12:29:59.780 [qtp2135290519-630] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [124c4170] Encoding [Person{name='John'}]
+12:29:59.854 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:29:59.854 [qtp2135290519-630] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [124c4170] Completed 200 OK
+12:29:59.855 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:29:59.857 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:29:59.858 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4063e3dc{/,null,UNAVAILABLE}
+12:29:59.870 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@7efc1a44{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:29:59.903 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:00.206 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:00.207 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:00.208 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 64994(0 millis).
+12:30:00.209 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64994/mono
+12:30:00.211 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:00.221 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [93c5a554-6] HTTP GET "/mono"
+12:30:00.222 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [93c5a554-6] Encoding [Person{name='John'}]
+12:30:00.224 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [93c5a554-6] Completed 200 OK
+12:30:00.229 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:00.230 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:00.236 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:00.238 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:00.359 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:00.359 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:00.388 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 64996(0 millis).
+12:30:00.389 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:64996/mono
+12:30:00.392 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:02.408 [http-nio-auto-6-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [395109fb] HTTP GET "/mono"
+12:30:02.409 [http-nio-auto-6-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [395109fb] Encoding [Person{name='John'}]
+12:30:02.411 [http-nio-auto-6-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [395109fb] Completed 200 OK
+12:30:02.411 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:02.411 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:02.413 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:03.033 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:03.089 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:03.090 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:03.090 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:03.119 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65089(0 millis).
+12:30:03.120 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65089/mono
+12:30:03.122 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:03.145 [XNIO-6 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5f3fbcfc] HTTP GET "/mono"
+12:30:03.146 [XNIO-6 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [5f3fbcfc] Encoding [Person{name='John'}]
+12:30:03.147 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:03.147 [XNIO-6 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5f3fbcfc] Completed 200 OK
+12:30:03.147 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:03.148 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:03.148 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:03.158 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:30:03.233 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:03.234 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:03.234 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@38b90cd5{/,null,AVAILABLE}
+12:30:03.234 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:03.234 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:03.257 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@71b66db4{HTTP/1.1, (http/1.1)}{0.0.0.0:65091}
+12:30:03.257 [Test worker] INFO  o.e.j.s.Server - Started @90320ms
+12:30:03.257 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65091(0 millis).
+12:30:03.260 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:65091/mono
+12:30:03.270 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:03.310 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [Person{name='Jack'}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+12:30:03.331 [qtp598939284-656] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [446c0763] HTTP POST "/mono"
+12:30:03.336 [qtp598939284-656] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [446c0763] Decoded [Person{name='Jack'}]
+12:30:03.336 [qtp598939284-656] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [446c0763] Encoding [Person{name='Jack'}]
+12:30:03.337 [qtp598939284-656] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [446c0763] Completed 200 OK
+12:30:03.338 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:03.338 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:03.339 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:30:03.339 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@38b90cd5{/,null,UNAVAILABLE}
+12:30:03.342 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@71b66db4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:30:03.343 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:03.404 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:03.404 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:03.411 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65115(0 millis).
+12:30:03.411 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:65115/mono
+12:30:03.414 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:03.414 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [Person{name='Jack'}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+12:30:03.418 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ef773a47-7] HTTP POST "/mono"
+12:30:03.422 [reactor-http-nio-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [ef773a47-7] Decoded [Person{name='Jack'}]
+12:30:03.422 [reactor-http-nio-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [ef773a47-7] Encoding [Person{name='Jack'}]
+12:30:03.424 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:03.424 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ef773a47-7] Completed 200 OK
+12:30:03.424 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:03.425 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:03.426 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:03.477 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:03.478 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:03.497 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65117(0 millis).
+12:30:03.497 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:65117/mono
+12:30:03.499 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:03.502 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [Person{name='Jack'}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+12:30:04.466 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [509fbc9c] HTTP POST "/mono"
+12:30:04.469 [http-nio-auto-7-exec-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [509fbc9c] Decoded [Person{name='Jack'}]
+12:30:04.469 [http-nio-auto-7-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [509fbc9c] Encoding [Person{name='Jack'}]
+12:30:04.471 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [509fbc9c] Completed 200 OK
+12:30:04.471 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:04.471 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:04.473 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:04.999 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:05.052 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:05.053 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:05.053 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:05.075 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65161(0 millis).
+12:30:05.075 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:65161/mono
+12:30:05.079 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:30:05.081 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [Person{name='Jack'}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+12:30:05.108 [XNIO-7 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30d6439f] HTTP POST "/mono"
+12:30:05.112 [XNIO-7 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [30d6439f] Decoded [Person{name='Jack'}]
+12:30:05.112 [XNIO-7 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [30d6439f] Encoding [Person{name='Jack'}]
+12:30:05.113 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:05.113 [XNIO-7 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30d6439f] Completed 200 OK
+12:30:05.113 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [org.springframework.web.reactive.function.server.PublisherHandlerFunctionIntegrationTests$Person]
+12:30:05.114 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:05.114 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:05.125 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

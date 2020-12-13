@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.resource.ContentBasedVersionStrategyTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:03" hostname="DESKTOP-TMNPDT1" time="0.023">
+  <properties/>
+  <testcase name="getResourceVersion()" classname="org.springframework.web.reactive.resource.ContentBasedVersionStrategyTests" time="0.02"/>
+  <testcase name="extractVersion()" classname="org.springframework.web.reactive.resource.ContentBasedVersionStrategyTests" time="0.0"/>
+  <testcase name="removeVersion()" classname="org.springframework.web.reactive.resource.ContentBasedVersionStrategyTests" time="0.0"/>
+  <testcase name="addVersionToUrl()" classname="org.springframework.web.reactive.resource.ContentBasedVersionStrategyTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

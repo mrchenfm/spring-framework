@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:05" hostname="DESKTOP-TMNPDT1" time="0.113">
+  <properties/>
+  <testcase name="handleNestedResponseStatusException()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.007"/>
+  <testcase name="unresolvedException()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="handleResponseStatusExceptionWithHeaders()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.006"/>
+  <testcase name="handleMethodNotAllowed()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.01"/>
+  <testcase name="responseCommitted()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.002"/>
+  <testcase name="handleResponseStatusException()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="handleAnnotatedException()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.06"/>
+  <testcase name="handleNestedAnnotatedException()" classname="org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests" time="0.001"/>
+  <system-out><![CDATA[12:30:05.692 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [688bf1f5] Resolved [Exception: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST ""] for HTTP GET /
+12:30:05.703 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [2cca6bf1] Resolved [NotAcceptableStatusException: 406 NOT_ACCEPTABLE "Could not find acceptable representation"] for HTTP GET /
+12:30:05.710 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [71fe54b6] Resolved [MethodNotAllowedException: 405 METHOD_NOT_ALLOWED "Request method 'PATCH' not supported"] for HTTP GET /
+12:30:05.730 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [7b466905] Resolved [ResponseStatusException: 400 BAD_REQUEST ""] for HTTP GET /
+12:30:05.792 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [1d1a0975] Resolved [CustomException: null] for HTTP GET /
+12:30:05.798 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [14f749c0] Resolved [Exception: org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandlerTests$CustomException] for HTTP GET /
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

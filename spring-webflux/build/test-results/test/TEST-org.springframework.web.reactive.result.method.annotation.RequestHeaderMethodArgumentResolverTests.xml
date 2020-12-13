@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:32:33" hostname="DESKTOP-TMNPDT1" time="1.632">
+  <properties/>
+  <testcase name="resolveDefaultValueFromSystemProperty()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.754"/>
+  <testcase name="resolveStringArrayArgument()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.173"/>
+  <testcase name="resolveNameFromSystemPropertyThroughPlaceholder()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.021"/>
+  <testcase name="resolveNameFromSystemPropertyThroughExpression()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.133"/>
+  <testcase name="dateConversion()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.01"/>
+  <testcase name="instantConversion()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.131"/>
+  <testcase name="resolveStringArgument()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.024"/>
+  <testcase name="resolveDefaultValue()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.149"/>
+  <testcase name="notFound()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.162"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.reactive.result.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

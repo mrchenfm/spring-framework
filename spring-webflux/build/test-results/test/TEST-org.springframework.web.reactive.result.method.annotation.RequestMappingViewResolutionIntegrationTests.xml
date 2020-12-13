@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:31:33" hostname="DESKTOP-TMNPDT1" time="10.274">
+  <properties/>
+  <testcase name="redirect(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="1.944"/>
+  <testcase name="redirect(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.175"/>
+  <testcase name="redirect(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="1.773"/>
+  <testcase name="redirect(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.399"/>
+  <testcase name="html(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.439"/>
+  <testcase name="html(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.248"/>
+  <testcase name="html(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="2.663"/>
+  <testcase name="html(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.346"/>
+  <testcase name="etagCheckWithNotModifiedResponse(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.223"/>
+  <testcase name="etagCheckWithNotModifiedResponse(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.214"/>
+  <testcase name="etagCheckWithNotModifiedResponse(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="1.358"/>
+  <testcase name="etagCheckWithNotModifiedResponse(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests" time="0.238"/>
+  <system-out><![CDATA[12:31:33.167 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:33.499 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:34.791 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:34.810 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:34.811 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:34.812 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@1ba939cc{/,null,AVAILABLE}
+12:31:34.813 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:34.813 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:34.877 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@74e3478b{HTTP/1.1, (http/1.1)}{0.0.0.0:49879}
+12:31:34.878 [Test worker] INFO  o.e.j.s.Server - Started @182579ms
+12:31:34.878 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49879(0 millis).
+12:31:34.906 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:49879/redirect
+12:31:34.939 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:31:34.943 [qtp178619097-610] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30551694] HTTP GET "/redirect"
+12:31:34.944 [qtp178619097-610] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [30551694] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#redirect()
+12:31:34.969 [qtp178619097-610] DEBUG o.s.w.r.r.v.RedirectView - [30551694] View name 'redirect:/', model {}
+12:31:34.971 [qtp178619097-610] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30551694] Completed 303 SEE_OTHER
+12:31:34.972 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 303 SEE_OTHER
+12:31:34.973 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:34.973 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1ba939cc{/,null,UNAVAILABLE}
+12:31:34.976 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@74e3478b{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:34.978 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:35.072 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:35.110 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:35.134 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:35.141 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:35.141 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:35.143 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49885(0 millis).
+12:31:35.167 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:49885/redirect
+12:31:35.167 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:31:35.171 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8271419a-17] HTTP GET "/redirect"
+12:31:35.171 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [8271419a-17] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#redirect()
+12:31:35.173 [reactor-http-nio-2] DEBUG o.s.w.r.r.v.RedirectView - [8271419a-17] View name 'redirect:/', model {}
+12:31:35.173 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8271419a-17] Completed 303 SEE_OTHER
+12:31:35.174 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 303 SEE_OTHER
+12:31:35.175 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:35.175 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:35.274 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:35.309 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:35.344 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:35.352 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:35.355 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:35.379 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49887(0 millis).
+12:31:35.403 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:49887/redirect
+12:31:35.404 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:31:36.579 [http-nio-auto-17-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [36184fb0] HTTP GET "/redirect"
+12:31:36.579 [http-nio-auto-17-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [36184fb0] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#redirect()
+12:31:36.582 [http-nio-auto-17-exec-1] DEBUG o.s.w.r.r.v.RedirectView - [36184fb0] View name 'redirect:/', model {}
+12:31:36.582 [http-nio-auto-17-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [36184fb0] Completed 303 SEE_OTHER
+12:31:36.583 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 303 SEE_OTHER
+12:31:36.583 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:36.972 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:37.102 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:37.177 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:37.314 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:37.320 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:37.321 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:37.321 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:37.340 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49977(0 millis).
+12:31:37.378 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:49977/redirect
+12:31:37.378 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/json, application/x-jackson-smile, application/*+json]
+12:31:37.387 [XNIO-17 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4f0dc9cd] HTTP GET "/redirect"
+12:31:37.388 [XNIO-17 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4f0dc9cd] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#redirect()
+12:31:37.389 [XNIO-17 I/O-2] DEBUG o.s.w.r.r.v.RedirectView - [4f0dc9cd] View name 'redirect:/', model {}
+12:31:37.389 [XNIO-17 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4f0dc9cd] Completed 303 SEE_OTHER
+12:31:37.390 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 303 SEE_OTHER
+12:31:37.390 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:37.390 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:37.394 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:37.495 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:37.531 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:37.569 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:37.577 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:37.578 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:37.580 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@249b2909{/,null,AVAILABLE}
+12:31:37.580 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:37.581 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:37.598 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@7a9415b5{HTTP/1.1, (http/1.1)}{0.0.0.0:49985}
+12:31:37.598 [Test worker] INFO  o.e.j.s.Server - Started @185299ms
+12:31:37.598 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49985(0 millis).
+12:31:37.598 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:49985/html?name=Jason
+12:31:37.599 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:37.606 [qtp1156657939-641] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43819100] HTTP GET "/html?name=Jason"
+12:31:37.606 [qtp1156657939-641] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [43819100] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:37.781 [qtp1156657939-641] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html;charset=UTF-8' given [text/html] and supported [text/html;charset=UTF-8]
+12:31:37.781 [qtp1156657939-641] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [43819100] View name 'test', model {hello=Hello: Jason!}
+12:31:37.786 [qtp1156657939-641] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [43819100] Rendering [test.ftl]
+12:31:37.842 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:31:37.842 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/html;charset=utf-8"
+12:31:37.842 [qtp1156657939-641] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43819100] Completed 200 OK
+12:31:37.843 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:37.843 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@249b2909{/,null,UNAVAILABLE}
+12:31:37.857 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@7a9415b5{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:37.861 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:37.999 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:38.036 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:38.098 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:38.104 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:38.104 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:38.106 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50009(0 millis).
+12:31:38.106 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50009/html?name=Jason
+12:31:38.106 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:38.114 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca8df7d2-18] HTTP GET "/html?name=Jason"
+12:31:38.115 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [ca8df7d2-18] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:38.123 [reactor-http-nio-4] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html;charset=UTF-8' given [text/html] and supported [text/html;charset=UTF-8]
+12:31:38.124 [reactor-http-nio-4] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [ca8df7d2-18] View name 'test', model {hello=Hello: Jason!}
+12:31:38.124 [reactor-http-nio-4] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [ca8df7d2-18] Rendering [test.ftl]
+12:31:38.126 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca8df7d2-18] Completed 200 OK
+12:31:38.127 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:31:38.127 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/html;charset=UTF-8"
+12:31:38.127 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:38.127 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:38.208 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:38.246 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:38.324 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:38.329 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:38.330 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:38.347 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50014(0 millis).
+12:31:38.348 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50014/html?name=Jason
+12:31:38.348 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:40.159 [http-nio-auto-18-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [37e1751a] HTTP GET "/html?name=Jason"
+12:31:40.159 [http-nio-auto-18-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [37e1751a] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:40.167 [http-nio-auto-18-exec-1] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html;charset=UTF-8' given [text/html] and supported [text/html;charset=UTF-8]
+12:31:40.167 [http-nio-auto-18-exec-1] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [37e1751a] View name 'test', model {hello=Hello: Jason!}
+12:31:40.167 [http-nio-auto-18-exec-1] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [37e1751a] Rendering [test.ftl]
+12:31:40.169 [http-nio-auto-18-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [37e1751a] Completed 200 OK
+12:31:40.169 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:31:40.169 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/html;charset=UTF-8"
+12:31:40.169 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:40.806 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:40.998 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:41.076 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:41.102 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:41.107 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:41.107 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:41.107 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:41.122 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50156(0 millis).
+12:31:41.122 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50156/html?name=Jason
+12:31:41.122 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:41.165 [XNIO-18 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7618f0d2] HTTP GET "/html?name=Jason"
+12:31:41.166 [XNIO-18 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7618f0d2] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:41.175 [XNIO-18 I/O-2] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html;charset=UTF-8' given [text/html] and supported [text/html;charset=UTF-8]
+12:31:41.175 [XNIO-18 I/O-2] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [7618f0d2] View name 'test', model {hello=Hello: Jason!}
+12:31:41.175 [XNIO-18 I/O-2] DEBUG o.s.w.r.r.v.f.FreeMarkerView - [7618f0d2] Rendering [test.ftl]
+12:31:41.176 [XNIO-18 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7618f0d2] Completed 200 OK
+12:31:41.176 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:31:41.177 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/html;charset=UTF-8"
+12:31:41.177 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:41.177 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:41.182 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:41.275 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:41.315 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:41.342 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:41.356 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:41.357 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:41.357 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@3e079431{/,null,AVAILABLE}
+12:31:41.357 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:41.357 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:41.407 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@54e83be{HTTP/1.1, (http/1.1)}{0.0.0.0:50160}
+12:31:41.408 [Test worker] INFO  o.e.j.s.Server - Started @189108ms
+12:31:41.408 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50160(0 millis).
+12:31:41.408 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50160/html
+12:31:41.408 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:41.415 [qtp2123389727-669] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [359980d2] HTTP GET "/html"
+12:31:41.416 [qtp2123389727-669] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [359980d2] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:41.418 [qtp2123389727-669] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [359980d2] Completed 304 NOT_MODIFIED
+12:31:41.419 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 304 NOT_MODIFIED
+12:31:41.420 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:41.420 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3e079431{/,null,UNAVAILABLE}
+12:31:41.423 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@54e83be{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:41.424 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:41.553 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:41.606 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:41.644 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:41.655 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:41.655 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:41.657 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50172(0 millis).
+12:31:41.657 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50172/html
+12:31:41.657 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:41.660 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4a2db764-19] HTTP GET "/html"
+12:31:41.661 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4a2db764-19] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:41.662 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4a2db764-19] Completed 304 NOT_MODIFIED
+12:31:41.662 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 304 NOT_MODIFIED
+12:31:41.663 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:41.663 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:41.804 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:41.841 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:41.870 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:41.876 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:41.878 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:41.903 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50174(0 millis).
+12:31:41.903 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50174/html
+12:31:41.904 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:42.391 [http-nio-auto-19-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [54c6eeb2] HTTP GET "/html"
+12:31:42.391 [http-nio-auto-19-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [54c6eeb2] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:42.393 [http-nio-auto-19-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [54c6eeb2] Completed 304 NOT_MODIFIED
+12:31:42.394 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 304 NOT_MODIFIED
+12:31:42.395 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:43.048 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:43.158 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+12:31:43.215 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:43.262 [Test worker] DEBUG o.s.w.r.r.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+12:31:43.272 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:43.273 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:43.273 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:43.287 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50224(0 millis).
+12:31:43.287 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:50224/html
+12:31:43.288 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:31:43.298 [XNIO-19 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [67050fe3] HTTP GET "/html"
+12:31:43.298 [XNIO-19 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [67050fe3] Mapped to org.springframework.web.reactive.result.method.annotation.RequestMappingViewResolutionIntegrationTests$TestController#getHtmlPage(Optional, Model, ServerWebExchange)
+12:31:43.301 [XNIO-19 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [67050fe3] Completed 304 NOT_MODIFIED
+12:31:43.303 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 304 NOT_MODIFIED
+12:31:43.303 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:43.304 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:43.309 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

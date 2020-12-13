@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.server.session.WebSessionIntegrationTests" tests="20" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:45" hostname="DESKTOP-TMNPDT1" time="6.036">
+  <properties/>
+  <testcase name="invalidate(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.104"/>
+  <testcase name="invalidate(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.021"/>
+  <testcase name="invalidate(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.805"/>
+  <testcase name="invalidate(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.068"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.087"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.034"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.506"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.026"/>
+  <testcase name="expiredSessionEnds(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.049"/>
+  <testcase name="expiredSessionEnds(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.017"/>
+  <testcase name="expiredSessionEnds(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="1.046"/>
+  <testcase name="expiredSessionEnds(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.584"/>
+  <testcase name="createSession(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.427"/>
+  <testcase name="createSession(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.027"/>
+  <testcase name="createSession(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="1.12"/>
+  <testcase name="createSession(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.03"/>
+  <testcase name="changeSessionId(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.042"/>
+  <testcase name="changeSessionId(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.016"/>
+  <testcase name="changeSessionId(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.787"/>
+  <testcase name="changeSessionId(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.115"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Dec 12, 2020 3:56:45 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Dec 12, 2020 3:56:45 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Dec 12, 2020 3:56:45 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-11"]
+Dec 12, 2020 3:56:45 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-11-62140"]
+Dec 12, 2020 3:56:45 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-11-62140"]
+Dec 12, 2020 3:56:46 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-11-62140"]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-11-62140"]
+Dec 12, 2020 3:56:46 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Dec 12, 2020 3:56:46 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-12"]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-12-62217"]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-12-62217"]
+Dec 12, 2020 3:56:46 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-12-62217"]
+Dec 12, 2020 3:56:46 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-12-62217"]
+Dec 12, 2020 3:56:47 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Dec 12, 2020 3:56:47 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Dec 12, 2020 3:56:47 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-13"]
+Dec 12, 2020 3:56:47 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-13-62262"]
+Dec 12, 2020 3:56:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-13-62262"]
+Dec 12, 2020 3:56:48 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Dec 12, 2020 3:56:48 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-13-62262"]
+Dec 12, 2020 3:56:48 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-13-62262"]
+Dec 12, 2020 3:56:49 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Dec 12, 2020 3:56:49 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Dec 12, 2020 3:56:49 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-14"]
+Dec 12, 2020 3:56:49 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-14-62328"]
+Dec 12, 2020 3:56:49 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-14-62328"]
+Dec 12, 2020 3:56:50 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Dec 12, 2020 3:56:50 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-14-62328"]
+Dec 12, 2020 3:56:50 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-14-62328"]
+Dec 12, 2020 3:56:50 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Dec 12, 2020 3:56:50 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Dec 12, 2020 3:56:50 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-15"]
+Dec 12, 2020 3:56:50 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-15-62376"]
+Dec 12, 2020 3:56:50 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-15-62376"]
+Dec 12, 2020 3:56:51 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Dec 12, 2020 3:56:51 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-15-62376"]
+Dec 12, 2020 3:56:51 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-15-62376"]
+]]></system-err>
+</testsuite>

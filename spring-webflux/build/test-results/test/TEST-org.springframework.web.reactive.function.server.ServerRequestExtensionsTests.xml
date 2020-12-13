@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" tests="21" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:33:43" hostname="DESKTOP-TMNPDT1" time="0.775">
+  <properties/>
+  <testcase name="awaitMultipartData()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.224"/>
+  <testcase name="bodyToMono with reified type parameters()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.012"/>
+  <testcase name="queryParamOrNull with null()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.01"/>
+  <testcase name="contentTypeOrNull with value()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.073"/>
+  <testcase name="bodyToFlow with reified type parameters()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.011"/>
+  <testcase name="contentLengthOrNull with value()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.062"/>
+  <testcase name="queryParamOrNull with values()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.007"/>
+  <testcase name="queryParamOrNull with value()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.011"/>
+  <testcase name="attributeOrNull with null()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.066"/>
+  <testcase name="remoteAddressOrNull with value()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.008"/>
+  <testcase name="awaitFormData()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.012"/>
+  <testcase name="queryParamOrNull with null value()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.008"/>
+  <testcase name="contentTypeOrNull with null()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.007"/>
+  <testcase name="attributeOrNull with value()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.007"/>
+  <testcase name="bodyToFlux with reified type parameters()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.007"/>
+  <testcase name="awaitPrincipal()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.08"/>
+  <testcase name="contentLengthOrNull with null()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.008"/>
+  <testcase name="awaitBody()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.012"/>
+  <testcase name="remoteAddressOrNull with null()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.009"/>
+  <testcase name="awaitSession()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.098"/>
+  <testcase name="awaitBodyOrNull()" classname="org.springframework.web.reactive.function.server.ServerRequestExtensionsTests" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

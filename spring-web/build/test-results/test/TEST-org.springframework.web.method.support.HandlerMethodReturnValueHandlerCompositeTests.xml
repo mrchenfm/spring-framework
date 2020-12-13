@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.method.support.HandlerMethodReturnValueHandlerCompositeTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:43" hostname="DESKTOP-TMNPDT1" time="0.082">
+  <properties/>
+  <testcase name="handleReturnValueWithMultipleHandlers()" classname="org.springframework.web.method.support.HandlerMethodReturnValueHandlerCompositeTests" time="0.012"/>
+  <testcase name="handleReturnValue()" classname="org.springframework.web.method.support.HandlerMethodReturnValueHandlerCompositeTests" time="0.001"/>
+  <testcase name="handleReturnValueWithAsyncHandler()" classname="org.springframework.web.method.support.HandlerMethodReturnValueHandlerCompositeTests" time="0.064"/>
+  <testcase name="supportsReturnType()" classname="org.springframework.web.method.support.HandlerMethodReturnValueHandlerCompositeTests" time="0.002"/>
+  <testcase name="noSuitableReturnValueHandler()" classname="org.springframework.web.method.support.HandlerMethodReturnValueHandlerCompositeTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

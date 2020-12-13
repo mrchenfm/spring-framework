@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.json.Jackson2JsonDecoderTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:55:04" hostname="DESKTOP-TMNPDT1" time="0.553">
+  <properties/>
+  <testcase name="decodeToMono()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.065"/>
+  <testcase name="decodeNonUtf8Encoding()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.12"/>
+  <testcase name="decode()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.064"/>
+  <testcase name="decodeNonUnicode()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.009"/>
+  <testcase name="decodeWithNullLiteral()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.004"/>
+  <testcase name="invalidData()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.008"/>
+  <testcase name="decodableMimeTypesIsImmutable()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.002"/>
+  <testcase name="canDecode()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.003"/>
+  <testcase name="decodeMonoNonUtf8Encoding()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.012"/>
+  <testcase name="noDefaultConstructor()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.017"/>
+  <testcase name="decodeEmptyArrayToFlux()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.007"/>
+  <testcase name="customDeserializer()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.048"/>
+  <testcase name="canDecodeWithProvidedMimeType()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.001"/>
+  <testcase name="decodeAscii()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.003"/>
+  <testcase name="classLevelJsonView()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.012"/>
+  <testcase name="bigDecimalFlux()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.125"/>
+  <testcase name="fieldLevelJsonView()" classname="org.springframework.http.codec.json.Jackson2JsonDecoderTests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

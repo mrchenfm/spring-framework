@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MessageReaderArgumentResolverTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MessageReaderArgumentResolverTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.web.reactive.result.method.annotation.html">org.springframework.web.reactive.result.method.annotation</a> &gt; MessageReaderArgumentResolverTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">19</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.719s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">array()</td>
+<td class="success">0.239s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">emptyBody()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flowableTestBean()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">fluxTestBean()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">futureTestBean()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">list()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">map()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">missingContentType()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">monoList()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">monoTestBean()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">observableTestBean()</td>
+<td class="success">0.105s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">parameterizedMethodArgument()</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rxJava2MaybeTestBean()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rxJava2ObservableTestBean()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rxJava2SingleTestBean()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">singleTestBean()</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBean()</td>
+<td class="success">0.097s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateFluxTestBean()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateMonoTestBean()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:30:21.357 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [6c737fd] Content-Type:application/json
+12:30:21.359 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [6c737fd] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.361 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6c737fd] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.370 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1cfb016c] Content-Type:application/json
+12:30:21.371 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1cfb016c] 0..N [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.469 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1cfb016c] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.470 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1cfb016c] Decoded [TestBean[foo='f2', bar='b2']]
+12:30:21.482 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [721c3660] Content-Type:application/json
+12:30:21.484 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [721c3660] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.576 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [665c82a5] Content-Type:application/json
+12:30:21.600 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [665c82a5] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.601 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [665c82a5] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.614 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [335f1bd2] Content-Type:application/json
+12:30:21.615 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [335f1bd2] 0..N [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.617 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [335f1bd2] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.627 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [335f1bd2] Decoded [TestBean[foo='f2', bar='b2']]
+12:30:21.672 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [4bd2ccfc] Content-Type:application/json
+12:30:21.675 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [4bd2ccfc] 0..N [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.687 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4bd2ccfc] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.688 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4bd2ccfc] Decoded [TestBean[foo='f2', bar='b2']]
+12:30:21.697 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [73658460] Content-Type:application/json
+12:30:21.698 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [73658460] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.711 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [73658460] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.792 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1a0cb2a] Content-Type:application/json
+12:30:21.793 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1a0cb2a] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.794 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1a0cb2a] Decoded [TestBean[foo='FOOFOO', bar='BARBAR']]
+12:30:21.802 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1326ea71] Content-Type:application/json
+12:30:21.803 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1326ea71] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.808 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1326ea71] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.817 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [34836b77] Content-Type:application/json
+12:30:21.818 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [34836b77] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:21.821 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [34836b77] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:21.948 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [44e27f7d] Content-Type:application/json
+12:30:21.952 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [44e27f7d] 0..1 [java.util.List&lt;org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean&gt;]
+12:30:21.954 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [44e27f7d] Decoded [[TestBean[foo='f1', bar='b1'], TestBean[foo='f2', bar='b2']]]
+12:30:21.963 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [1144fa37] No Content-Type, using application/octet-stream
+12:30:21.977 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [4f6c269f] Content-Type:application/json
+12:30:21.977 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [4f6c269f] 0..1 [java.util.Map&lt;java.lang.String, java.lang.String&gt;]
+12:30:21.977 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4f6c269f] Decoded [{bar=b1, foo=f1}]
+12:30:22.101 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [3a8c58d] Content-Type:application/json
+12:30:22.102 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [3a8c58d] 0..1 [java.util.List&lt;org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean&gt;]
+12:30:22.112 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [3a8c58d] Decoded [[TestBean[foo='f1', bar='b1'], TestBean[foo='f2', bar='b2']]]
+12:30:22.136 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [6039c9e9] Content-Type:application/json
+12:30:22.209 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [6039c9e9] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean[]]
+12:30:22.216 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6039c9e9] Decoded [[Lorg.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestB (truncated)...]
+12:30:22.436 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [f30545c] Content-Type:application/json
+12:30:22.438 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [f30545c] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$SimpleBean]
+12:30:22.453 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [f30545c] Decoded [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$SimpleB (truncated)...]
+12:30:22.498 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [6946766d] Content-Type:application/json
+12:30:22.499 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [6946766d] 0..N [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:22.500 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6946766d] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:22.500 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6946766d] Decoded [TestBean[foo='null', bar='b2']]
+12:30:22.516 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [563b4a37] Content-Type:application/json
+12:30:22.518 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [563b4a37] 0..1 [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:22.519 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [563b4a37] Decoded [TestBean[foo='null', bar='b1']]
+12:30:22.529 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [c14bb83] Content-Type:application/json
+12:30:22.531 [Test worker] DEBUG o.s.w.r.r.m.a.MessageReaderArgumentResolverTests$1 - [c14bb83] 0..N [org.springframework.web.reactive.result.method.annotation.MessageReaderArgumentResolverTests$TestBean]
+12:30:22.571 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [c14bb83] Decoded [TestBean[foo='f1', bar='b1']]
+12:30:22.571 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [c14bb83] Decoded [TestBean[foo='f2', bar='b2']]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.4</a> at 2020-12-12 12:33:45</p>
+</div>
+</div>
+</body>
+</html>

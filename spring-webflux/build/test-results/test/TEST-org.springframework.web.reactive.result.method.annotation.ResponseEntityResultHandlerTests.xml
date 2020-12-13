@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" tests="18" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:23" hostname="DESKTOP-TMNPDT1" time="0.682">
+  <properties/>
+  <testcase name="handleReturnValueEtagInvalidIfNoneMatch()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.065"/>
+  <testcase name="supports()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.017"/>
+  <testcase name="handleMonoWithWildcardBodyTypeAndNullBody()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.197"/>
+  <testcase name="handleReturnTypes()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.02"/>
+  <testcase name="defaultOrder()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.005"/>
+  <testcase name="responseEntityHeaders()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.009"/>
+  <testcase name="handleReturnValueEtag()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.228"/>
+  <testcase name="handleReturnValueChangedETagAndLastModified()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.013"/>
+  <testcase name="handleWithPresetContentTypeShouldFailWithServerError()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.014"/>
+  <testcase name="handleResponseEntityWithNullBody()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.009"/>
+  <testcase name="handleReturnValueETagAndLastModified()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.022"/>
+  <testcase name="handleWithProducibleContentTypeShouldFailWithServerError()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.011"/>
+  <testcase name="doesNotSupport()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.015"/>
+  <testcase name="handleReturnValueLastModified()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.019"/>
+  <testcase name="responseEntityStatusCode()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.007"/>
+  <testcase name="handleMonoWithWildcardBodyType()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.007"/>
+  <testcase name="httpHeaders()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.006"/>
+  <testcase name="handleWithPresetContentType()" classname="org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandlerTests" time="0.006"/>
+  <system-out><![CDATA[12:30:23.425 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.426 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [5a8a3389] 0..1 [java.lang.String]
+12:30:23.463 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [5a8a3389] Writing "body"
+12:30:23.689 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.690 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [147b75c0] 0..1 [java.lang.String]
+12:30:23.690 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [147b75c0] Writing "abc"
+12:30:23.691 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.692 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [654a1d18] 0..1 [java.lang.String]
+12:30:23.692 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [654a1d18] Writing "abc"
+12:30:23.694 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.695 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [7402d25e] 0..1 [java.lang.String]
+12:30:23.695 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [7402d25e] Writing "abc"
+12:30:23.697 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.697 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [53e20963] 0..1 [java.lang.String]
+12:30:23.698 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [53e20963] Writing "abc"
+12:30:23.700 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.700 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [1c78a3aa] 0..1 [java.lang.String]
+12:30:23.701 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [1c78a3aa] Writing "abc"
+12:30:23.956 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/plain;charset=UTF-8, */*]
+12:30:23.956 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [877d9b0] 0..1 [java.lang.String]
+12:30:23.956 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [877d9b0] Writing "body"
+12:30:23.973 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [51cb5ee7] Found 'Content-Type:application/xml' in response
+12:30:23.973 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [51cb5ee7] 0..1 [java.lang.String]
+12:30:24.016 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'application/xml' given [*/*] and supported [application/xml]
+12:30:24.017 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [4fd4c551] 0..1 [java.lang.String]
+12:30:24.069 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'application/json' given [*/*] and supported [application/json]
+12:30:24.069 [Test worker] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [1cdbc83d] 0..1 [java.lang.String]
+12:30:24.070 [Test worker] DEBUG o.s.c.c.CharSequenceEncoder - [1cdbc83d] Writing "body"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

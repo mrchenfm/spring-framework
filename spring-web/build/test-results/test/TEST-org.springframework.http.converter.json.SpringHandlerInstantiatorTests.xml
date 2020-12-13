@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.converter.json.SpringHandlerInstantiatorTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:55:24" hostname="DESKTOP-TMNPDT1" time="0.267">
+  <properties/>
+  <testcase name="applicationContextAwareTypeIdResolver()" classname="org.springframework.http.converter.json.SpringHandlerInstantiatorTests" time="0.214"/>
+  <testcase name="autowiredDeserializer()" classname="org.springframework.http.converter.json.SpringHandlerInstantiatorTests" time="0.017"/>
+  <testcase name="autowiredKeyDeserializer()" classname="org.springframework.http.converter.json.SpringHandlerInstantiatorTests" time="0.008"/>
+  <testcase name="autowiredSerializer()" classname="org.springframework.http.converter.json.SpringHandlerInstantiatorTests" time="0.012"/>
+  <testcase name="applicationContextAwaretypeResolverBuilder()" classname="org.springframework.http.converter.json.SpringHandlerInstantiatorTests" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

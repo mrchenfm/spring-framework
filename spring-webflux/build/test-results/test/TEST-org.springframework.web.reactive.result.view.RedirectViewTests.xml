@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.view.RedirectViewTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:33:30" hostname="DESKTOP-TMNPDT1" time="0.021">
+  <properties/>
+  <testcase name="expandUriTemplateVariablesFromExchangeAttribute()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.004"/>
+  <testcase name="expandUriTemplateVariablesFromModel()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.001"/>
+  <testcase name="propagateQueryParams()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.002"/>
+  <testcase name="contextRelativeQueryParam()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.001"/>
+  <testcase name="contextRelative()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.001"/>
+  <testcase name="customStatusCode()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.002"/>
+  <testcase name="defaultStatusCode()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.002"/>
+  <testcase name="noUrlSet()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.002"/>
+  <testcase name="remoteHost()" classname="org.springframework.web.reactive.result.view.RedirectViewTests" time="0.002"/>
+  <system-out><![CDATA[12:33:30.223 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [567aae52] View [RedirectView], model {}
+12:33:30.226 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [45d7d6d4] View [RedirectView], model {foo=bar}
+12:33:30.228 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [ba8638f] View [RedirectView], model {}
+12:33:30.230 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [71c565fd] View [RedirectView], model {}
+12:33:30.232 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [a5f7c67] View [RedirectView], model {}
+12:33:30.233 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [18491527] View [RedirectView], model {}
+12:33:30.236 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [5035b9ba] View [RedirectView], model {}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

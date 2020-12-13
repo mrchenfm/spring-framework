@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" tests="24" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:33:15" hostname="DESKTOP-TMNPDT1" time="9.859">
+  <properties/>
+  <testcase name="Suspending handler method throwing exception(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.562"/>
+  <testcase name="Suspending handler method throwing exception(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.254"/>
+  <testcase name="Suspending handler method throwing exception(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.802"/>
+  <testcase name="Suspending handler method throwing exception(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.257"/>
+  <testcase name="Handler method returning Flow throwing exception(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.316"/>
+  <testcase name="Handler method returning Flow throwing exception(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.219"/>
+  <testcase name="Handler method returning Flow throwing exception(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.642"/>
+  <testcase name="Handler method returning Flow throwing exception(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.224"/>
+  <testcase name="Handler method returning Deferred(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.291"/>
+  <testcase name="Handler method returning Deferred(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.198"/>
+  <testcase name="Handler method returning Deferred(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.765"/>
+  <testcase name="Handler method returning Deferred(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.236"/>
+  <testcase name="Suspending handler method(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.273"/>
+  <testcase name="Suspending handler method(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.209"/>
+  <testcase name="Suspending handler method(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.789"/>
+  <testcase name="Suspending handler method(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.51"/>
+  <testcase name="Handler method returning Flow(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.248"/>
+  <testcase name="Handler method returning Flow(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.149"/>
+  <testcase name="Handler method returning Flow(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.613"/>
+  <testcase name="Handler method returning Flow(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.213"/>
+  <testcase name="Suspending handler method returning Flow(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.233"/>
+  <testcase name="Suspending handler method returning Flow(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.17"/>
+  <testcase name="Suspending handler method returning Flow(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.731"/>
+  <testcase name="Suspending handler method returning Flow(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests" time="0.309"/>
+  <system-out><![CDATA[12:33:16.238 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:16.313 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:16.384 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:16.385 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:33:16.387 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@37366bbe{/,null,AVAILABLE}
+12:33:16.388 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:33:16.388 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:33:16.427 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@6932d335{HTTP/1.1, (http/1.1)}{0.0.0.0:52464}
+12:33:16.427 [Test worker] INFO  o.e.j.s.Server - Started @283491ms
+12:33:16.428 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 52464(0 millis).
+12:33:16.433 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52464/error
+12:33:16.433 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:16.445 [qtp744279242-1915] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [27f84956] HTTP GET "/error"
+12:33:16.450 [qtp744279242-1915] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [27f84956] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation)
+12:33:16.481 [qtp744279242-1915] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+12:33:16.481 [qtp744279242-1915] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [27f84956] 0..1 [kotlin.Unit]
+12:33:16.524 [kotlinx.coroutines.DefaultExecutor @coroutine#5] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [27f84956] 500 Server Error for HTTP GET "/error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$error$1.invokeSuspend(CoroutinesIntegrationTests.kt) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:16.535 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:16.544 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:33:16.545 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@37366bbe{/,null,UNAVAILABLE}
+12:33:16.551 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@6932d335{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:33:16.553 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:33:16.695 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:16.747 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:16.796 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:16.798 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:33:16.800 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 52470(0 millis).
+12:33:16.801 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52470/error
+12:33:16.801 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:16.805 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7398b692-43] HTTP GET "/error"
+12:33:16.808 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7398b692-43] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation)
+12:33:16.813 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+12:33:16.813 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7398b692-43] 0..1 [kotlin.Unit]
+12:33:16.821 [kotlinx.coroutines.DefaultExecutor @coroutine#6] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [7398b692-43] 500 Server Error for HTTP GET "/error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$error$1.invokeSuspend(CoroutinesIntegrationTests.kt) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:16.826 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:16.827 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:33:16.829 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:33:16.975 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:17.026 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:17.073 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:17.075 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:33:17.106 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 52473(0 millis).
+12:33:17.106 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52473/error
+12:33:17.106 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:17.173 [http-nio-auto-42-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c9fc4e4] HTTP GET "/error"
+12:33:17.174 [http-nio-auto-42-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7c9fc4e4] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation)
+12:33:17.176 [http-nio-auto-42-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+12:33:17.176 [http-nio-auto-42-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7c9fc4e4] 0..1 [kotlin.Unit]
+12:33:17.179 [kotlinx.coroutines.DefaultExecutor @coroutine#7] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [7c9fc4e4] 500 Server Error for HTTP GET "/error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$error$1.invokeSuspend(CoroutinesIntegrationTests.kt) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:17.193 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:17.194 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:33:17.664 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:33:17.799 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:17.853 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:17.899 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:17.900 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:33:17.900 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:33:17.914 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 52516(0 millis).
+12:33:17.914 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52516/error
+12:33:17.915 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:17.928 [XNIO-41 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [13926a3d] HTTP GET "/error"
+12:33:17.928 [XNIO-41 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [13926a3d] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation)
+12:33:17.931 [XNIO-41 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+12:33:17.931 [XNIO-41 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [13926a3d] 0..1 [kotlin.Unit]
+12:33:17.936 [kotlinx.coroutines.DefaultExecutor @coroutine#8] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [13926a3d] 500 Server Error for HTTP GET "/error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#error(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController.error(CoroutinesIntegrationTests.kt:144) ~[test/:?]
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$error$1.invokeSuspend(CoroutinesIntegrationTests.kt) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:17.938 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:17.939 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:33:17.939 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:33:17.945 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:33:18.107 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:18.164 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:18.213 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:18.215 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:33:18.216 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@6d13e9e5{/,null,AVAILABLE}
+12:33:18.217 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:33:18.218 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:33:18.230 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@5f3140a3{HTTP/1.1, (http/1.1)}{0.0.0.0:52518}
+12:33:18.230 [Test worker] INFO  o.e.j.s.Server - Started @285294ms
+12:33:18.231 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 52518(0 millis).
+12:33:18.234 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52518/flow-error
+12:33:18.235 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:18.239 [qtp1404920459-1945] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1b2dd8b7] HTTP GET "/flow-error"
+12:33:18.240 [qtp1404920459-1945] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1b2dd8b7] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation)
+12:33:18.244 [qtp1404920459-1945] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:18.244 [qtp1404920459-1945] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [1b2dd8b7] 0..N [java.lang.String]
+12:33:18.277 [kotlinx.coroutines.DefaultExecutor] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [1b2dd8b7] 500 Server Error for HTTP GET "/flow-error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/flow-error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:18.280 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:18.281 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:33:18.281 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6d13e9e5{/,null,UNAVAILABLE}
+12:33:18.287 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@5f3140a3{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:33:18.289 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:33:18.426 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:18.483 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:18.515 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:18.516 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:33:18.519 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 52525(0 millis).
+12:33:18.520 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52525/flow-error
+12:33:18.520 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:18.524 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8cf45fcf-44] HTTP GET "/flow-error"
+12:33:18.524 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [8cf45fcf-44] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation)
+12:33:18.527 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:18.527 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [8cf45fcf-44] 0..N [java.lang.String]
+12:33:18.533 [kotlinx.coroutines.DefaultExecutor] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [8cf45fcf-44] 500 Server Error for HTTP GET "/flow-error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/flow-error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:18.537 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:18.538 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:33:18.539 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:33:18.667 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:18.701 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:18.743 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:18.745 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:33:18.798 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 52539(0 millis).
+12:33:18.798 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52539/flow-error
+12:33:18.799 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:18.820 [http-nio-auto-43-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [177aec4b] HTTP GET "/flow-error"
+12:33:18.825 [http-nio-auto-43-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [177aec4b] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation)
+12:33:18.828 [http-nio-auto-43-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:18.828 [http-nio-auto-43-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [177aec4b] 0..N [java.lang.String]
+12:33:18.830 [kotlinx.coroutines.DefaultExecutor] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [177aec4b] 500 Server Error for HTTP GET "/flow-error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/flow-error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:18.852 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:18.853 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:33:19.227 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:33:19.371 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:19.410 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:19.453 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:19.453 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:33:19.453 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:33:19.469 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 52570(0 millis).
+12:33:19.469 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52570/flow-error
+12:33:19.470 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:19.479 [XNIO-42 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2f8aea64] HTTP GET "/flow-error"
+12:33:19.480 [XNIO-42 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [2f8aea64] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation)
+12:33:19.482 [XNIO-42 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:19.482 [XNIO-42 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [2f8aea64] 0..N [java.lang.String]
+12:33:19.485 [kotlinx.coroutines.DefaultExecutor] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [2f8aea64] 500 Server Error for HTTP GET "/flow-error"
+java.lang.IllegalStateException: null
+	at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Handler org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowError(Continuation) [DispatcherHandler]
+	|_ checkpoint ⇢ HTTP GET "/flow-error" [ExceptionHandlingWebHandler]
+Stack trace:
+		at org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController$flowError$2.invokeSuspend(CoroutinesIntegrationTests.kt:150) ~[test/:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) [kotlin-stdlib-1.3.72.jar:1.3.72-release-468 (1.3.72)]
+		at kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:175) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.resumeUnconfined(DispatchedTask.kt:137) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:108) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:307) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:317) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.CancellableContinuationImpl.resumeUndispatched(CancellableContinuationImpl.kt:399) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase$DelayedResumeTask.run(EventLoop.common.kt:485) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:272) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:68) [kotlinx-coroutines-core-1.3.5.jar:?]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:33:19.487 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+12:33:19.488 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:33:19.488 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:33:19.491 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:33:19.607 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:19.653 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:19.691 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:19.691 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:33:19.692 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@5277605c{/,null,AVAILABLE}
+12:33:19.692 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:33:19.692 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:33:19.703 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@17dd4bce{HTTP/1.1, (http/1.1)}{0.0.0.0:52572}
+12:33:19.703 [Test worker] INFO  o.e.j.s.Server - Started @286767ms
+12:33:19.703 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 52572(0 millis).
+12:33:19.703 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52572/deferred
+12:33:19.704 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:19.711 [qtp731927598-1973] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7a47d36a] HTTP GET "/deferred"
+12:33:19.711 [qtp731927598-1973] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7a47d36a] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#deferredEndpoint()
+12:33:19.756 [qtp731927598-1973] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:19.756 [qtp731927598-1973] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7a47d36a] 0..1 [java.lang.String]
+12:33:19.790 [DefaultDispatcher-worker-1 @coroutine#14] DEBUG o.s.c.c.CharSequenceEncoder - [7a47d36a] Writing "foo"
+12:33:19.793 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:19.794 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=utf-8"
+12:33:19.794 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:33:19.794 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5277605c{/,null,UNAVAILABLE}
+12:33:19.795 [DefaultDispatcher-worker-1 @coroutine#14] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7a47d36a] Completed 200 OK
+12:33:19.800 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@17dd4bce{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:33:19.801 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:33:19.914 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:19.955 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:20.002 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:20.002 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:33:20.007 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 52579(0 millis).
+12:33:20.007 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52579/deferred
+12:33:20.008 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:20.013 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6c4675bd-45] HTTP GET "/deferred"
+12:33:20.013 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [6c4675bd-45] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#deferredEndpoint()
+12:33:20.015 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:20.015 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [6c4675bd-45] 0..1 [java.lang.String]
+12:33:20.022 [DefaultDispatcher-worker-1 @coroutine#16] DEBUG o.s.c.c.CharSequenceEncoder - [6c4675bd-45] Writing "foo"
+12:33:20.028 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6c4675bd-45] Completed 200 OK
+12:33:20.028 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:20.028 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:20.029 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:33:20.029 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:33:20.186 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:20.221 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:20.256 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:20.257 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:33:20.285 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 52599(0 millis).
+12:33:20.288 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52599/deferred
+12:33:20.289 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:20.321 [http-nio-auto-44-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [724fba4] HTTP GET "/deferred"
+12:33:20.322 [http-nio-auto-44-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [724fba4] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#deferredEndpoint()
+12:33:20.323 [http-nio-auto-44-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:20.323 [http-nio-auto-44-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [724fba4] 0..1 [java.lang.String]
+12:33:20.326 [DefaultDispatcher-worker-1 @coroutine#18] DEBUG o.s.c.c.CharSequenceEncoder - [724fba4] Writing "foo"
+12:33:20.327 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:20.327 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:20.328 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:33:20.336 [DefaultDispatcher-worker-1 @coroutine#18] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [724fba4] Completed 200 OK
+12:33:20.822 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:33:20.998 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:21.045 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:21.077 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:21.077 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:33:21.077 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:33:21.092 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 52624(0 millis).
+12:33:21.093 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52624/deferred
+12:33:21.093 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:21.102 [XNIO-43 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [77e6744e] HTTP GET "/deferred"
+12:33:21.102 [XNIO-43 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [77e6744e] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#deferredEndpoint()
+12:33:21.104 [XNIO-43 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:21.104 [XNIO-43 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [77e6744e] 0..1 [java.lang.String]
+12:33:21.109 [DefaultDispatcher-worker-1 @coroutine#20] DEBUG o.s.c.c.CharSequenceEncoder - [77e6744e] Writing "foo"
+12:33:21.110 [XNIO-43 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [77e6744e] Completed 200 OK
+12:33:21.110 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:21.110 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:21.110 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:33:21.110 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:33:21.116 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:33:21.235 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:21.280 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:21.353 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:21.354 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:33:21.355 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@14bf073e{/,null,AVAILABLE}
+12:33:21.356 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:33:21.357 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:33:21.366 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@1c2ddc3c{HTTP/1.1, (http/1.1)}{0.0.0.0:52627}
+12:33:21.366 [Test worker] INFO  o.e.j.s.Server - Started @288429ms
+12:33:21.366 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 52627(0 millis).
+12:33:21.366 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52627/suspend
+12:33:21.366 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:21.374 [qtp2030907698-2004] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [76d0ad87] HTTP GET "/suspend"
+12:33:21.374 [qtp2030907698-2004] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [76d0ad87] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingEndpoint(Continuation)
+12:33:21.376 [qtp2030907698-2004] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:21.376 [qtp2030907698-2004] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [76d0ad87] 0..1 [java.lang.String]
+12:33:21.381 [kotlinx.coroutines.DefaultExecutor @coroutine#21] DEBUG o.s.c.c.CharSequenceEncoder - [76d0ad87] Writing "foo"
+12:33:21.400 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:21.400 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=utf-8"
+12:33:21.401 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:33:21.401 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@14bf073e{/,null,UNAVAILABLE}
+12:33:21.402 [kotlinx.coroutines.DefaultExecutor @coroutine#21] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [76d0ad87] Completed 200 OK
+12:33:21.405 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@1c2ddc3c{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:33:21.408 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:33:21.554 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:21.593 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:21.624 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:21.624 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:33:21.626 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 52645(0 millis).
+12:33:21.626 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52645/suspend
+12:33:21.627 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:21.630 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [433002d4-46] HTTP GET "/suspend"
+12:33:21.631 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [433002d4-46] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingEndpoint(Continuation)
+12:33:21.632 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:21.632 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [433002d4-46] 0..1 [java.lang.String]
+12:33:21.639 [kotlinx.coroutines.DefaultExecutor @coroutine#22] DEBUG o.s.c.c.CharSequenceEncoder - [433002d4-46] Writing "foo"
+12:33:21.641 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:21.641 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:21.641 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:33:21.642 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:33:21.751 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:21.783 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:21.812 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:21.819 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:33:21.850 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 52653(0 millis).
+12:33:21.850 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52653/suspend
+12:33:21.850 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:22.035 [http-nio-auto-45-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4465f71c] HTTP GET "/suspend"
+12:33:22.036 [http-nio-auto-45-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4465f71c] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingEndpoint(Continuation)
+12:33:22.037 [http-nio-auto-45-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:22.037 [http-nio-auto-45-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [4465f71c] 0..1 [java.lang.String]
+12:33:22.041 [kotlinx.coroutines.DefaultExecutor @coroutine#23] DEBUG o.s.c.c.CharSequenceEncoder - [4465f71c] Writing "foo"
+12:33:22.044 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:22.044 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:22.044 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:33:22.046 [kotlinx.coroutines.DefaultExecutor @coroutine#23] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4465f71c] Completed 200 OK
+12:33:22.453 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:33:22.627 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:22.679 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:22.878 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:22.879 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:33:22.879 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:33:22.938 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 52691(0 millis).
+12:33:22.939 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52691/suspend
+12:33:22.940 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:22.983 [XNIO-44 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [160a3830] HTTP GET "/suspend"
+12:33:22.985 [XNIO-44 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [160a3830] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingEndpoint(Continuation)
+12:33:22.987 [XNIO-44 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:22.987 [XNIO-44 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [160a3830] 0..1 [java.lang.String]
+12:33:22.989 [kotlinx.coroutines.DefaultExecutor @coroutine#24] DEBUG o.s.c.c.CharSequenceEncoder - [160a3830] Writing "foo"
+12:33:22.990 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:22.990 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:22.991 [XNIO-44 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [160a3830] Completed 200 OK
+12:33:22.992 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:33:22.992 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:33:22.996 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:33:23.081 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:23.148 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:23.177 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:23.177 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:33:23.178 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@6f37455b{/,null,AVAILABLE}
+12:33:23.178 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:33:23.178 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:33:23.190 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@7ec29009{HTTP/1.1, (http/1.1)}{0.0.0.0:52699}
+12:33:23.190 [Test worker] INFO  o.e.j.s.Server - Started @290254ms
+12:33:23.190 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 52699(0 millis).
+12:33:23.190 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52699/flow
+12:33:23.191 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:23.198 [qtp279814536-2033] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [229bd184] HTTP GET "/flow"
+12:33:23.199 [qtp279814536-2033] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [229bd184] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowEndpoint()
+12:33:23.203 [qtp279814536-2033] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:23.203 [qtp279814536-2033] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [229bd184] 0..N [java.lang.String]
+12:33:23.233 [qtp279814536-2033] DEBUG o.s.c.c.CharSequenceEncoder - [229bd184] Writing "foo"
+12:33:23.235 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:23.235 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=utf-8"
+12:33:23.239 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [229bd184] Writing "bar"
+12:33:23.253 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [229bd184] Completed 200 OK
+12:33:23.256 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:33:23.256 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6f37455b{/,null,UNAVAILABLE}
+12:33:23.261 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@7ec29009{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:33:23.263 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:33:23.348 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:23.384 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:23.416 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:23.416 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:33:23.418 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 52713(0 millis).
+12:33:23.419 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52713/flow
+12:33:23.419 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:23.422 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c5cc90a-47] HTTP GET "/flow"
+12:33:23.423 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7c5cc90a-47] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowEndpoint()
+12:33:23.424 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:23.424 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7c5cc90a-47] 0..N [java.lang.String]
+12:33:23.425 [reactor-http-nio-4] DEBUG o.s.c.c.CharSequenceEncoder - [7c5cc90a-47] Writing "foo"
+12:33:23.428 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:23.428 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:23.428 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [7c5cc90a-47] Writing "bar"
+12:33:23.431 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c5cc90a-47] Completed 200 OK
+12:33:23.432 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:33:23.432 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:33:23.538 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:23.575 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:23.608 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:23.611 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:33:23.632 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 52715(0 millis).
+12:33:23.632 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52715/flow
+12:33:23.633 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:23.685 [http-nio-auto-46-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7590d3ca] HTTP GET "/flow"
+12:33:23.685 [http-nio-auto-46-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7590d3ca] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowEndpoint()
+12:33:23.687 [http-nio-auto-46-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:23.687 [http-nio-auto-46-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7590d3ca] 0..N [java.lang.String]
+12:33:23.687 [http-nio-auto-46-exec-1] DEBUG o.s.c.c.CharSequenceEncoder - [7590d3ca] Writing "foo"
+12:33:23.689 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [7590d3ca] Writing "bar"
+12:33:23.697 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:23.697 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:23.698 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7590d3ca] Completed 200 OK
+12:33:23.704 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:33:24.067 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:33:24.170 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:24.200 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:24.233 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:24.234 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:33:24.234 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:33:24.274 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 52751(0 millis).
+12:33:24.275 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52751/flow
+12:33:24.277 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:24.285 [XNIO-45 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6492613c] HTTP GET "/flow"
+12:33:24.286 [XNIO-45 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [6492613c] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#flowEndpoint()
+12:33:24.287 [XNIO-45 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:24.287 [XNIO-45 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [6492613c] 0..N [java.lang.String]
+12:33:24.287 [XNIO-45 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [6492613c] Writing "foo"
+12:33:24.289 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:24.289 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:24.300 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [6492613c] Writing "bar"
+12:33:24.303 [XNIO-45 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6492613c] Completed 200 OK
+12:33:24.303 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:33:24.303 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:33:24.308 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:33:24.431 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:24.470 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:24.509 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:24.511 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:33:24.513 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@268841ba{/,null,AVAILABLE}
+12:33:24.513 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:33:24.514 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:33:24.525 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@5a39db4f{HTTP/1.1, (http/1.1)}{0.0.0.0:52755}
+12:33:24.525 [Test worker] INFO  o.e.j.s.Server - Started @291588ms
+12:33:24.525 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 52755(0 millis).
+12:33:24.525 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52755/suspending-flow
+12:33:24.526 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:24.531 [qtp853127691-2062] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [11608090] HTTP GET "/suspending-flow"
+12:33:24.532 [qtp853127691-2062] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [11608090] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingFlowEndpoint(Continuation)
+12:33:24.534 [qtp853127691-2062] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:24.534 [qtp853127691-2062] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [11608090] 0..N [java.lang.String]
+12:33:24.549 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [11608090] Writing "foo"
+12:33:24.551 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:24.552 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=utf-8"
+12:33:24.554 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [11608090] Writing "bar"
+12:33:24.557 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [11608090] Completed 200 OK
+12:33:24.557 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:33:24.558 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@268841ba{/,null,UNAVAILABLE}
+12:33:24.561 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@5a39db4f{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:33:24.563 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:33:24.659 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:24.694 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:24.720 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:24.720 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:33:24.722 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 52767(0 millis).
+12:33:24.723 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52767/suspending-flow
+12:33:24.723 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:24.727 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [64e97527-48] HTTP GET "/suspending-flow"
+12:33:24.727 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [64e97527-48] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingFlowEndpoint(Continuation)
+12:33:24.729 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:24.729 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [64e97527-48] 0..N [java.lang.String]
+12:33:24.740 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [64e97527-48] Writing "foo"
+12:33:24.742 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:24.743 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:24.747 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [64e97527-48] Writing "bar"
+12:33:24.752 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [64e97527-48] Completed 200 OK
+12:33:24.753 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:33:24.754 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:33:24.900 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:24.952 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:25.000 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:25.019 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:33:25.034 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 52769(0 millis).
+12:33:25.034 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52769/suspending-flow
+12:33:25.034 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:25.102 [http-nio-auto-47-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [41ef9312] HTTP GET "/suspending-flow"
+12:33:25.103 [http-nio-auto-47-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [41ef9312] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingFlowEndpoint(Continuation)
+12:33:25.106 [http-nio-auto-47-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:25.106 [http-nio-auto-47-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [41ef9312] 0..N [java.lang.String]
+12:33:25.117 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [41ef9312] Writing "foo"
+12:33:25.120 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [41ef9312] Writing "bar"
+12:33:25.123 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:25.124 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:25.124 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [41ef9312] Completed 200 OK
+12:33:25.139 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:33:25.520 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:33:25.710 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+12:33:25.752 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:33:25.784 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:33:25.784 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:33:25.785 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:33:25.807 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 52807(0 millis).
+12:33:25.808 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:52807/suspending-flow
+12:33:25.809 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:33:25.817 [XNIO-46 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [46a9c20] HTTP GET "/suspending-flow"
+12:33:25.818 [XNIO-46 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [46a9c20] Mapped to org.springframework.web.reactive.result.method.annotation.CoroutinesIntegrationTests$CoroutinesController#suspendingFlowEndpoint(Continuation)
+12:33:25.819 [XNIO-46 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [text/plain, application/json, application/x-jackson-smile, application/*+json, */*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:33:25.819 [XNIO-46 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [46a9c20] 0..N [java.lang.String]
+12:33:25.834 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [46a9c20] Writing "foo"
+12:33:25.839 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:33:25.840 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+12:33:25.843 [kotlinx.coroutines.DefaultExecutor] DEBUG o.s.c.c.CharSequenceEncoder - [46a9c20] Writing "bar"
+12:33:25.846 [XNIO-46 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [46a9c20] Completed 200 OK
+12:33:25.847 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:33:25.847 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:33:25.851 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

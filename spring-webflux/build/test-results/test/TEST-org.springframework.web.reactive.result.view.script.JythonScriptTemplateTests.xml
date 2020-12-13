@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.view.script.JythonScriptTemplateTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:33:03" hostname="DESKTOP-TMNPDT1" time="6.001">
+  <properties/>
+  <testcase name="renderTemplate()" classname="org.springframework.web.reactive.result.view.script.JythonScriptTemplateTests" time="6.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

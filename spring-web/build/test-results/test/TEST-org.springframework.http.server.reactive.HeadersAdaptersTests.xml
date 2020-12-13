@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.HeadersAdaptersTests" tests="35" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:06" hostname="DESKTOP-TMNPDT1" time="0.062">
+  <properties/>
+  <testcase name="putShouldOverrideExisting(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.002"/>
+  <testcase name="putShouldOverrideExisting(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.002"/>
+  <testcase name="putShouldOverrideExisting(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="putShouldOverrideExisting(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="putShouldOverrideExisting(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="containsKeyShouldBeCaseInsensitive(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="containsKeyShouldBeCaseInsensitive(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="containsKeyShouldBeCaseInsensitive(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="containsKeyShouldBeCaseInsensitive(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="containsKeyShouldBeCaseInsensitive(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="sizeWithMultipleValuesForHeaderShouldCountHeaders(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="sizeWithMultipleValuesForHeaderShouldCountHeaders(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.005"/>
+  <testcase name="sizeWithMultipleValuesForHeaderShouldCountHeaders(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="sizeWithMultipleValuesForHeaderShouldCountHeaders(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="sizeWithMultipleValuesForHeaderShouldCountHeaders(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="getWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="addShouldKeepOrdering(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="addShouldKeepOrdering(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="addShouldKeepOrdering(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="addShouldKeepOrdering(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="addShouldKeepOrdering(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getFirstWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getFirstWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getFirstWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getFirstWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="getFirstWithUnknownHeaderShouldReturnNull(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="keySetShouldNotDuplicateHeaderNames(String, MultiValueMap)[1]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="keySetShouldNotDuplicateHeaderNames(String, MultiValueMap)[2]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.001"/>
+  <testcase name="keySetShouldNotDuplicateHeaderNames(String, MultiValueMap)[3]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <testcase name="keySetShouldNotDuplicateHeaderNames(String, MultiValueMap)[4]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.006"/>
+  <testcase name="keySetShouldNotDuplicateHeaderNames(String, MultiValueMap)[5]" classname="org.springframework.http.server.reactive.HeadersAdaptersTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

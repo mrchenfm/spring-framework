@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:47" hostname="DESKTOP-TMNPDT1" time="0.032">
+  <properties/>
+  <testcase name="resolveArgumentNoMatch()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolveArgumentPathVariable()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveArgumentRequired()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="resolveArgumentMultipleMatches()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveArgumentDefaultValue()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="resolveArgument()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.reactive.result.method.annotation.MatrixVariablesMethodArgumentResolverTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

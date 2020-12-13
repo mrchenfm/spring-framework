@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:41" hostname="DESKTOP-TMNPDT1" time="2.852">
+  <properties/>
+  <testcase name="notModifiedEtag()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.036"/>
+  <testcase name="create()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.002"/>
+  <testcase name="modelAttributes()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.002"/>
+  <testcase name="render()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="2.705"/>
+  <testcase name="modelAttribute()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.002"/>
+  <testcase name="modelAttributesConventions()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.008"/>
+  <testcase name="notModifiedLastModified()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.027"/>
+  <testcase name="defaultContentType()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.049"/>
+  <testcase name="headers()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.002"/>
+  <testcase name="cookies()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.006"/>
+  <testcase name="modelAttributeConventions()" classname="org.springframework.web.reactive.function.server.DefaultRenderingResponseTests" time="0.001"/>
+  <system-out><![CDATA[12:29:43.848 [Test worker] DEBUG o.s.w.r.f.s.DefaultRenderingResponseTests$TestView - [2f165b27] View [TestView], model {}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.multipart.commons.CommonsMultipartResolverTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:43" hostname="DESKTOP-TMNPDT1" time="0.085">
+  <properties/>
+  <testcase name="withServletContextAndFilterWithCustomBeanName()" classname="org.springframework.web.multipart.commons.CommonsMultipartResolverTests" time="0.039"/>
+  <testcase name="withApplicationContext()" classname="org.springframework.web.multipart.commons.CommonsMultipartResolverTests" time="0.03"/>
+  <testcase name="withServletContextAndFilter()" classname="org.springframework.web.multipart.commons.CommonsMultipartResolverTests" time="0.004"/>
+  <testcase name="withApplicationContextAndLazyResolution()" classname="org.springframework.web.multipart.commons.CommonsMultipartResolverTests" time="0.01"/>
+  <system-out><![CDATA[03:56:43.818 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field3' with encoding 'enc': using platform default
+03:56:43.819 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field4' with encoding 'enc': using platform default
+03:56:43.840 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field3' with encoding 'enc': using platform default
+03:56:43.842 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field4' with encoding 'enc': using platform default
+03:56:43.844 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field3' with encoding 'enc': using platform default
+03:56:43.845 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field4' with encoding 'enc': using platform default
+03:56:43.852 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field3' with encoding 'enc': using platform default
+03:56:43.853 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field4' with encoding 'enc': using platform default
+03:56:43.856 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field3' with encoding 'enc': using platform default
+03:56:43.857 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field4' with encoding 'enc': using platform default
+03:56:43.858 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field3' with encoding 'enc': using platform default
+03:56:43.859 [Test worker] WARN  o.s.w.m.c.CommonsMultipartResolverTests$MockCommonsMultipartResolver - Could not decode multipart item 'field4' with encoding 'enc': using platform default
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

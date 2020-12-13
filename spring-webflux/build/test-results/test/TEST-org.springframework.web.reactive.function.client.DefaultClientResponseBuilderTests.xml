@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:29" hostname="DESKTOP-TMNPDT1" time="0.053">
+  <properties/>
+  <testcase name="fromCustomStatus()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" time="0.015"/>
+  <testcase name="normal()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" time="0.021"/>
+  <testcase name="from()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" time="0.016"/>
+  <system-out><![CDATA[12:29:29.312 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "baz"
+12:29:29.329 [Test worker] DEBUG o.s.c.c.StringDecoder - my-prefixDecoded "baz"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:28:47" hostname="DESKTOP-TMNPDT1" time="13.563">
+  <properties/>
+  <testcase name="responseEntityResultHandlerWithPrimaryUsesQualifiedRequestedContentTypeResolver()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="8.269"/>
+  <testcase name="responseBodyResultHandlerUsesWebFluxInfrastructureByDefault()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.29"/>
+  <testcase name="viewResolutionResultHandlerWithPrimaryUsesQualifiedReactiveAdapterRegistry()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.281"/>
+  <testcase name="responseBodyResultHandlerWithPrimaryUsesQualifiedRequestedContentTypeResolver()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.299"/>
+  <testcase name="responseEntityResultHandlerWithPrimaryUsesQualifiedReactiveAdapterRegistry()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.198"/>
+  <testcase name="viewResolutionResultHandlerUsesWebFluxInfrastructureByDefault()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.634"/>
+  <testcase name="requestMappingHandlerAdapterWithPrimaryUsesQualifiedReactiveAdapterRegistry()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.299"/>
+  <testcase name="responseEntityResultHandlerUsesWebFluxInfrastructureByDefault()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.329"/>
+  <testcase name="requestMappingHandlerAdapterUsesWebFluxInfrastructureByDefault()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.416"/>
+  <testcase name="requestMappingHandlerAdapterWithPrimaryUsesQualifiedValidator()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.339"/>
+  <testcase name="requestMappingHandlerMappingUsesWebFluxInfrastructureByDefault()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.252"/>
+  <testcase name="requestMappingHandlerAdapterWithPrimaryUsesQualifiedConversionService()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="1.144"/>
+  <testcase name="requestMappingHandlerMappingWithPrimaryUsesQualifiedRequestedContentTypeResolver()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.289"/>
+  <testcase name="viewResolutionResultHandlerWithPrimaryUsesQualifiedRequestedContentTypeResolver()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.325"/>
+  <testcase name="responseBodyResultHandlerWithPrimaryUsesQualifiedReactiveAdapterRegistry()" classname="org.springframework.web.reactive.config.DelegatingWebFluxConfigurationIntegrationTests" time="0.182"/>
+  <system-out><![CDATA[12:28:52.432 [Test worker] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+12:28:53.752 [Test worker] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.6.Final
+12:28:55.012 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:55.552 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:55.846 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:56.087 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:56.356 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:56.828 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:57.153 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:57.535 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:57.873 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:58.327 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:58.611 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:59.597 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:28:59.996 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:29:00.379 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:29:00.513 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

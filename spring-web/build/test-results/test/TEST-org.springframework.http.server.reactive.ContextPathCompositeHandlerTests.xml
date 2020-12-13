@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:55:44" hostname="DESKTOP-TMNPDT1" time="0.019">
+  <properties/>
+  <testcase name="notFoundWithCommitAction()" classname="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" time="0.009"/>
+  <testcase name="invalidContextPath()" classname="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" time="0.001"/>
+  <testcase name="match()" classname="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" time="0.004"/>
+  <testcase name="matchWithContextPathEqualToPath()" classname="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" time="0.002"/>
+  <testcase name="notFound()" classname="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" time="0.001"/>
+  <testcase name="matchWithNativeContextPath()" classname="org.springframework.http.server.reactive.ContextPathCompositeHandlerTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

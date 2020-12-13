@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:55:27" hostname="DESKTOP-TMNPDT1" time="1.041">
+  <properties/>
+  <testcase name="customizeMarshaller()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.624"/>
+  <testcase name="readXmlRootElementExternalEntityDisabled()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.137"/>
+  <testcase name="readXmlRootElementExternalEntityEnabled()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.022"/>
+  <testcase name="canWrite()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.007"/>
+  <testcase name="writeXmlRootElementSubclass()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.086"/>
+  <testcase name="canRead()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.002"/>
+  <testcase name="customizeUnmarshaller()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.01"/>
+  <testcase name="writeXmlRootElement()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.053"/>
+  <testcase name="readXmlRootElement()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.012"/>
+  <testcase name="readXmlRootElementSubclass()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.017"/>
+  <testcase name="readXmlType()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.008"/>
+  <testcase name="testXmlBomb()" classname="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverterTests" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

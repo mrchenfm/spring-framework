@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:47" hostname="DESKTOP-TMNPDT1" time="0.658">
+  <properties/>
+  <testcase name="supports()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.056"/>
+  <testcase name="stringBody()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.048"/>
+  <testcase name="emptyBodyWithoutContentType()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.032"/>
+  <testcase name="emptyBodyWithSingle()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.06"/>
+  <testcase name="emptyBodyWithString()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.038"/>
+  <testcase name="emptyBodyWithCompletableFuture()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.132"/>
+  <testcase name="emptyBodyWithFlux()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.112"/>
+  <testcase name="emptyBodyWithMono()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.11"/>
+  <testcase name="emptyBodyWithMaybe()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.019"/>
+  <testcase name="emptyBodyWithStringNotRequired()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="emptyBodyWithObservable()" classname="org.springframework.web.reactive.result.method.annotation.RequestBodyMethodArgumentResolverTests" time="0.034"/>
+  <system-out><![CDATA[12:30:47.455 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [786b8e69] No Content-Type, using application/octet-stream
+12:30:47.455 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [786b8e69] 0..1 [java.lang.String]
+12:30:47.457 [Test worker] DEBUG o.s.c.c.StringDecoder - [786b8e69] Decoded "line1"
+12:30:47.489 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [7a89be4e] No Content-Type, using application/octet-stream
+12:30:47.496 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [387ae889] No Content-Type, using application/octet-stream
+12:30:47.496 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [387ae889] 0..1 [java.lang.String]
+12:30:47.545 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [be65422] No Content-Type, using application/octet-stream
+12:30:47.550 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [be65422] 0..1 [java.lang.String]
+12:30:47.587 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [618ccafc] No Content-Type, using application/octet-stream
+12:30:47.588 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [618ccafc] 0..1 [java.lang.String]
+12:30:47.635 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [5872d5ab] No Content-Type, using application/octet-stream
+12:30:47.635 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [5872d5ab] 0..1 [java.lang.String]
+12:30:47.657 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6e23f55e] No Content-Type, using application/octet-stream
+12:30:47.657 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6e23f55e] 0..1 [java.lang.String]
+12:30:47.797 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [225c85a8] No Content-Type, using application/octet-stream
+12:30:47.798 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [225c85a8] 0..N [java.lang.String]
+12:30:47.834 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [47be54f4] No Content-Type, using application/octet-stream
+12:30:47.834 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [47be54f4] 0..N [java.lang.String]
+12:30:47.900 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6e5f747b] No Content-Type, using application/octet-stream
+12:30:47.901 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6e5f747b] 0..1 [java.lang.String]
+12:30:47.946 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [2868dddd] No Content-Type, using application/octet-stream
+12:30:47.946 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [2868dddd] 0..1 [java.lang.String]
+12:30:47.954 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [81343e5] No Content-Type, using application/octet-stream
+12:30:47.954 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [81343e5] 0..1 [java.lang.String]
+12:30:47.965 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [12e675e1] No Content-Type, using application/octet-stream
+12:30:47.965 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [12e675e1] 0..1 [java.lang.String]
+12:30:47.970 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6d25b970] No Content-Type, using application/octet-stream
+12:30:47.970 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6d25b970] 0..1 [java.lang.String]
+12:30:47.983 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [2092d2cd] No Content-Type, using application/octet-stream
+12:30:47.983 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [2092d2cd] 0..N [java.lang.String]
+12:30:48.010 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [35f97d07] No Content-Type, using application/octet-stream
+12:30:48.010 [Test worker] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [35f97d07] 0..N [java.lang.String]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

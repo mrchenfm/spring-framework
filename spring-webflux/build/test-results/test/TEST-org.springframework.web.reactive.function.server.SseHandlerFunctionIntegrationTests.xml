@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" tests="12" skipped="0" failures="2" errors="0" timestamp="2020-12-12T04:30:41" hostname="DESKTOP-TMNPDT1" time="20.528">
+  <properties/>
+  <testcase name="sseAsEvent(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.365"/>
+  <testcase name="sseAsEvent(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.285"/>
+  <testcase name="sseAsEvent(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="7.781">
+    <failure message="java.lang.AssertionError: VerifySubscriber timed out on reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain@6221959a" type="java.lang.AssertionError">java.lang.AssertionError: VerifySubscriber timed out on reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain@6221959a
+	at reactor.test.MessageFormatter.assertionError(MessageFormatter.java:115)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.pollTaskEventOrComplete(DefaultStepVerifierBuilder.java:1684)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.verify(DefaultStepVerifierBuilder.java:1261)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultStepVerifier.verify(DefaultStepVerifierBuilder.java:825)
+	at org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests.sseAsEvent(SseHandlerFunctionIntegrationTests.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:198)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:106)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:373)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:106)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="sseAsEvent(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.459"/>
+  <testcase name="sseAsPerson(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.68"/>
+  <testcase name="sseAsPerson(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.237"/>
+  <testcase name="sseAsPerson(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="7.467">
+    <failure message="java.lang.AssertionError: VerifySubscriber timed out on reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain@741d112d" type="java.lang.AssertionError">java.lang.AssertionError: VerifySubscriber timed out on reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain@741d112d
+	at reactor.test.MessageFormatter.assertionError(MessageFormatter.java:115)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.pollTaskEventOrComplete(DefaultStepVerifierBuilder.java:1684)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.verify(DefaultStepVerifierBuilder.java:1261)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultStepVerifier.verify(DefaultStepVerifierBuilder.java:825)
+	at org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests.sseAsPerson(SseHandlerFunctionIntegrationTests.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:198)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:106)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:373)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:106)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="sseAsPerson(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.706"/>
+  <testcase name="sseAsString(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="1.038"/>
+  <testcase name="sseAsString(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.262"/>
+  <testcase name="sseAsString(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.938"/>
+  <testcase name="sseAsString(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.SseHandlerFunctionIntegrationTests" time="0.287"/>
+  <system-out><![CDATA[12:30:41.183 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:41.184 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:41.185 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@54a52d5{/,null,AVAILABLE}
+12:30:41.185 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:41.186 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:41.210 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@4ddccfc5{HTTP/1.1, (http/1.1)}{0.0.0.0:49163}
+12:30:41.211 [Test worker] INFO  o.e.j.s.Server - Started @128902ms
+12:30:41.211 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49163(0 millis).
+12:30:41.213 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [32a26eb7] HTTP GET http://localhost:49163/event
+12:30:41.275 [qtp502507155-319] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [a76fb0] HTTP GET "/event"
+12:30:41.406 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [32a26eb7] Response 200 OK
+12:30:41.420 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded "id:0"
+12:30:41.421 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded ":bar"
+12:30:41.421 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded "data:foo"
+12:30:41.421 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded ""
+12:30:41.491 [parallel-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [a76fb0] Completed 200 OK
+12:30:41.491 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded "id:1"
+12:30:41.491 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded ":bar"
+12:30:41.491 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded "data:foo"
+12:30:41.492 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [32a26eb7] Decoded ""
+12:30:41.493 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:30:41.493 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@54a52d5{/,null,UNAVAILABLE}
+12:30:41.497 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@4ddccfc5{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:30:41.506 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:41.555 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:41.556 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:41.559 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49169(0 millis).
+12:30:41.559 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [422583d0] HTTP GET http://localhost:49169/event
+12:30:41.570 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1a3ce40b-11] HTTP GET "/event"
+12:30:41.728 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [422583d0] Response 200 OK
+12:30:41.733 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded "id:0"
+12:30:41.733 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded ":bar"
+12:30:41.733 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded "data:foo"
+12:30:41.733 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded ""
+12:30:41.786 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded "id:1"
+12:30:41.786 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded ":bar"
+12:30:41.786 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded "data:foo"
+12:30:41.786 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [422583d0] Decoded ""
+12:30:41.790 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1a3ce40b-11] Completed 200 OK
+12:30:41.792 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:41.794 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:41.821 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:41.823 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:41.857 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49171(0 millis).
+12:30:41.858 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [74a864ea] HTTP GET http://localhost:49171/event
+12:30:48.256 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:48.270 [reactor-http-nio-1] WARN  r.n.h.c.HttpClientConnect - [id: 0xb3b33e5b, L:/127.0.0.1:49220 - R:localhost/127.0.0.1:49171] The connection observed an error
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:821) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:635) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:30:49.573 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:49.656 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:49.656 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:49.656 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:49.735 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49240(0 millis).
+12:30:49.736 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [3d841550] HTTP GET http://localhost:49240/event
+12:30:49.821 [XNIO-11 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7910e2f5] HTTP GET "/event"
+12:30:49.926 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [3d841550] Response 200 OK
+12:30:49.927 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded "id:0"
+12:30:49.928 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded ":bar"
+12:30:49.928 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded "data:foo"
+12:30:49.928 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded ""
+12:30:50.024 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded "id:1"
+12:30:50.025 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded ":bar"
+12:30:50.025 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded "data:foo"
+12:30:50.025 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [3d841550] Decoded ""
+12:30:50.027 [parallel-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7910e2f5] Completed 200 OK
+12:30:50.028 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:50.028 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:50.035 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:30:50.168 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:50.168 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:50.183 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@5948e01d{/,null,AVAILABLE}
+12:30:50.183 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:50.184 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:50.345 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@6717b4fb{HTTP/1.1, (http/1.1)}{0.0.0.0:49248}
+12:30:50.346 [Test worker] INFO  o.e.j.s.Server - Started @138037ms
+12:30:50.347 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49248(0 millis).
+12:30:50.350 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1c53b019] HTTP GET http://localhost:49248/person
+12:30:50.404 [qtp1391661129-350] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [65663963] HTTP GET "/person"
+12:30:50.573 [parallel-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [65663963] Encoding [Person{name='foo 0'}]
+12:30:50.591 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1c53b019] Response 200 OK
+12:30:50.595 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [1c53b019] Decoded "data:{"name":"foo 0"}"
+12:30:50.595 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [1c53b019] Decoded ""
+12:30:50.595 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1c53b019] Decoded [Person{name='foo 0'}]
+12:30:50.633 [parallel-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [65663963] Encoding [Person{name='foo 1'}]
+12:30:50.638 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [1c53b019] Decoded "data:{"name":"foo 1"}"
+12:30:50.638 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [1c53b019] Decoded ""
+12:30:50.638 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1c53b019] Decoded [Person{name='foo 1'}]
+12:30:50.655 [parallel-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [65663963] Completed 200 OK
+12:30:50.656 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:30:50.656 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5948e01d{/,null,UNAVAILABLE}
+12:30:50.661 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@6717b4fb{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:30:50.711 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:50.748 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:50.748 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:50.750 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49254(0 millis).
+12:30:50.750 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [8336b43] HTTP GET http://localhost:49254/person
+12:30:50.756 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [db800ed2-12] HTTP GET "/person"
+12:30:50.908 [parallel-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [db800ed2-12] Encoding [Person{name='foo 0'}]
+12:30:50.922 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [8336b43] Response 200 OK
+12:30:50.929 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [8336b43] Decoded "data:{"name":"foo 0"}"
+12:30:50.929 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [8336b43] Decoded ""
+12:30:50.929 [reactor-http-nio-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [8336b43] Decoded [Person{name='foo 0'}]
+12:30:50.957 [parallel-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [db800ed2-12] Encoding [Person{name='foo 1'}]
+12:30:50.959 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [db800ed2-12] Completed 200 OK
+12:30:50.960 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [8336b43] Decoded "data:{"name":"foo 1"}"
+12:30:50.960 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [8336b43] Decoded ""
+12:30:50.960 [reactor-http-nio-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [8336b43] Decoded [Person{name='foo 1'}]
+12:30:50.961 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:50.961 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:50.996 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:50.997 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:51.036 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49256(0 millis).
+12:30:51.040 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [547f3c0e] HTTP GET http://localhost:49256/person
+12:30:58.379 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:58.424 [reactor-http-nio-3] WARN  r.n.h.c.HttpClientConnect - [id: 0x4858d43b, L:/127.0.0.1:49358 - R:localhost/127.0.0.1:49256] The connection observed an error
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:821) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:635) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+12:30:58.429 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:58.449 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:58.449 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:58.449 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:58.465 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49369(0 millis).
+12:30:58.467 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [d786732] HTTP GET http://localhost:49369/person
+12:30:58.695 [XNIO-12 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1d5a3d82] HTTP GET "/person"
+12:30:58.869 [parallel-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [1d5a3d82] Encoding [Person{name='foo 0'}]
+12:30:58.887 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [d786732] Response 200 OK
+12:30:58.890 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [d786732] Decoded "data:{"name":"foo 0"}"
+12:30:58.890 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [d786732] Decoded ""
+12:30:58.890 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [d786732] Decoded [Person{name='foo 0'}]
+12:30:59.016 [parallel-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [1d5a3d82] Encoding [Person{name='foo 1'}]
+12:30:59.046 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [d786732] Decoded "data:{"name":"foo 1"}"
+12:30:59.046 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [d786732] Decoded ""
+12:30:59.047 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [d786732] Decoded [Person{name='foo 1'}]
+12:30:59.130 [parallel-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1d5a3d82] Completed 200 OK
+12:30:59.132 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:59.132 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:59.136 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:30:59.194 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:59.213 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:59.214 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@4ba1a5a1{/,null,AVAILABLE}
+12:30:59.214 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:59.215 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:59.283 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@3f9a1d09{HTTP/1.1, (http/1.1)}{0.0.0.0:49371}
+12:30:59.283 [Test worker] INFO  o.e.j.s.Server - Started @146974ms
+12:30:59.283 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 49371(0 millis).
+12:30:59.284 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [51c81ee5] HTTP GET http://localhost:49371/string
+12:30:59.289 [qtp1634558108-381] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [73909364] HTTP GET "/string"
+12:30:59.457 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [51c81ee5] Response 200 OK
+12:30:59.458 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [51c81ee5] Decoded "data:foo 0"
+12:30:59.458 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [51c81ee5] Decoded ""
+12:30:59.780 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [51c81ee5] Decoded "data:foo 1"
+12:30:59.780 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [51c81ee5] Decoded ""
+12:31:00.059 [parallel-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [73909364] Completed 200 OK
+12:31:00.071 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:00.071 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4ba1a5a1{/,null,UNAVAILABLE}
+12:31:00.082 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@3f9a1d09{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:00.169 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:00.199 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:00.199 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:00.203 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 49377(0 millis).
+12:31:00.205 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [74df0c6] HTTP GET http://localhost:49377/string
+12:31:00.214 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [15210535-13] HTTP GET "/string"
+12:31:00.348 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [74df0c6] Response 200 OK
+12:31:00.350 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [74df0c6] Decoded "data:foo 0"
+12:31:00.350 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [74df0c6] Decoded ""
+12:31:00.434 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [74df0c6] Decoded "data:foo 1"
+12:31:00.434 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [74df0c6] Decoded ""
+12:31:00.437 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [15210535-13] Completed 200 OK
+12:31:00.438 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:00.440 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:00.475 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:00.476 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:00.494 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 49379(0 millis).
+12:31:00.495 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4986b6c1] HTTP GET http://localhost:49379/string
+12:31:00.521 [http-nio-auto-13-exec-9] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1810e1ec] HTTP GET "/string"
+12:31:00.678 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4986b6c1] Response 200 OK
+12:31:00.679 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [4986b6c1] Decoded "data:foo 0"
+12:31:00.679 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [4986b6c1] Decoded ""
+12:31:00.771 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [4986b6c1] Decoded "data:foo 1"
+12:31:00.771 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [4986b6c1] Decoded ""
+12:31:00.772 [parallel-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1810e1ec] Completed 200 OK
+12:31:00.776 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:01.380 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:01.403 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:01.403 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:01.403 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:01.421 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 49406(0 millis).
+12:31:01.425 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [44d38862] HTTP GET http://localhost:49406/string
+12:31:01.441 [XNIO-13 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [15069947] HTTP GET "/string"
+12:31:01.561 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [44d38862] Response 200 OK
+12:31:01.562 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [44d38862] Decoded "data:foo 0"
+12:31:01.562 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [44d38862] Decoded ""
+12:31:01.659 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [44d38862] Decoded "data:foo 1"
+12:31:01.660 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [44d38862] Decoded ""
+12:31:01.662 [parallel-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [15069947] Completed 200 OK
+12:31:01.663 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:01.663 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:01.668 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:54:51" hostname="DESKTOP-TMNPDT1" time="1.259">
+  <properties/>
+  <testcase name="headersAfterExecute()" classname="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" time="0.492"/>
+  <testcase name="status()" classname="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" time="0.11"/>
+  <testcase name="echo()" classname="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" time="0.271"/>
+  <testcase name="multipleWrites()" classname="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" time="0.094"/>
+  <testcase name="queryParameters()" classname="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" time="0.081"/>
+  <testcase name="httpMethods()" classname="org.springframework.http.client.NoOutputStreamingBufferedSimpleHttpRequestFactoryTests" time="0.208"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[十二月 12, 2020 3:54:51 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[59030] starting to accept connections
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59030] received request: POST /status/ok HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[59030] done accepting connections: socket closed
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[59032] starting to accept connections
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59032] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[59032] done accepting connections: socket closed
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[59034] starting to accept connections
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59034] received request: PUT /echo HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[59034] done accepting connections: socket closed
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[59036] starting to accept connections
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[59036] done accepting connections: Socket is closed
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[59038] starting to accept connections
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59038] received request: GET /params?param1=value&param2=value1&param2=value2 HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[59038] done accepting connections: socket closed
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[59040] starting to accept connections
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59040] received request: GET /methods/get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59040] received request: HEAD /methods/head HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59040] received request: POST /methods/post HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59040] received request: PUT /methods/put HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59040] received request: OPTIONS /methods/options HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[59040] received request: DELETE /methods/delete HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:54:52 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[59040] done accepting connections: socket closed
+]]></system-err>
+</testsuite>

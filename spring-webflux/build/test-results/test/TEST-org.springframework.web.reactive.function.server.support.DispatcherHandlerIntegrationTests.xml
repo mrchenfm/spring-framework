@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:04" hostname="DESKTOP-TMNPDT1" time="10.145">
+  <properties/>
+  <testcase name="nested(HttpServer)[1]" classname="org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests" time="1.81"/>
+  <testcase name="nested(HttpServer)[2]" classname="org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests" time="0.203"/>
+  <testcase name="nested(HttpServer)[3]" classname="org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests" time="7.56"/>
+  <testcase name="nested(HttpServer)[4]" classname="org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests" time="0.402"/>
+  <system-out><![CDATA[12:30:04.444 [Test worker] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 1 RouterFunction(s) in 'routerFunctionMapping'
+12:30:04.560 [Test worker] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.6.Final
+12:30:05.992 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:06.049 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:06.049 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:30:06.049 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@4d1e838{/,null,AVAILABLE}
+12:30:06.050 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:30:06.050 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:30:06.076 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@5a6ffd97{HTTP/1.1, (http/1.1)}{0.0.0.0:65163}
+12:30:06.076 [Test worker] INFO  o.e.j.s.Server - Started @93777ms
+12:30:06.076 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65163(0 millis).
+12:30:06.077 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65163/foo/bar
+12:30:06.077 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:06.083 [qtp674906407-316] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1be41bdf] HTTP GET "/foo/bar"
+12:30:06.085 [qtp674906407-316] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - [1be41bdf] Mapped to org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests$TestConfiguration$$Lambda$1195/1630961885@6f1f2f57
+12:30:06.087 [qtp674906407-316] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1be41bdf] Completed 200 OK
+12:30:06.088 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:06.089 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:30:06.089 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4d1e838{/,null,UNAVAILABLE}
+12:30:06.092 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@5a6ffd97{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:30:06.094 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:30:06.209 [Test worker] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 1 RouterFunction(s) in 'routerFunctionMapping'
+12:30:06.269 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:06.311 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:06.311 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:30:06.313 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65170(0 millis).
+12:30:06.314 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65170/foo/bar
+12:30:06.314 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:06.318 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [dc4f85f8-7] HTTP GET "/foo/bar"
+12:30:06.318 [reactor-http-nio-2] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - [dc4f85f8-7] Mapped to org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests$TestConfiguration$$Lambda$1195/1630961885@250d1222
+12:30:06.319 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [dc4f85f8-7] Completed 200 OK
+12:30:06.320 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:06.320 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:30:06.321 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:30:06.392 [Test worker] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 1 RouterFunction(s) in 'routerFunctionMapping'
+12:30:06.423 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:06.517 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:06.518 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:30:06.560 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65172(0 millis).
+12:30:06.561 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65172/foo/bar
+12:30:06.561 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:12.838 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [65464507] HTTP GET "/foo/bar"
+12:30:12.839 [http-nio-auto-7-exec-1] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - [65464507] Mapped to org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests$TestConfiguration$$Lambda$1195/1630961885@6b81b7df
+12:30:12.841 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [65464507] Completed 200 OK
+12:30:12.842 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:12.844 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:30:13.904 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:30:14.181 [Test worker] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 1 RouterFunction(s) in 'routerFunctionMapping'
+12:30:14.239 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:30:14.393 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:30:14.394 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:30:14.394 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:30:14.413 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65243(0 millis).
+12:30:14.413 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:65243/foo/bar
+12:30:14.415 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+12:30:14.424 [XNIO-7 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [213b28b3] HTTP GET "/foo/bar"
+12:30:14.425 [XNIO-7 I/O-2] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - [213b28b3] Mapped to org.springframework.web.reactive.function.server.support.DispatcherHandlerIntegrationTests$TestConfiguration$$Lambda$1195/1630961885@2504b84c
+12:30:14.425 [XNIO-7 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [213b28b3] Completed 200 OK
+12:30:14.426 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+12:30:14.426 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:30:14.426 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:30:14.429 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

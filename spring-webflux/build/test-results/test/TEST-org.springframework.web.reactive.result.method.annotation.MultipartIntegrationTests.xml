@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" tests="28" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:31:47" hostname="DESKTOP-TMNPDT1" time="21.705">
+  <properties/>
+  <testcase name="requestBodyMap(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="2.227"/>
+  <testcase name="requestBodyMap(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.358"/>
+  <testcase name="requestBodyMap(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="5.399"/>
+  <testcase name="requestBodyMap(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.439"/>
+  <testcase name="transferTo(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.779"/>
+  <testcase name="transferTo(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.365"/>
+  <testcase name="transferTo(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="2.067"/>
+  <testcase name="transferTo(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.203"/>
+  <testcase name="modelAttribute(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.182"/>
+  <testcase name="modelAttribute(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.201"/>
+  <testcase name="modelAttribute(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.684"/>
+  <testcase name="modelAttribute(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.283"/>
+  <testcase name="requestBodyFlux(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.186"/>
+  <testcase name="requestBodyFlux(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.171"/>
+  <testcase name="requestBodyFlux(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.965"/>
+  <testcase name="requestBodyFlux(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.618"/>
+  <testcase name="requestPart(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.146"/>
+  <testcase name="requestPart(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.128"/>
+  <testcase name="requestPart(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.715"/>
+  <testcase name="requestPart(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.498"/>
+  <testcase name="filePartsFlux(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.255"/>
+  <testcase name="filePartsFlux(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.18"/>
+  <testcase name="filePartsFlux(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="2.495"/>
+  <testcase name="filePartsFlux(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.392"/>
+  <testcase name="filePartsMono(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.156"/>
+  <testcase name="filePartsMono(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.167"/>
+  <testcase name="filePartsMono(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.86"/>
+  <testcase name="filePartsMono(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests" time="0.543"/>
+  <system-out><![CDATA[12:31:47.438 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:47.571 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:47.637 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:47.638 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:47.640 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@7d1ea04{/,null,AVAILABLE}
+12:31:47.640 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:47.645 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:47.664 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@2018eee4{HTTP/1.1, (http/1.1)}{0.0.0.0:50325}
+12:31:47.665 [Test worker] INFO  o.e.j.s.Server - Started @194728ms
+12:31:47.665 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50325(0 millis).
+12:31:47.670 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [795a6eb4] HTTP POST http://localhost:50325/requestBodyMap
+12:31:47.674 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [795a6eb4] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:48.810 [qtp2114822870-1134] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5bd3301b] HTTP POST "/requestBodyMap"
+12:31:48.811 [qtp2114822870-1134] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [5bd3301b] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyMap(Mono)
+12:31:48.905 [qtp2114822870-1134] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [5bd3301b] Content-Type:multipart/form-data;boundary=vEo839o28Ndtg_8y_3MwC2DnPNmXH2n;charset=UTF-8
+12:31:48.906 [qtp2114822870-1134] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [5bd3301b] 0..1 [org.springframework.util.MultiValueMap<java.lang.String, org.springframework.http.codec.multipart.Part>]
+12:31:48.909 [qtp2114822870-1134] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:48.909 [qtp2114822870-1134] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [5bd3301b] 0..1 [java.lang.String]
+12:31:49.486 [qtp2114822870-1134] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [5bd3301b] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:49.520 [qtp2114822870-1134] DEBUG o.s.c.c.CharSequenceEncoder - [5bd3301b] Writing "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:49.521 [qtp2114822870-1134] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5bd3301b] Completed 200 OK
+12:31:49.522 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [795a6eb4] Response 200 OK
+12:31:49.523 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [795a6eb4] Decoded "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:49.524 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:49.524 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7d1ea04{/,null,UNAVAILABLE}
+12:31:49.527 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@2018eee4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:49.532 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:49.558 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:49.613 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:49.644 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:49.645 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:49.662 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50331(0 millis).
+12:31:49.667 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [30ab5f94] HTTP POST http://localhost:50331/requestBodyMap
+12:31:49.685 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [30ab5f94] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:49.700 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bdfbe790-21] HTTP POST "/requestBodyMap"
+12:31:49.701 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [bdfbe790-21] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyMap(Mono)
+12:31:49.702 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [bdfbe790-21] Content-Type:multipart/form-data;boundary=ax-V161RisOzVqs61HuMExuoXHXCPXIN1TG;charset=UTF-8
+12:31:49.702 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [bdfbe790-21] 0..1 [org.springframework.util.MultiValueMap<java.lang.String, org.springframework.http.codec.multipart.Part>]
+12:31:49.703 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:49.703 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [bdfbe790-21] 0..1 [java.lang.String]
+12:31:49.835 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [bdfbe790-21] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:49.835 [reactor-http-nio-1] DEBUG o.s.c.c.CharSequenceEncoder - [bdfbe790-21] Writing "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:49.864 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [30ab5f94] Response 200 OK
+12:31:49.865 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [30ab5f94] Decoded "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:49.867 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bdfbe790-21] Completed 200 OK
+12:31:49.891 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:49.892 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:49.935 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:49.993 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:50.046 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:50.049 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:53.387 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50373(0 millis).
+12:31:53.388 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6b18e389] HTTP POST http://localhost:50373/requestBodyMap
+12:31:53.619 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [6b18e389] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:53.642 [http-nio-auto-20-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [45727ecc] HTTP POST "/requestBodyMap"
+12:31:53.642 [http-nio-auto-20-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [45727ecc] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyMap(Mono)
+12:31:53.643 [http-nio-auto-20-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [45727ecc] Content-Type:multipart/form-data;boundary=eJV9Xg7Tv9mAuoXQf7RPRENGjeZ7WQK950A;charset=UTF-8
+12:31:53.643 [http-nio-auto-20-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [45727ecc] 0..1 [org.springframework.util.MultiValueMap<java.lang.String, org.springframework.http.codec.multipart.Part>]
+12:31:53.644 [http-nio-auto-20-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:53.644 [http-nio-auto-20-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [45727ecc] 0..1 [java.lang.String]
+12:31:53.760 [http-nio-auto-20-exec-8] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [45727ecc] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:53.760 [http-nio-auto-20-exec-8] DEBUG o.s.c.c.CharSequenceEncoder - [45727ecc] Writing "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:53.761 [http-nio-auto-20-exec-8] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [45727ecc] Completed 200 OK
+12:31:53.761 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6b18e389] Response 200 OK
+12:31:54.414 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [6b18e389] Decoded "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:54.416 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:55.291 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:55.410 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:55.468 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:55.581 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:55.582 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:55.582 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:55.605 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50445(0 millis).
+12:31:55.607 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [300bc818] HTTP POST http://localhost:50445/requestBodyMap
+12:31:55.610 [reactor-http-nio-3] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [300bc818] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:55.654 [XNIO-19 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3d7f7132] HTTP POST "/requestBodyMap"
+12:31:55.655 [XNIO-19 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [3d7f7132] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyMap(Mono)
+12:31:55.656 [XNIO-19 I/O-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [3d7f7132] Content-Type:multipart/form-data;boundary=yLvPD7q6AN6rUYlbwpyTcmfA6bKNU3nkODk;charset=UTF-8
+12:31:55.656 [XNIO-19 I/O-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [3d7f7132] 0..1 [org.springframework.util.MultiValueMap<java.lang.String, org.springframework.http.codec.multipart.Part>]
+12:31:55.657 [XNIO-19 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:55.657 [XNIO-19 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [3d7f7132] 0..1 [java.lang.String]
+12:31:55.696 [XNIO-19 I/O-2] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [3d7f7132] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:55.696 [XNIO-19 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [3d7f7132] Writing "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:55.698 [XNIO-19 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3d7f7132] Completed 200 OK
+12:31:55.699 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [300bc818] Response 200 OK
+12:31:55.699 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [300bc818] Decoded "Map[[fieldPart],[fileParts:foo.txt,fileParts:logo.png],[jsonPart]]"
+12:31:55.718 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:55.718 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:55.731 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:55.790 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:55.981 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:56.061 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:56.065 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:56.066 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@654d46d7{/,null,AVAILABLE}
+12:31:56.067 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:56.067 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:56.304 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@3b76b1dd{HTTP/1.1, (http/1.1)}{0.0.0.0:50447}
+12:31:56.304 [Test worker] INFO  o.e.j.s.Server - Started @203367ms
+12:31:56.304 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50447(0 millis).
+12:31:56.317 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [3ce1b405] HTTP POST http://localhost:50447/transferTo
+12:31:56.387 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [3ce1b405] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:56.452 [qtp1300759635-1165] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [20a8daef] HTTP POST "/transferTo"
+12:31:56.453 [qtp1300759635-1165] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [20a8daef] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#transferTo(Flux)
+12:31:56.461 [qtp1300759635-1165] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:56.461 [qtp1300759635-1165] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [20a8daef] 0..N [java.lang.String]
+12:31:56.474 [qtp1300759635-1165] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [20a8daef] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:56.483 [qtp1300759635-1165] DEBUG o.s.c.c.CharSequenceEncoder - [20a8daef] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests3833993581051374688foo.txt
+"
+12:31:56.484 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [3ce1b405] Response 200 OK
+12:31:56.486 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [3ce1b405] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests3833993581051374688foo.txt"
+12:31:56.505 [qtp1300759635-1165] DEBUG o.s.c.c.CharSequenceEncoder - [20a8daef] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests4704513632016642348logo.png
+"
+12:31:56.506 [qtp1300759635-1165] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [20a8daef] Completed 200 OK
+12:31:56.507 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [3ce1b405] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests4704513632016642348logo.png"
+12:31:56.508 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:56.509 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@654d46d7{/,null,UNAVAILABLE}
+12:31:56.510 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@3b76b1dd{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:56.512 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:56.526 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:56.560 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:56.661 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:56.662 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:56.664 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50453(0 millis).
+12:31:56.666 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7b300894] HTTP POST http://localhost:50453/transferTo
+12:31:56.669 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [7b300894] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:56.680 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [913fdb64-22] HTTP POST "/transferTo"
+12:31:56.680 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [913fdb64-22] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#transferTo(Flux)
+12:31:56.682 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:56.682 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [913fdb64-22] 0..N [java.lang.String]
+12:31:56.803 [reactor-http-nio-3] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [913fdb64-22] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:56.862 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [913fdb64-22] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests8528094888319151926foo.txt
+"
+12:31:56.864 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7b300894] Response 200 OK
+12:31:56.867 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [913fdb64-22] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests1367442015456986759logo.png
+"
+12:31:56.869 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [7b300894] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests8528094888319151926foo.txt"
+12:31:56.871 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [7b300894] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests1367442015456986759logo.png"
+12:31:56.872 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [913fdb64-22] Completed 200 OK
+12:31:56.873 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:56.879 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:56.915 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:56.962 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:56.998 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:56.999 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:57.056 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50455(0 millis).
+12:31:57.058 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [34e2e46c] HTTP POST http://localhost:50455/transferTo
+12:31:57.522 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [34e2e46c] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:57.599 [http-nio-auto-21-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [34d3bbd9] HTTP POST "/transferTo"
+12:31:57.600 [http-nio-auto-21-exec-10] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [34d3bbd9] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#transferTo(Flux)
+12:31:57.603 [http-nio-auto-21-exec-10] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:57.603 [http-nio-auto-21-exec-10] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [34d3bbd9] 0..N [java.lang.String]
+12:31:57.679 [http-nio-auto-21-exec-10] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [34d3bbd9] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:58.023 [http-nio-auto-21-exec-10] DEBUG o.s.c.c.CharSequenceEncoder - [34d3bbd9] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests4370934241836389838foo.txt
+"
+12:31:58.106 [http-nio-auto-21-exec-10] DEBUG o.s.c.c.CharSequenceEncoder - [34d3bbd9] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests1778804304348937843logo.png
+"
+12:31:58.107 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [34e2e46c] Response 200 OK
+12:31:58.109 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [34e2e46c] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests4370934241836389838foo.txt"
+12:31:58.111 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [34e2e46c] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests1778804304348937843logo.png"
+12:31:58.112 [http-nio-auto-21-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [34d3bbd9] Completed 200 OK
+12:31:58.139 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:31:58.955 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:31:58.989 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:59.024 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:59.055 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:59.055 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:31:59.056 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:31:59.076 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50512(0 millis).
+12:31:59.077 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5abfbd89] HTTP POST http://localhost:50512/transferTo
+12:31:59.108 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [5abfbd89] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.124 [XNIO-20 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [17999007] HTTP POST "/transferTo"
+12:31:59.124 [XNIO-20 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [17999007] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#transferTo(Flux)
+12:31:59.125 [XNIO-20 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:59.125 [XNIO-20 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [17999007] 0..N [java.lang.String]
+12:31:59.139 [XNIO-20 I/O-2] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [17999007] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.142 [XNIO-20 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [17999007] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests7181868827714997661foo.txt
+"
+12:31:59.145 [XNIO-20 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [17999007] Writing "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests3103227129798309583logo.png
+"
+12:31:59.145 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5abfbd89] Response 200 OK
+12:31:59.145 [XNIO-20 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [17999007] Completed 200 OK
+12:31:59.147 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [5abfbd89] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests7181868827714997661foo.txt"
+12:31:59.149 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [5abfbd89] Decoded "C:\Users\Admin\AppData\Local\Temp\MultipartIntegrationTests3103227129798309583logo.png"
+12:31:59.151 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:31:59.151 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:31:59.157 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:31:59.173 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:59.208 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:59.245 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:59.245 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:31:59.246 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@1598c93f{/,null,AVAILABLE}
+12:31:59.246 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:31:59.246 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:31:59.251 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@e5ba252{HTTP/1.1, (http/1.1)}{0.0.0.0:50520}
+12:31:59.251 [Test worker] INFO  o.e.j.s.Server - Started @206314ms
+12:31:59.251 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50520(0 millis).
+12:31:59.252 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2a00a151] HTTP POST http://localhost:50520/modelAttribute
+12:31:59.254 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [2a00a151] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.283 [qtp1947423209-1192] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [23d0af26] HTTP POST "/modelAttribute"
+12:31:59.285 [qtp1947423209-1192] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [23d0af26] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#modelAttribute(FormBean)
+12:31:59.302 [qtp1947423209-1192] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [23d0af26] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.331 [qtp1947423209-1192] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:59.331 [qtp1947423209-1192] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [23d0af26] 0..1 [java.lang.String]
+12:31:59.331 [qtp1947423209-1192] DEBUG o.s.c.c.CharSequenceEncoder - [23d0af26] Writing "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:31:59.334 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2a00a151] Response 200 OK
+12:31:59.335 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [2a00a151] Decoded "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:31:59.335 [qtp1947423209-1192] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [23d0af26] Completed 200 OK
+12:31:59.336 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:31:59.337 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1598c93f{/,null,UNAVAILABLE}
+12:31:59.340 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@e5ba252{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:31:59.341 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:31:59.367 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:59.411 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:59.466 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:59.466 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:31:59.471 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50529(0 millis).
+12:31:59.472 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [466d7f28] HTTP POST http://localhost:50529/modelAttribute
+12:31:59.488 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [466d7f28] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.495 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [102968a6-23] HTTP POST "/modelAttribute"
+12:31:59.496 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [102968a6-23] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#modelAttribute(FormBean)
+12:31:59.536 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [102968a6-23] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.540 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:59.540 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [102968a6-23] 0..1 [java.lang.String]
+12:31:59.541 [reactor-http-nio-1] DEBUG o.s.c.c.CharSequenceEncoder - [102968a6-23] Writing "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:31:59.542 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [102968a6-23] Completed 200 OK
+12:31:59.542 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [466d7f28] Response 200 OK
+12:31:59.543 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [466d7f28] Decoded "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:31:59.543 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:31:59.544 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:31:59.559 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:31:59.609 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:31:59.655 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:31:59.656 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:31:59.674 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50537(0 millis).
+12:31:59.675 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [202dec41] HTTP POST http://localhost:50537/modelAttribute
+12:31:59.678 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [202dec41] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.742 [http-nio-auto-22-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c0b7dbf] HTTP POST "/modelAttribute"
+12:31:59.743 [http-nio-auto-22-exec-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4c0b7dbf] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#modelAttribute(FormBean)
+12:31:59.752 [http-nio-auto-22-exec-2] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [4c0b7dbf] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:31:59.754 [http-nio-auto-22-exec-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:31:59.754 [http-nio-auto-22-exec-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [4c0b7dbf] 0..1 [java.lang.String]
+12:31:59.754 [http-nio-auto-22-exec-2] DEBUG o.s.c.c.CharSequenceEncoder - [4c0b7dbf] Writing "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:31:59.755 [http-nio-auto-22-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c0b7dbf] Completed 200 OK
+12:31:59.756 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [202dec41] Response 200 OK
+12:31:59.757 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [202dec41] Decoded "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:31:59.757 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:00.229 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:00.267 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:00.313 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:00.351 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.351 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:00.351 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:00.371 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50586(0 millis).
+12:32:00.373 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2c7551eb] HTTP POST http://localhost:50586/modelAttribute
+12:32:00.448 [reactor-http-nio-3] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [2c7551eb] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:00.466 [XNIO-21 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5280f2d3] HTTP POST "/modelAttribute"
+12:32:00.467 [XNIO-21 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [5280f2d3] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#modelAttribute(FormBean)
+12:32:00.485 [XNIO-21 I/O-2] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [5280f2d3] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:00.500 [XNIO-21 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:00.500 [XNIO-21 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [5280f2d3] 0..1 [java.lang.String]
+12:32:00.500 [XNIO-21 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [5280f2d3] Writing "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:32:00.501 [XNIO-21 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5280f2d3] Completed 200 OK
+12:32:00.501 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2c7551eb] Response 200 OK
+12:32:00.502 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [2c7551eb] Decoded "FormBean[fieldValue,[fileParts:foo.txt,fileParts:logo.png]]"
+12:32:00.502 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:00.502 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:00.513 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:00.529 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:00.575 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:00.616 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.616 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:00.621 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@526e311{/,null,AVAILABLE}
+12:32:00.621 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:00.621 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:00.634 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@ac99101{HTTP/1.1, (http/1.1)}{0.0.0.0:50600}
+12:32:00.634 [Test worker] INFO  o.e.j.s.Server - Started @207696ms
+12:32:00.634 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50600(0 millis).
+12:32:00.635 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4b729ce] HTTP POST http://localhost:50600/requestBodyFlux
+12:32:00.639 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [4b729ce] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:00.676 [qtp1587603365-1223] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4bf163c8] HTTP POST "/requestBodyFlux"
+12:32:00.677 [qtp1587603365-1223] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4bf163c8] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyFlux(Flux)
+12:32:00.680 [qtp1587603365-1223] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [4bf163c8] Content-Type:multipart/form-data;boundary=iiQ0OtLGfHd9r9JWaijZpz9zXyJyU1AWA;charset=UTF-8
+12:32:00.681 [qtp1587603365-1223] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [4bf163c8] 0..N [org.springframework.http.codec.multipart.Part]
+12:32:00.683 [qtp1587603365-1223] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:00.683 [qtp1587603365-1223] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [4bf163c8] 0..1 [java.lang.String]
+12:32:00.685 [qtp1587603365-1223] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [4bf163c8] Parsed parts 'fieldPart' (content masked)
+12:32:00.685 [qtp1587603365-1223] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [4bf163c8] Parsed parts 'fileParts' (content masked)
+12:32:00.692 [qtp1587603365-1223] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [4bf163c8] Parsed parts 'fileParts' (content masked)
+12:32:00.692 [qtp1587603365-1223] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [4bf163c8] Parsed parts 'jsonPart' (content masked)
+12:32:00.693 [qtp1587603365-1223] DEBUG o.s.c.c.CharSequenceEncoder - [4bf163c8] Writing "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:00.693 [qtp1587603365-1223] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4bf163c8] Completed 200 OK
+12:32:00.693 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4b729ce] Response 200 OK
+12:32:00.694 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [4b729ce] Decoded "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:00.696 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:00.696 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@526e311{/,null,UNAVAILABLE}
+12:32:00.699 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@ac99101{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:00.700 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:00.729 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:00.762 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:00.813 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:00.813 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:00.815 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50606(0 millis).
+12:32:00.816 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1d9b5924] HTTP POST http://localhost:50606/requestBodyFlux
+12:32:00.818 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [1d9b5924] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:00.827 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [80bbee28-24] HTTP POST "/requestBodyFlux"
+12:32:00.827 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [80bbee28-24] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyFlux(Flux)
+12:32:00.828 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [80bbee28-24] Content-Type:multipart/form-data;boundary=EDvX4v7t1Luk4n7WdKZDI49IZvtiSWmY;charset=UTF-8
+12:32:00.828 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [80bbee28-24] 0..N [org.springframework.http.codec.multipart.Part]
+12:32:00.829 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:00.829 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [80bbee28-24] 0..1 [java.lang.String]
+12:32:00.830 [reactor-http-nio-3] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [80bbee28-24] Parsed parts 'fieldPart' (content masked)
+12:32:00.830 [reactor-http-nio-3] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [80bbee28-24] Parsed parts 'fileParts' (content masked)
+12:32:00.861 [reactor-http-nio-3] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [80bbee28-24] Parsed parts 'fileParts' (content masked)
+12:32:00.861 [reactor-http-nio-3] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [80bbee28-24] Parsed parts 'jsonPart' (content masked)
+12:32:00.861 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [80bbee28-24] Writing "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:00.863 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [80bbee28-24] Completed 200 OK
+12:32:00.863 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1d9b5924] Response 200 OK
+12:32:00.863 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [1d9b5924] Decoded "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:00.868 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:00.871 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:00.892 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:00.993 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:01.044 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.045 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:01.078 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50621(0 millis).
+12:32:01.079 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1241c248] HTTP POST http://localhost:50621/requestBodyFlux
+12:32:01.232 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [1241c248] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:01.435 [http-nio-auto-23-exec-9] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3a3e2202] HTTP POST "/requestBodyFlux"
+12:32:01.435 [http-nio-auto-23-exec-9] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [3a3e2202] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyFlux(Flux)
+12:32:01.436 [http-nio-auto-23-exec-9] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [3a3e2202] Content-Type:multipart/form-data;boundary=s28yrjo_zM6111U4UYC5xUjBYRIBWG7ch;charset=UTF-8
+12:32:01.436 [http-nio-auto-23-exec-9] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [3a3e2202] 0..N [org.springframework.http.codec.multipart.Part]
+12:32:01.437 [http-nio-auto-23-exec-9] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:01.437 [http-nio-auto-23-exec-9] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [3a3e2202] 0..1 [java.lang.String]
+12:32:01.437 [http-nio-auto-23-exec-9] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [3a3e2202] Parsed parts 'fieldPart' (content masked)
+12:32:01.438 [http-nio-auto-23-exec-9] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [3a3e2202] Parsed parts 'fileParts' (content masked)
+12:32:01.443 [http-nio-auto-23-exec-9] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [3a3e2202] Parsed parts 'fileParts' (content masked)
+12:32:01.444 [http-nio-auto-23-exec-9] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [3a3e2202] Parsed parts 'jsonPart' (content masked)
+12:32:01.444 [http-nio-auto-23-exec-9] DEBUG o.s.c.c.CharSequenceEncoder - [3a3e2202] Writing "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:01.445 [http-nio-auto-23-exec-9] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3a3e2202] Completed 200 OK
+12:32:01.445 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1241c248] Response 200 OK
+12:32:01.451 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [1241c248] Decoded "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:01.451 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:01.839 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:01.880 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:01.921 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:01.953 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:01.954 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:01.954 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:01.970 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50710(0 millis).
+12:32:01.971 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7176234f] HTTP POST http://localhost:50710/requestBodyFlux
+12:32:01.974 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [7176234f] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:01.989 [XNIO-22 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8510521] HTTP POST "/requestBodyFlux"
+12:32:01.989 [XNIO-22 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [8510521] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestBodyFlux(Flux)
+12:32:01.990 [XNIO-22 I/O-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [8510521] Content-Type:multipart/form-data;boundary=9bW5_z3z9XfhJK-mlSZBRWtkQKBnX6T;charset=UTF-8
+12:32:01.990 [XNIO-22 I/O-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [8510521] 0..N [org.springframework.http.codec.multipart.Part]
+12:32:02.440 [XNIO-22 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:02.440 [XNIO-22 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [8510521] 0..1 [java.lang.String]
+12:32:02.441 [XNIO-22 I/O-2] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [8510521] Parsed parts 'fieldPart' (content masked)
+12:32:02.441 [XNIO-22 I/O-2] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [8510521] Parsed parts 'fileParts' (content masked)
+12:32:02.446 [XNIO-22 I/O-2] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [8510521] Parsed parts 'fileParts' (content masked)
+12:32:02.447 [XNIO-22 I/O-2] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - [8510521] Parsed parts 'jsonPart' (content masked)
+12:32:02.447 [XNIO-22 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [8510521] Writing "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:02.449 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7176234f] Response 200 OK
+12:32:02.450 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [7176234f] Decoded "[fieldPart,fileParts:foo.txt,fileParts:logo.png,jsonPart]"
+12:32:02.450 [XNIO-22 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [8510521] Completed 200 OK
+12:32:02.453 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:02.454 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:02.458 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:02.476 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:02.505 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:02.533 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.534 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:02.534 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@32f2f71{/,null,AVAILABLE}
+12:32:02.535 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:02.535 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:02.540 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@115462e6{HTTP/1.1, (http/1.1)}{0.0.0.0:50753}
+12:32:02.541 [Test worker] INFO  o.e.j.s.Server - Started @209603ms
+12:32:02.541 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50753(0 millis).
+12:32:02.542 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [190dd84f] HTTP POST http://localhost:50753/requestPart
+12:32:02.544 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [190dd84f] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:02.570 [qtp546632258-1247] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6cf928ba] HTTP POST "/requestPart"
+12:32:02.570 [qtp546632258-1247] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [6cf928ba] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestPart(FormFieldPart, FilePart, Mono)
+12:32:02.584 [qtp546632258-1247] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [6cf928ba] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:02.589 [qtp546632258-1247] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [6cf928ba] Decoding part 'jsonPart'
+12:32:02.589 [qtp546632258-1247] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [6cf928ba] Content-Type:application/json
+12:32:02.597 [qtp546632258-1247] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [6cf928ba] 0..1 [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person]
+12:32:02.602 [qtp546632258-1247] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6cf928ba] Decoded [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person@538cf7b]
+12:32:02.603 [qtp546632258-1247] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6cf928ba] Completed 200 OK
+12:32:02.604 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [190dd84f] Response 200 OK
+12:32:02.604 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:02.604 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@32f2f71{/,null,UNAVAILABLE}
+12:32:02.606 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@115462e6{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:02.607 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:02.619 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:02.654 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:02.694 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.694 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:02.695 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50771(0 millis).
+12:32:02.696 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [62e2185c] HTTP POST http://localhost:50771/requestPart
+12:32:02.698 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [62e2185c] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:02.709 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4912dfbf-25] HTTP POST "/requestPart"
+12:32:02.710 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4912dfbf-25] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestPart(FormFieldPart, FilePart, Mono)
+12:32:02.729 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [4912dfbf-25] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:02.729 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [4912dfbf-25] Decoding part 'jsonPart'
+12:32:02.730 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [4912dfbf-25] Content-Type:application/json
+12:32:02.731 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [4912dfbf-25] 0..1 [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person]
+12:32:02.731 [reactor-http-nio-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4912dfbf-25] Decoded [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person@21faa876]
+12:32:02.732 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4912dfbf-25] Completed 200 OK
+12:32:02.733 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [62e2185c] Response 200 OK
+12:32:02.734 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:02.735 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:02.753 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:02.786 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:02.814 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:02.815 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:02.832 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50773(0 millis).
+12:32:02.833 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [75d0f75e] HTTP POST http://localhost:50773/requestPart
+12:32:02.836 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [75d0f75e] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:02.861 [http-nio-auto-24-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2601c8f5] HTTP POST "/requestPart"
+12:32:02.861 [http-nio-auto-24-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [2601c8f5] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestPart(FormFieldPart, FilePart, Mono)
+12:32:02.871 [http-nio-auto-24-exec-1] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [2601c8f5] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:02.871 [http-nio-auto-24-exec-1] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [2601c8f5] Decoding part 'jsonPart'
+12:32:02.872 [http-nio-auto-24-exec-1] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [2601c8f5] Content-Type:application/json
+12:32:02.873 [http-nio-auto-24-exec-1] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [2601c8f5] 0..1 [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person]
+12:32:02.873 [http-nio-auto-24-exec-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [2601c8f5] Decoded [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person@22d81c79]
+12:32:02.873 [http-nio-auto-24-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2601c8f5] Completed 200 OK
+12:32:02.875 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [75d0f75e] Response 200 OK
+12:32:02.875 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:03.451 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:03.627 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:03.769 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:03.840 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:03.840 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:03.840 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:03.852 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50824(0 millis).
+12:32:03.872 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6911a00c] HTTP POST http://localhost:50824/requestPart
+12:32:03.900 [reactor-http-nio-3] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [6911a00c] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:03.918 [XNIO-23 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3fffc271] HTTP POST "/requestPart"
+12:32:03.919 [XNIO-23 I/O-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [3fffc271] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#requestPart(FormFieldPart, FilePart, Mono)
+12:32:03.936 [XNIO-23 I/O-3] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [3fffc271] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:03.936 [XNIO-23 I/O-3] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [3fffc271] Decoding part 'jsonPart'
+12:32:03.936 [XNIO-23 I/O-3] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [3fffc271] Content-Type:application/json
+12:32:03.937 [XNIO-23 I/O-3] DEBUG o.s.w.r.r.m.a.RequestPartMethodArgumentResolver - [3fffc271] 0..1 [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person]
+12:32:03.938 [XNIO-23 I/O-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [3fffc271] Decoded [org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$Person@777ff131]
+12:32:03.938 [XNIO-23 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3fffc271] Completed 200 OK
+12:32:03.944 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6911a00c] Response 200 OK
+12:32:03.944 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:03.944 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:03.952 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:03.975 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:04.052 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:04.107 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:04.107 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:04.108 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@1c0534c7{/,null,AVAILABLE}
+12:32:04.108 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:04.108 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:04.127 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@2fb6ca9{HTTP/1.1, (http/1.1)}{0.0.0.0:50832}
+12:32:04.127 [Test worker] INFO  o.e.j.s.Server - Started @211190ms
+12:32:04.127 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50832(0 millis).
+12:32:04.128 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6efa4e7b] HTTP POST http://localhost:50832/filePartFlux
+12:32:04.131 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [6efa4e7b] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:04.173 [qtp434498968-1280] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [308f028c] HTTP POST "/filePartFlux"
+12:32:04.174 [qtp434498968-1280] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [308f028c] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Flux)
+12:32:04.176 [qtp434498968-1280] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:04.176 [qtp434498968-1280] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [308f028c] 0..1 [java.lang.String]
+12:32:04.183 [qtp434498968-1280] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [308f028c] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:04.183 [qtp434498968-1280] DEBUG o.s.c.c.CharSequenceEncoder - [308f028c] Writing "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:04.184 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6efa4e7b] Response 200 OK
+12:32:04.185 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [6efa4e7b] Decoded "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:04.185 [qtp434498968-1280] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [308f028c] Completed 200 OK
+12:32:04.199 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:04.199 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1c0534c7{/,null,UNAVAILABLE}
+12:32:04.202 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@2fb6ca9{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:04.211 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:04.247 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:04.284 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:04.310 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:04.310 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:04.312 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50840(0 millis).
+12:32:04.313 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1a8b8bfa] HTTP POST http://localhost:50840/filePartFlux
+12:32:04.321 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [1a8b8bfa] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:04.332 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [e93b0287-26] HTTP POST "/filePartFlux"
+12:32:04.332 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [e93b0287-26] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Flux)
+12:32:04.334 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:04.334 [reactor-http-nio-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [e93b0287-26] 0..1 [java.lang.String]
+12:32:04.358 [reactor-http-nio-3] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [e93b0287-26] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:04.359 [reactor-http-nio-3] DEBUG o.s.c.c.CharSequenceEncoder - [e93b0287-26] Writing "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:04.361 [reactor-http-nio-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [e93b0287-26] Completed 200 OK
+12:32:04.362 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1a8b8bfa] Response 200 OK
+12:32:04.363 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [1a8b8bfa] Decoded "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:04.388 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:04.391 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:04.424 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:04.474 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:04.501 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:04.504 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:04.545 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50848(0 millis).
+12:32:04.546 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1299c2d9] HTTP POST http://localhost:50848/filePartFlux
+12:32:04.550 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [1299c2d9] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:06.268 [http-nio-auto-25-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [518fd33d] HTTP POST "/filePartFlux"
+12:32:06.269 [http-nio-auto-25-exec-10] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [518fd33d] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Flux)
+12:32:06.270 [http-nio-auto-25-exec-10] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:06.270 [http-nio-auto-25-exec-10] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [518fd33d] 0..1 [java.lang.String]
+12:32:06.279 [http-nio-auto-25-exec-10] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [518fd33d] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:06.279 [http-nio-auto-25-exec-10] DEBUG o.s.c.c.CharSequenceEncoder - [518fd33d] Writing "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:06.280 [http-nio-auto-25-exec-10] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [518fd33d] Completed 200 OK
+12:32:06.288 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1299c2d9] Response 200 OK
+12:32:06.289 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [1299c2d9] Decoded "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:06.290 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:06.888 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:06.913 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:06.963 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:06.986 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:06.986 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:06.986 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:07.004 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50885(0 millis).
+12:32:07.005 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [59648b21] HTTP POST http://localhost:50885/filePartFlux
+12:32:07.250 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [59648b21] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.258 [XNIO-24 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [277d0dcf] HTTP POST "/filePartFlux"
+12:32:07.258 [XNIO-24 I/O-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [277d0dcf] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Flux)
+12:32:07.259 [XNIO-24 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:07.260 [XNIO-24 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [277d0dcf] 0..1 [java.lang.String]
+12:32:07.276 [XNIO-24 I/O-4] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [277d0dcf] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.276 [XNIO-24 I/O-4] DEBUG o.s.c.c.CharSequenceEncoder - [277d0dcf] Writing "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:07.277 [XNIO-24 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [277d0dcf] Completed 200 OK
+12:32:07.277 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [59648b21] Response 200 OK
+12:32:07.278 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [59648b21] Decoded "[fileParts:foo.txt,fileParts:logo.png]"
+12:32:07.278 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:07.278 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:07.281 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+12:32:07.297 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:07.339 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:07.362 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:07.362 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+12:32:07.363 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@38afeab4{/,null,AVAILABLE}
+12:32:07.363 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+12:32:07.363 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_191-b12
+12:32:07.374 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@6b6e46a{HTTP/1.1, (http/1.1)}{0.0.0.0:50895}
+12:32:07.374 [Test worker] INFO  o.e.j.s.Server - Started @214437ms
+12:32:07.374 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 50895(0 millis).
+12:32:07.375 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4a5228a4] HTTP POST http://localhost:50895/filePartMono
+12:32:07.399 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [4a5228a4] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.423 [qtp1693520748-1309] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [75d03dbb] HTTP POST "/filePartMono"
+12:32:07.423 [qtp1693520748-1309] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [75d03dbb] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Mono)
+12:32:07.424 [qtp1693520748-1309] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:07.424 [qtp1693520748-1309] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [75d03dbb] 0..1 [java.lang.String]
+12:32:07.430 [qtp1693520748-1309] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [75d03dbb] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.430 [qtp1693520748-1309] DEBUG o.s.c.c.CharSequenceEncoder - [75d03dbb] Writing "[fileParts:foo.txt]"
+12:32:07.431 [qtp1693520748-1309] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [75d03dbb] Completed 200 OK
+12:32:07.432 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4a5228a4] Response 200 OK
+12:32:07.432 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [4a5228a4] Decoded "[fileParts:foo.txt]"
+12:32:07.433 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+12:32:07.433 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@38afeab4{/,null,UNAVAILABLE}
+12:32:07.436 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@6b6e46a{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+12:32:07.438 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+12:32:07.452 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:07.487 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:07.514 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:07.515 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+12:32:07.516 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 50901(0 millis).
+12:32:07.517 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [323473d] HTTP POST http://localhost:50901/filePartMono
+12:32:07.519 [reactor-http-nio-4] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [323473d] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.528 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [74a6afc1-27] HTTP POST "/filePartMono"
+12:32:07.528 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [74a6afc1-27] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Mono)
+12:32:07.529 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:07.529 [reactor-http-nio-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [74a6afc1-27] 0..1 [java.lang.String]
+12:32:07.570 [reactor-http-nio-1] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [74a6afc1-27] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.570 [reactor-http-nio-1] DEBUG o.s.c.c.CharSequenceEncoder - [74a6afc1-27] Writing "[fileParts:foo.txt]"
+12:32:07.571 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [74a6afc1-27] Completed 200 OK
+12:32:07.572 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [323473d] Response 200 OK
+12:32:07.573 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [323473d] Decoded "[fileParts:foo.txt]"
+12:32:07.605 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+12:32:07.606 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+12:32:07.625 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:07.660 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:07.678 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:07.678 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+12:32:07.702 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 50903(0 millis).
+12:32:07.703 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [30c8c75f] HTTP POST http://localhost:50903/filePartMono
+12:32:07.726 [reactor-http-nio-2] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [30c8c75f] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.769 [http-nio-auto-26-exec-7] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5c6b11a4] HTTP POST "/filePartMono"
+12:32:07.770 [http-nio-auto-26-exec-7] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [5c6b11a4] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Mono)
+12:32:07.771 [http-nio-auto-26-exec-7] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:07.771 [http-nio-auto-26-exec-7] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [5c6b11a4] 0..1 [java.lang.String]
+12:32:07.778 [http-nio-auto-26-exec-7] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [5c6b11a4] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:07.778 [http-nio-auto-26-exec-7] DEBUG o.s.c.c.CharSequenceEncoder - [5c6b11a4] Writing "[fileParts:foo.txt]"
+12:32:07.779 [http-nio-auto-26-exec-7] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5c6b11a4] Completed 200 OK
+12:32:07.780 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [30c8c75f] Response 200 OK
+12:32:07.781 [reactor-http-nio-2] DEBUG o.s.c.c.StringDecoder - [30c8c75f] Decoded "[fileParts:foo.txt]"
+12:32:07.781 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+12:32:08.467 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+12:32:08.629 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+12:32:08.660 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+12:32:08.744 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:32:08.744 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+12:32:08.744 [Test worker] INFO  i.undertow - starting server: Undertow - 2.0.32.Final
+12:32:08.754 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 50939(0 millis).
+12:32:08.755 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [492b6a00] HTTP POST http://localhost:50939/filePartMono
+12:32:08.817 [reactor-http-nio-3] DEBUG o.s.h.c.m.MultipartHttpMessageWriter - [492b6a00] Encoding parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:08.999 [XNIO-25 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [53779a93] HTTP POST "/filePartMono"
+12:32:08.999 [XNIO-25 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [53779a93] Mapped to org.springframework.web.reactive.result.method.annotation.MultipartIntegrationTests$MultipartController#filePartsFlux(Mono)
+12:32:09.000 [XNIO-25 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+12:32:09.000 [XNIO-25 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [53779a93] 0..1 [java.lang.String]
+12:32:09.006 [XNIO-25 I/O-2] DEBUG o.s.h.c.m.MultipartHttpMessageReader - [53779a93] Parsed parts [fieldPart, fileParts, jsonPart] (content masked)
+12:32:09.007 [XNIO-25 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [53779a93] Writing "[fileParts:foo.txt]"
+12:32:09.007 [XNIO-25 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [53779a93] Completed 200 OK
+12:32:09.008 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [492b6a00] Response 200 OK
+12:32:09.008 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [492b6a00] Decoded "[fileParts:foo.txt]"
+12:32:09.008 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+12:32:09.009 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.0.32.Final
+12:32:09.012 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

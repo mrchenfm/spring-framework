@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:31:44" hostname="DESKTOP-TMNPDT1" time="0.118">
+  <properties/>
+  <testcase name="supports()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.041"/>
+  <testcase name="contentNegotiationWith406()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.006"/>
+  <testcase name="defaultViewName()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.033"/>
+  <testcase name="unresolvedViewName()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.002"/>
+  <testcase name="contentNegotiationWithRedirect()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.003"/>
+  <testcase name="contentNegotiation()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.002"/>
+  <testcase name="handleWithMultipleResolvers()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.002"/>
+  <testcase name="handleReturnValueTypes()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.023"/>
+  <testcase name="viewResolverOrder()" classname="org.springframework.web.reactive.result.view.ViewResolutionResultHandlerTests" time="0.0"/>
+  <system-out><![CDATA[12:31:45.045 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - [47be72b9] No match for [application/json], supported: [text/html]
+12:31:45.049 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.062 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.063 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.065 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.065 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.066 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.067 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.068 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.069 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.079 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.079 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.080 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.085 [Test worker] DEBUG o.s.w.r.r.v.RedirectView - [11eeef6d] View name 'redirect:/', model {}
+12:31:45.087 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'application/json' given [application/json] and supported [text/html, application/json]
+12:31:45.090 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.092 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.093 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.094 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.095 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.096 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.098 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.100 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.104 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.106 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.107 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+12:31:45.113 [Test worker] DEBUG o.s.w.r.r.v.ViewResolutionResultHandler - Using 'text/html' given [*/*] and supported [text/html]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

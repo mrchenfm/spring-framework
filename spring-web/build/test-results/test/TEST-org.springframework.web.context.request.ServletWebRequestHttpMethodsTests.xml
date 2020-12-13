@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" tests="44" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:39" hostname="DESKTOP-TMNPDT1" time="0.188">
+  <properties/>
+  <testcase name="checkNotModifiedTimestamp(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedTimestamp(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedInvalidIfNoneMatchHeader(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedInvalidIfNoneMatchHeader(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedWildcardIsIgnored(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedWildcardIsIgnored(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagStrongWeak(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagStrongWeak(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedInvalidStatus(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedInvalidStatus(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedETagAndModifiedTimestamp(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagAndModifiedTimestamp(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedMultipleETags(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedMultipleETags(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedNon2xxStatus(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedNon2xxStatus(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkModifiedTimestamp(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkModifiedTimestamp(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.003"/>
+  <testcase name="checkNotModifiedTimestampConditionalPutConflict(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedTimestampConditionalPutConflict(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedTimestampConditionalPut(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedTimestampConditionalPut(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkModifiedETagAndNotModifiedTimestamp(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkModifiedETagAndNotModifiedTimestamp(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagWeakStrong(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagWeakStrong(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedHeaderAlreadySet(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedHeaderAlreadySet(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkModifiedTimestampWithLengthPart(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.004"/>
+  <testcase name="checkModifiedTimestampWithLengthPart(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedETagWithSeparatorChars(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedETagWithSeparatorChars(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkModifiedETag(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkModifiedETag(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagAndTimestamp(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedETagAndTimestamp(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkModifiedUnpaddedETag(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkModifiedUnpaddedETag(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedETag(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.0"/>
+  <testcase name="checkNotModifiedETag(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.026"/>
+  <testcase name="checkNotModifiedUnpaddedETag(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedUnpaddedETag(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.001"/>
+  <testcase name="checkNotModifiedTimestampWithLengthPart(String)[1]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.002"/>
+  <testcase name="checkNotModifiedTimestampWithLengthPart(String)[2]" classname="org.springframework.web.context.request.ServletWebRequestHttpMethodsTests" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.client.SimpleClientHttpResponseTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:54:55" hostname="DESKTOP-TMNPDT1" time="0.092">
+  <properties/>
+  <testcase name="shouldDrainResponseEvenIfResponseNotRead()" classname="org.springframework.http.client.SimpleClientHttpResponseTests" time="0.002"/>
+  <testcase name="shouldDrainStreamWhenResponseClosed()" classname="org.springframework.http.client.SimpleClientHttpResponseTests" time="0.015"/>
+  <testcase name="shouldDrainErrorStreamWhenResponseClosed()" classname="org.springframework.http.client.SimpleClientHttpResponseTests" time="0.002"/>
+  <testcase name="shouldNotDrainWhenErrorStreamClosed()" classname="org.springframework.http.client.SimpleClientHttpResponseTests" time="0.067"/>
+  <testcase name="shouldNotCloseConnectionWhenResponseClosed()" classname="org.springframework.http.client.SimpleClientHttpResponseTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

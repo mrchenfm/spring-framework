@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" tests="34" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:42" hostname="DESKTOP-TMNPDT1" time="0.766">
+  <properties/>
+  <testcase name="resolveEmptyValueWithoutDefault()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.093"/>
+  <testcase name="resolveOptionalParamList()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.014"/>
+  <testcase name="missingOptionalParamArray()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.056"/>
+  <testcase name="missingOptionalParamValue()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.008"/>
+  <testcase name="missingRequestParamEmptyValueNotRequired()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="resolveMultipartFileNotAnnot()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.044"/>
+  <testcase name="resolveSimpleTypeParam()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolveOptionalMultipartFile()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.024"/>
+  <testcase name="isMultipartRequest()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.008"/>
+  <testcase name="missingOptionalMultipartFile()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.011"/>
+  <testcase name="resolveEmptyValueToDefault()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolvePartList()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.027"/>
+  <testcase name="resolveOptionalParamArray()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.018"/>
+  <testcase name="resolveOptionalParamValue()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="resolveString()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="resolveStringArray()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="missingRequestParam()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="resolveEmptyValueRequiredWithoutDefault()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="optionalMultipartFileWithoutMultipartRequest()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolvePartArray()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveMultipartFileArray()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolveMultipartFile()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveMultipartFileListNotannot()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolveDefaultValue()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="isMultipartRequestHttpPut()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="noMultipartContent()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.038"/>
+  <testcase name="missingOptionalParamList()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.03"/>
+  <testcase name="missingMultipartFile()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.13"/>
+  <testcase name="missingRequestParamEmptyValueConvertedToNull()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolvePart()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.016"/>
+  <testcase name="resolvePartNotAnnot()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="resolveSimpleTypeParamToNull()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="resolveMultipartFileList()" classname="org.springframework.web.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

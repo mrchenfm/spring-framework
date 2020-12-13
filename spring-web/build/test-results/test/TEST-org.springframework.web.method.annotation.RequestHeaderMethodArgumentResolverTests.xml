@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:42" hostname="DESKTOP-TMNPDT1" time="0.089">
+  <properties/>
+  <testcase name="resolveDefaultValueFromSystemProperty()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="uuidConversionWithInvalidValue()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="resolveStringArrayArgument()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolveDefaultValueFromRequest()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveNameFromSystemPropertyThroughPlaceholder()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.01"/>
+  <testcase name="resolveNameFromSystemPropertyThroughExpression()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="dateConversion()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="instantConversion()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="uuidConversionWithEmptyValue()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="uuidConversionWithBlankValue()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolveStringArgument()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="uuidConversionWithValidValue()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="resolveDefaultValue()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="notFound()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolverTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.client.AsyncRestTemplateIntegrationTests" tests="42" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:27" hostname="DESKTOP-TMNPDT1" time="3.994">
+  <properties/>
+  <testcase name="postForEntityCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.305"/>
+  <testcase name="exchangeGet()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.117"/>
+  <testcase name="postForLocationCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.231"/>
+  <testcase name="headForHeadersCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.082"/>
+  <testcase name="delete()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.131"/>
+  <testcase name="notFoundCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.09"/>
+  <testcase name="getEntityCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.124"/>
+  <testcase name="getNoContentTypeHeader()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.024"/>
+  <testcase name="headForHeadersCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.024"/>
+  <testcase name="getNotModified()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.131"/>
+  <testcase name="serverErrorCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.041"/>
+  <testcase name="serverError()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.02"/>
+  <testcase name="serverErrorCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.052"/>
+  <testcase name="getEntityCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.029"/>
+  <testcase name="headForHeaders()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.029"/>
+  <testcase name="getEntityFromCompletable()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.025"/>
+  <testcase name="postForEntity()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.067"/>
+  <testcase name="exchangeGetCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.022"/>
+  <testcase name="putCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.023"/>
+  <testcase name="postForEntityCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.029"/>
+  <testcase name="postForLocation()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.021"/>
+  <testcase name="postForLocationCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.022"/>
+  <testcase name="put()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.022"/>
+  <testcase name="multipleFutureGets()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.021"/>
+  <testcase name="deleteCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.058"/>
+  <testcase name="exchangeGetCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.062"/>
+  <testcase name="optionsForAllowCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.024"/>
+  <testcase name="getAndInterceptError()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.17"/>
+  <testcase name="getEntity()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.082"/>
+  <testcase name="exchangePostCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.198"/>
+  <testcase name="getNoResponse()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.193"/>
+  <testcase name="notFoundGet()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.159"/>
+  <testcase name="optionsForAllow()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.071"/>
+  <testcase name="optionsForAllowCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.035"/>
+  <testcase name="notFoundCallbackWithLambdas()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.028"/>
+  <testcase name="getAndInterceptResponse()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.457"/>
+  <testcase name="identicalExceptionThroughGetAndCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.043"/>
+  <testcase name="exchangePost()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.021"/>
+  <testcase name="getNoContent()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.022"/>
+  <testcase name="multipartFormData()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.071"/>
+  <testcase name="deleteCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.116"/>
+  <testcase name="exchangePostCallback()" classname="org.springframework.web.client.AsyncRestTemplateIntegrationTests" time="0.047"/>
+  <system-out><![CDATA[03:56:28.545 [I/O dispatcher 57] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:60785/status/notfound" resulted in 404 (Client Error); invoking error handler
+03:56:28.938 [I/O dispatcher 77] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:60851/status/server" resulted in 500 (Server Error); invoking error handler
+03:56:28.974 [Test worker] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:60869/status/server" resulted in 500 (Server Error); invoking error handler
+03:56:29.048 [I/O dispatcher 85] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:60881/status/server" resulted in 500 (Server Error); invoking error handler
+03:56:30.502 [Test worker] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:61131/status/notfound" resulted in 404 (Client Error); invoking error handler
+03:56:30.668 [I/O dispatcher 173] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:61175/status/notfound" resulted in 404 (Client Error); invoking error handler
+03:56:31.186 [I/O dispatcher 181] WARN  o.s.w.c.AsyncRestTemplate - Async GET request for "http://localhost:61209/status/notfound" resulted in 404 (Client Error); invoking error handler
+]]></system-out>
+  <system-err><![CDATA[十二月 12, 2020 3:56:27 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60692] starting to accept connections
+十二月 12, 2020 3:56:27 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60692] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:27 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60692] done accepting connections: socket closed
+十二月 12, 2020 3:56:27 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60716] starting to accept connections
+十二月 12, 2020 3:56:27 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60716] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:27 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60716] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60728] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60728] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60728] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60747] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60747] received request: HEAD /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60747] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60759] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60759] received request: DELETE /delete HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60759] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60785] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60785] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60785] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60797] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60797] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60797] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60815] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60815] received request: GET /get/nocontenttype HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60815] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60827] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60827] received request: HEAD /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60827] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60839] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60839] received request: GET /status/notmodified HTTP/1.1 and responded: HTTP/1.1 304 Redirection
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60839] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60851] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60851] received request: GET /status/server HTTP/1.1 and responded: HTTP/1.1 500 Server Error
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60851] done accepting connections: socket closed
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60869] starting to accept connections
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60869] received request: GET /status/server HTTP/1.1 and responded: HTTP/1.1 500 Server Error
+十二月 12, 2020 3:56:28 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60869] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60881] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60881] received request: GET /status/server HTTP/1.1 and responded: HTTP/1.1 500 Server Error
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60881] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60893] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60893] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60893] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60905] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60905] received request: HEAD /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60905] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60917] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60917] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60917] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60929] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60929] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60929] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60943] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60943] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60943] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60955] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60955] received request: PUT /put HTTP/1.1 and responded: HTTP/1.1 202 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60955] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60967] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60967] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60967] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60979] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60979] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60979] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[60991] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[60991] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[60991] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61003] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61003] received request: PUT /put HTTP/1.1 and responded: HTTP/1.1 202 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61003] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61021] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61021] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61021] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61033] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61033] received request: DELETE /delete HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61033] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61045] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61045] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61045] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61058] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61058] received request: OPTIONS /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61058] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61070] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61070] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61070] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61082] starting to accept connections
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61082] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61082] done accepting connections: socket closed
+十二月 12, 2020 3:56:29 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61094] starting to accept connections
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61094] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61094] done accepting connections: socket closed
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61119] starting to accept connections
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61119] received request: GET /get/nothing HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61119] done accepting connections: socket closed
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61131] starting to accept connections
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61131] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61131] done accepting connections: socket closed
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61143] starting to accept connections
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61143] received request: OPTIONS /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61143] done accepting connections: socket closed
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61161] starting to accept connections
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61161] received request: OPTIONS /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61161] done accepting connections: socket closed
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61175] starting to accept connections
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61175] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61175] done accepting connections: socket closed
+十二月 12, 2020 3:56:30 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61197] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61197] received request: GET /get HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61197] done accepting connections: socket closed
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61209] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61209] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61209] done accepting connections: socket closed
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61227] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61227] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61227] done accepting connections: socket closed
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61241] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61241] received request: GET /status/nocontent HTTP/1.1 and responded: HTTP/1.1 204 OK
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61241] done accepting connections: socket closed
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61253] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61253] received request: POST /multipartFormData HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61253] done accepting connections: socket closed
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61265] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61265] received request: DELETE /delete HTTP/1.1 and responded: HTTP/1.1 200 OK
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61265] done accepting connections: socket closed
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 execute
+信息: MockWebServer[61279] starting to accept connections
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+信息: MockWebServer[61279] received request: POST /post HTTP/1.1 and responded: HTTP/1.1 201 OK
+十二月 12, 2020 3:56:31 上午 okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+信息: MockWebServer[61279] done accepting connections: socket closed
+]]></system-err>
+</testsuite>

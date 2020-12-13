@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.ResourceHttpMessageWriterTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:55:08" hostname="DESKTOP-TMNPDT1" time="0.04">
+  <properties/>
+  <testcase name="writeSingleRegion()" classname="org.springframework.http.codec.ResourceHttpMessageWriterTests" time="0.011"/>
+  <testcase name="writeMultipleRegions()" classname="org.springframework.http.codec.ResourceHttpMessageWriterTests" time="0.025"/>
+  <testcase name="invalidRange()" classname="org.springframework.http.codec.ResourceHttpMessageWriterTests" time="0.001"/>
+  <testcase name="getWritableMediaTypes()" classname="org.springframework.http.codec.ResourceHttpMessageWriterTests" time="0.0"/>
+  <testcase name="writeResource()" classname="org.springframework.http.codec.ResourceHttpMessageWriterTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

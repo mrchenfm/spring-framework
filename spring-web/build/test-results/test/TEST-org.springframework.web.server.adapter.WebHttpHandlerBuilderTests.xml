@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.server.adapter.WebHttpHandlerBuilderTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:44" hostname="DESKTOP-TMNPDT1" time="0.27">
+  <properties/>
+  <testcase name="configWithoutFilters()" classname="org.springframework.web.server.adapter.WebHttpHandlerBuilderTests" time="0.086"/>
+  <testcase name="orderedWebExceptionHandlerBeans()" classname="org.springframework.web.server.adapter.WebHttpHandlerBuilderTests" time="0.092"/>
+  <testcase name="cloneWithApplicationContext()" classname="org.springframework.web.server.adapter.WebHttpHandlerBuilderTests" time="0.015"/>
+  <testcase name="forwardedHeaderFilter()" classname="org.springframework.web.server.adapter.WebHttpHandlerBuilderTests" time="0.028"/>
+  <testcase name="orderedWebFilterBeans()" classname="org.springframework.web.server.adapter.WebHttpHandlerBuilderTests" time="0.044"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

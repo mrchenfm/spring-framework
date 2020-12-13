@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.WebClientIntegrationTests" tests="71" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:29" hostname="DESKTOP-TMNPDT1" time="11.581">
+  <properties/>
+  <testcase name="retrieve404(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="3.943"/>
+  <testcase name="retrieve404(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.25"/>
+  <testcase name="retrieve500(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.327"/>
+  <testcase name="retrieve500(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.157"/>
+  <testcase name="statusHandlerSuppressedErrorSignalWithEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.282"/>
+  <testcase name="statusHandlerSuppressedErrorSignalWithEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.129"/>
+  <testcase name="exchangeForEmptyBodyAsVoidEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.493"/>
+  <testcase name="exchangeForEmptyBodyAsVoidEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.053"/>
+  <testcase name="exchangeForUnknownStatusCode(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.046"/>
+  <testcase name="exchangeForUnknownStatusCode(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.056"/>
+  <testcase name="statusHandlerRawStatus(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.079"/>
+  <testcase name="statusHandlerRawStatus(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.024"/>
+  <testcase name="statusHandlerSuppressedErrorSignal(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.051"/>
+  <testcase name="statusHandlerSuppressedErrorSignal(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.018"/>
+  <testcase name="retrieve500AsEntityList(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.031"/>
+  <testcase name="retrieve500AsEntityList(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.053"/>
+  <testcase name="filter(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.035"/>
+  <testcase name="filter(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.02"/>
+  <testcase name="statusHandler(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.027"/>
+  <testcase name="statusHandler(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.027"/>
+  <testcase name="retrieveJsonAsResponseEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.033"/>
+  <testcase name="retrieveJsonAsResponseEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.048"/>
+  <testcase name="retrieveJsonArrayAsBodilessEntityShouldReleasesConnection()" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.108"/>
+  <testcase name="exchangeForJsonArrayAsResponseEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.377"/>
+  <testcase name="exchangeForJsonArrayAsResponseEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.098"/>
+  <testcase name="exchangeForJsonAsBodilessEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.029"/>
+  <testcase name="exchangeForJsonAsBodilessEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.038"/>
+  <testcase name="exchangeFor404(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.33"/>
+  <testcase name="exchangeFor404(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.06"/>
+  <testcase name="retrieveJsonArrayAsResponseEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.056"/>
+  <testcase name="retrieveJsonArrayAsResponseEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.016"/>
+  <testcase name="retrieve(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.054"/>
+  <testcase name="retrieve(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.023"/>
+  <testcase name="statusHandlerParameterizedTypeReference(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.049"/>
+  <testcase name="statusHandlerParameterizedTypeReference(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.046"/>
+  <testcase name="exchangeForPlainText(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.063"/>
+  <testcase name="exchangeForPlainText(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.035"/>
+  <testcase name="retrieveJsonNull(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.08"/>
+  <testcase name="retrieveJsonNull(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.018"/>
+  <testcase name="retrieve404WithBody(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.048"/>
+  <testcase name="retrieve404WithBody(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.037"/>
+  <testcase name="statusHandlerSuppressedErrorSignalWithFlux(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.053"/>
+  <testcase name="statusHandlerSuppressedErrorSignalWithFlux(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.05"/>
+  <testcase name="retrieve500AsEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.049"/>
+  <testcase name="retrieve500AsEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.076"/>
+  <testcase name="retrieveJson(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.037"/>
+  <testcase name="retrieveJson(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.059"/>
+  <testcase name="postPojoAsJson(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.233"/>
+  <testcase name="postPojoAsJson(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.047"/>
+  <testcase name="exchangeWithRelativeUrl(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.094"/>
+  <testcase name="exchangeWithRelativeUrl(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.02"/>
+  <testcase name="retrieveJsonWithParameterizedTypeReference(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.099"/>
+  <testcase name="retrieveJsonWithParameterizedTypeReference(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.142"/>
+  <testcase name="retrieveJsonAsBodilessEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.192"/>
+  <testcase name="retrieveJsonAsBodilessEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.112"/>
+  <testcase name="retrieve555UnknownStatus(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.085"/>
+  <testcase name="retrieve555UnknownStatus(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.197"/>
+  <testcase name="exchangeForJsonAsResponseEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.232"/>
+  <testcase name="exchangeForJsonAsResponseEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.089"/>
+  <testcase name="retrieveJsonArray(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.279"/>
+  <testcase name="retrieveJsonArray(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.055"/>
+  <testcase name="filterForErrorHandling(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.613"/>
+  <testcase name="filterForErrorHandling(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.056"/>
+  <testcase name="statusHandlerWithErrorBodyTransformation(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.032"/>
+  <testcase name="statusHandlerWithErrorBodyTransformation(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.027"/>
+  <testcase name="postLargeTextFile(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.377"/>
+  <testcase name="postLargeTextFile(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.211"/>
+  <testcase name="retrieve500AsBodilessEntity(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.031"/>
+  <testcase name="retrieve500AsBodilessEntity(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.014"/>
+  <testcase name="retrieveJsonAsSerializedText(ClientHttpConnector)[1]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.04"/>
+  <testcase name="retrieveJsonAsSerializedText(ClientHttpConnector)[2]" classname="org.springframework.web.reactive.function.client.WebClientIntegrationTests" time="0.038"/>
+  <system-out><![CDATA[12:29:32.056 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4f639f5e] HTTP GET http://127.0.0.1:64406/greeting
+12:29:32.785 [HttpClient@6106b458-110] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4f639f5e] Response 404 NOT_FOUND
+12:29:33.384 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [c138d] HTTP GET http://127.0.0.1:64426/greeting
+12:29:33.562 [reactor-http-nio-3] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:285)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.readRetainedSlice(AdvancedLeakAwareByteBuf.java:106)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:376)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	Hint: 'reactor.left.httpCodec' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'DefaultChannelPipeline$HeadContext#0' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#5:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:634)
+	io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:363)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:178)
+	io.netty.buffer.AbstractByteBufAllocator.ioBuffer(AbstractByteBufAllocator.java:139)
+	io.netty.channel.DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle.allocate(DefaultMaxMessagesRecvByteBufAllocator.java:114)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:147)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+12:29:33.590 [reactor-http-nio-3] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.http.DefaultHttpContent.release(DefaultHttpContent.java:92)
+	io.netty.util.ReferenceCountUtil.release(ReferenceCountUtil.java:88)
+	reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:260)
+	reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:362)
+	reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:358)
+	reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:677)
+	reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:96)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.getByte(AdvancedLeakAwareByteBuf.java:154)
+	org.springframework.core.io.buffer.NettyDataBuffer.getByte(NettyDataBuffer.java:132)
+	org.springframework.core.io.buffer.DataBufferUtils$CompositeMatcher.match(DataBufferUtils.java:660)
+	org.springframework.core.codec.StringDecoder.processDataBuffer(StringDecoder.java:151)
+	org.springframework.core.codec.StringDecoder.lambda$decode$0(StringDecoder.java:121)
+	reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:344)
+	reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:679)
+	reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:243)
+	reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192)
+	reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:256)
+	reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:362)
+	reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:358)
+	reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:677)
+	reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:96)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	org.springframework.core.io.buffer.NettyDataBufferFactory.wrap(NettyDataBufferFactory.java:93)
+	org.springframework.http.client.reactive.ReactorClientHttpResponse.lambda$getBody$1(ReactorClientHttpResponse.java:104)
+	reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:100)
+	reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192)
+	reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:256)
+	reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:362)
+	reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:358)
+	reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:677)
+	reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:96)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'reactor.right.reactiveBridge' will handle the message from this point.
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:86)
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:25)
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#5:
+	io.netty.handler.codec.http.DefaultHttpContent.release(DefaultHttpContent.java:92)
+	io.netty.util.ReferenceCountUtil.release(ReferenceCountUtil.java:88)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:90)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#6:
+	io.netty.handler.codec.http.DefaultHttpContent.retain(DefaultHttpContent.java:68)
+	io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:158)
+	io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:47)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#7:
+	Hint: 'reactor.left.decompressor' will handle the message from this point.
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:86)
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:25)
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.SimpleLeakAwareByteBuf.unwrappedDerived(SimpleLeakAwareByteBuf.java:143)
+	io.netty.buffer.SimpleLeakAwareByteBuf.readRetainedSlice(SimpleLeakAwareByteBuf.java:67)
+	io.netty.buffer.AdvancedLeakAwareByteBuf.readRetainedSlice(AdvancedLeakAwareByteBuf.java:107)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:376)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+: 7 leak records were discarded because they were duplicates
+: 7177 leak records were discarded because the leak record count is targeted to 4. Use system property io.netty.leakDetection.targetRecords to increase the limit.
+12:29:33.618 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [c138d] Response 404 NOT_FOUND
+12:29:33.791 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7e0e4274] HTTP GET http://127.0.0.1:64431/greeting
+12:29:33.929 [HttpClient@1aba4710-126] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7e0e4274] Response 500 INTERNAL_SERVER_ERROR
+12:29:33.959 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7cbc71e0] HTTP GET http://127.0.0.1:64440/greeting
+12:29:34.102 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7cbc71e0] Response 500 INTERNAL_SERVER_ERROR
+12:29:34.290 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [360a501d] HTTP GET http://127.0.0.1:64442/
+12:29:34.376 [HttpClient@77094a78-137] DEBUG o.s.w.r.f.c.ExchangeFunctions - [360a501d] Response 500 INTERNAL_SERVER_ERROR
+12:29:34.390 [HttpClient@77094a78-137] DEBUG o.s.c.c.StringDecoder - [360a501d] Decoded "Internal Server error"
+12:29:34.400 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6542195e] HTTP GET http://127.0.0.1:64450/
+12:29:34.518 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6542195e] Response 500 INTERNAL_SERVER_ERROR
+12:29:34.519 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [6542195e] Decoded "Internal Server error"
+12:29:34.857 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [323d1efc] HTTP GET http://127.0.0.1:64452/noContent
+12:29:35.015 [HttpClient@6e57e60e-149] DEBUG o.s.w.r.f.c.ExchangeFunctions - [323d1efc] Response 200 OK
+12:29:35.028 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [73a0b471] HTTP GET http://127.0.0.1:64464/noContent
+12:29:35.072 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [73a0b471] Response 200 OK
+12:29:35.105 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [66dfaf49] HTTP GET http://127.0.0.1:64466/unknownPage
+12:29:35.123 [HttpClient@ad62c92-164] DEBUG o.s.w.r.f.c.ExchangeFunctions - [66dfaf49] Response 555
+12:29:35.129 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [fee1786] HTTP GET http://127.0.0.1:64472/unknownPage
+12:29:35.180 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [fee1786] Response 555
+12:29:35.196 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [53c9c182] HTTP GET http://127.0.0.1:64474/greeting
+12:29:35.259 [HttpClient@7826e248-178] DEBUG o.s.w.r.f.c.ExchangeFunctions - [53c9c182] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.267 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1139a919] HTTP GET http://127.0.0.1:64480/greeting
+12:29:35.287 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1139a919] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.321 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [693cb49d] HTTP GET http://127.0.0.1:64482/greeting
+12:29:35.339 [HttpClient@7ac58488-195] DEBUG o.s.w.r.f.c.ExchangeFunctions - [693cb49d] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.340 [HttpClient@7ac58488-195] DEBUG o.s.c.c.StringDecoder - [693cb49d] Decoded "Internal Server error"
+12:29:35.348 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [23c66167] HTTP GET http://127.0.0.1:64488/greeting
+12:29:35.361 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [23c66167] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.363 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [23c66167] Decoded "Internal Server error"
+12:29:35.381 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2eb2f80f] HTTP GET http://127.0.0.1:64490/
+12:29:35.390 [HttpClient@10587c35-203] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2eb2f80f] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.401 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1f2a01de] HTTP GET http://127.0.0.1:64496/
+12:29:35.449 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1f2a01de] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.469 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6b2a91c] HTTP GET http://127.0.0.1:64498/greeting
+12:29:35.486 [HttpClient@f10d884-219] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6b2a91c] Response 200 OK
+12:29:35.488 [HttpClient@f10d884-219] DEBUG o.s.c.c.StringDecoder - [6b2a91c] Decoded "Hello Spring!"
+12:29:35.493 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [64803ad8] HTTP GET http://127.0.0.1:64504/greeting
+12:29:35.509 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [64803ad8] Response 200 OK
+12:29:35.509 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [64803ad8] Decoded "Hello Spring!"
+12:29:35.526 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [65e6fe84] HTTP GET http://127.0.0.1:64506/greeting
+12:29:35.537 [HttpClient@6f1a8880-234] DEBUG o.s.w.r.f.c.ExchangeFunctions - [65e6fe84] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.547 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1b060660] HTTP GET http://127.0.0.1:64512/greeting
+12:29:35.568 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1b060660] Response 500 INTERNAL_SERVER_ERROR
+12:29:35.591 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [55fdbdd4] HTTP GET http://127.0.0.1:64514/json
+12:29:35.601 [HttpClient@2530b31-247] DEBUG o.s.w.r.f.c.ExchangeFunctions - [55fdbdd4] Response 200 OK
+12:29:35.603 [HttpClient@2530b31-247] DEBUG o.s.c.c.StringDecoder - [55fdbdd4] Decoded "{"bar":"barbar","foo":"foofoo"}"
+12:29:35.611 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4505e674] HTTP GET http://127.0.0.1:64520/json
+12:29:35.650 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4505e674] Response 200 OK
+12:29:35.653 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [4505e674] Decoded "{"bar":"barbar","foo":"foofoo"}"
+12:29:35.664 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1d660b2b] HTTP GET http://127.0.0.1:64522/json
+12:29:35.751 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1d660b2b] Response 200 OK
+12:29:35.755 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2cbab52] HTTP GET http://127.0.0.1:64522/json
+12:29:35.762 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2cbab52] Response 200 OK
+12:29:35.787 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7e765586] HTTP GET http://127.0.0.1:64524/json
+12:29:35.796 [HttpClient@45b7e3e-256] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7e765586] Response 200 OK
+12:29:36.136 [HttpClient@45b7e3e-256] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7e765586] Decoded [Pojo[foo='foo1', bar='bar1']]
+12:29:36.137 [HttpClient@45b7e3e-256] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7e765586] Decoded [Pojo[foo='foo2', bar='bar2']]
+12:29:36.151 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [637bc0c2] HTTP GET http://127.0.0.1:64546/json
+12:29:36.241 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [637bc0c2] Response 200 OK
+12:29:36.242 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [637bc0c2] Decoded [Pojo[foo='foo1', bar='bar1']]
+12:29:36.242 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [637bc0c2] Decoded [Pojo[foo='foo2', bar='bar2']]
+12:29:36.269 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5df804a4] HTTP GET http://127.0.0.1:64552/json
+12:29:36.275 [HttpClient@7941fe97-271] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5df804a4] Response 200 OK
+12:29:36.288 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [c78cc48] HTTP GET http://127.0.0.1:64558/json
+12:29:36.320 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [c78cc48] Response 200 OK
+12:29:36.460 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [361f48f3] HTTP GET http://127.0.0.1:64562/greeting
+12:29:36.658 [HttpClient@29915234-282] DEBUG o.s.w.r.f.c.ExchangeFunctions - [361f48f3] Response 404 NOT_FOUND
+12:29:36.662 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [ca6009] HTTP GET http://127.0.0.1:64574/greeting
+12:29:36.717 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [ca6009] Response 404 NOT_FOUND
+12:29:36.780 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4cfc3554] HTTP GET http://127.0.0.1:64576/json
+12:29:36.788 [HttpClient@5b06805e-295] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4cfc3554] Response 200 OK
+12:29:36.789 [HttpClient@5b06805e-295] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4cfc3554] Decoded [Pojo[foo='foo1', bar='bar1']]
+12:29:36.790 [HttpClient@5b06805e-295] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4cfc3554] Decoded [Pojo[foo='foo2', bar='bar2']]
+12:29:36.797 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5403fcad] HTTP GET http://127.0.0.1:64582/json
+12:29:36.807 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5403fcad] Response 200 OK
+12:29:36.808 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [5403fcad] Decoded [Pojo[foo='foo1', bar='bar1']]
+12:29:36.808 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [5403fcad] Decoded [Pojo[foo='foo2', bar='bar2']]
+12:29:36.835 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [447c592c] HTTP GET http://127.0.0.1:64585/greeting
+12:29:36.863 [HttpClient@6bf966c6-311] DEBUG o.s.w.r.f.c.ExchangeFunctions - [447c592c] Response 200 OK
+12:29:36.865 [HttpClient@6bf966c6-311] DEBUG o.s.c.c.StringDecoder - [447c592c] Decoded "Hello Spring!"
+12:29:36.872 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [16614fda] HTTP GET http://127.0.0.1:64591/greeting
+12:29:36.890 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [16614fda] Response 200 OK
+12:29:36.890 [reactor-http-nio-3] DEBUG o.s.c.c.StringDecoder - [16614fda] Decoded "Hello Spring!"
+12:29:36.925 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [40ec9728] HTTP GET http://127.0.0.1:64593/greeting
+12:29:36.937 [HttpClient@3cf6796a-327] DEBUG o.s.w.r.f.c.ExchangeFunctions - [40ec9728] Response 500 INTERNAL_SERVER_ERROR
+12:29:36.946 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2903ef2] HTTP GET http://127.0.0.1:64599/greeting
+12:29:36.964 [reactor-http-nio-4] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:285)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.readRetainedSlice(AdvancedLeakAwareByteBuf.java:106)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:336)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.forEachByte(AdvancedLeakAwareByteBuf.java:670)
+	io.netty.handler.codec.http.HttpObjectDecoder$HeaderParser.parse(HttpObjectDecoder.java:940)
+	io.netty.handler.codec.http.HttpObjectDecoder.readHeaders(HttpObjectDecoder.java:616)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:258)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'reactor.left.httpCodec' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#5:
+	Hint: 'DefaultChannelPipeline$HeadContext#0' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#6:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:634)
+	io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:363)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:178)
+	io.netty.buffer.AbstractByteBufAllocator.ioBuffer(AbstractByteBufAllocator.java:139)
+	io.netty.channel.DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle.allocate(DefaultMaxMessagesRecvByteBufAllocator.java:114)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:147)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+: 3 leak records were discarded because the leak record count is targeted to 4. Use system property io.netty.leakDetection.targetRecords to increase the limit.
+12:29:36.979 [reactor-http-nio-4] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	Hint: 'reactor.right.reactiveBridge' will handle the message from this point.
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:86)
+	io.netty.handler.codec.http.DefaultLastHttpContent.touch(DefaultLastHttpContent.java:88)
+	io.netty.handler.codec.http.DefaultLastHttpContent.touch(DefaultLastHttpContent.java:28)
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.handler.codec.http.DefaultHttpContent.release(DefaultHttpContent.java:92)
+	io.netty.util.ReferenceCountUtil.release(ReferenceCountUtil.java:88)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:90)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	io.netty.handler.codec.http.DefaultHttpContent.retain(DefaultHttpContent.java:68)
+	io.netty.handler.codec.http.DefaultLastHttpContent.retain(DefaultLastHttpContent.java:76)
+	io.netty.handler.codec.http.DefaultLastHttpContent.retain(DefaultLastHttpContent.java:28)
+	io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:158)
+	io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:47)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'reactor.left.decompressor' will handle the message from this point.
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:86)
+	io.netty.handler.codec.http.DefaultLastHttpContent.touch(DefaultLastHttpContent.java:88)
+	io.netty.handler.codec.http.DefaultLastHttpContent.touch(DefaultLastHttpContent.java:28)
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.SimpleLeakAwareByteBuf.unwrappedDerived(SimpleLeakAwareByteBuf.java:143)
+	io.netty.buffer.SimpleLeakAwareByteBuf.readRetainedSlice(SimpleLeakAwareByteBuf.java:67)
+	io.netty.buffer.AdvancedLeakAwareByteBuf.readRetainedSlice(AdvancedLeakAwareByteBuf.java:107)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:336)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+12:29:36.985 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2903ef2] Response 500 INTERNAL_SERVER_ERROR
+12:29:37.034 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6b66780b] HTTP GET http://127.0.0.1:64601/greeting
+12:29:37.050 [HttpClient@7a4a14e-335] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6b66780b] Response 200 OK
+12:29:37.052 [HttpClient@7a4a14e-335] DEBUG o.s.c.c.StringDecoder - [6b66780b] Decoded "Hello Spring!"
+12:29:37.060 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [438ce868] HTTP GET http://127.0.0.1:64607/greeting
+12:29:37.090 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [438ce868] Response 200 OK
+12:29:37.091 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [438ce868] Decoded "Hello Spring!"
+12:29:37.113 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [55f4dbd0] HTTP GET http://127.0.0.1:64609/null
+12:29:37.129 [HttpClient@4e205c81-351] DEBUG o.s.w.r.f.c.ExchangeFunctions - [55f4dbd0] Response 200 OK
+12:29:37.182 [HttpClient@4e205c81-351] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [55f4dbd0] Decoded []
+12:29:37.188 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [24036ab1] HTTP GET http://127.0.0.1:64615/null
+12:29:37.200 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [24036ab1] Response 200 OK
+12:29:37.202 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [24036ab1] Decoded []
+12:29:37.225 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1291be31] HTTP GET http://127.0.0.1:64617/greeting
+12:29:37.245 [HttpClient@46aad352-361] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1291be31] Response 404 NOT_FOUND
+12:29:37.257 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [a9933b4] HTTP GET http://127.0.0.1:64623/greeting
+12:29:37.290 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [a9933b4] Response 404 NOT_FOUND
+12:29:37.319 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7f4e6907] HTTP GET http://127.0.0.1:64625/greeting
+12:29:37.342 [HttpClient@7a9fa0c8-379] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7f4e6907] Response 500 INTERNAL_SERVER_ERROR
+12:29:37.344 [HttpClient@7a9fa0c8-379] DEBUG o.s.c.c.StringDecoder - [7f4e6907] Decoded "Internal Server error"
+12:29:37.351 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [68177380] HTTP GET http://127.0.0.1:64631/greeting
+12:29:37.394 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [68177380] Response 500 INTERNAL_SERVER_ERROR
+12:29:37.396 [reactor-http-nio-4] DEBUG o.s.c.c.StringDecoder - [68177380] Decoded "Internal Server error"
+12:29:37.407 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [55aa3f6f] HTTP GET http://127.0.0.1:64633/
+12:29:37.441 [HttpClient@3e83a8f4-392] DEBUG o.s.w.r.f.c.ExchangeFunctions - [55aa3f6f] Response 500 INTERNAL_SERVER_ERROR
+12:29:37.454 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6fbc266a] HTTP GET http://127.0.0.1:64639/
+12:29:37.524 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6fbc266a] Response 500 INTERNAL_SERVER_ERROR
+12:29:37.539 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [277e23bd] HTTP GET http://127.0.0.1:64641/pojo
+12:29:37.560 [HttpClient@6cbaa386-403] DEBUG o.s.w.r.f.c.ExchangeFunctions - [277e23bd] Response 200 OK
+12:29:37.563 [HttpClient@6cbaa386-403] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [277e23bd] Decoded [Pojo[foo='foofoo', bar='barbar']]
+12:29:37.573 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [3e445cab] HTTP GET http://127.0.0.1:64647/pojo
+12:29:37.618 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [3e445cab] Response 200 OK
+12:29:37.619 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [3e445cab] Decoded [Pojo[foo='foofoo', bar='barbar']]
+12:29:37.712 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5221c249] HTTP POST http://127.0.0.1:64650/pojo/capitalize
+12:29:37.725 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [5221c249] Encoding [Pojo[foo='foofoo', bar='barbar']]
+12:29:37.856 [HttpClient@8c7174d-415] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5221c249] Response 200 OK
+12:29:37.858 [HttpClient@8c7174d-415] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [5221c249] Decoded [Pojo[foo='FOOFOO', bar='BARBAR']]
+12:29:37.868 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [248628c9] HTTP POST http://127.0.0.1:64656/pojo/capitalize
+12:29:37.881 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [248628c9] Encoding [Pojo[foo='foofoo', bar='barbar']]
+12:29:37.909 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [248628c9] Response 200 OK
+12:29:37.910 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [248628c9] Decoded [Pojo[foo='FOOFOO', bar='BARBAR']]
+12:29:37.924 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7b2a7363] HTTP GET /api/v4/groups/1
+12:29:38.019 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [125e0024] HTTP GET /api/v4/groups/1
+12:29:38.106 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6139060f] HTTP GET http://127.0.0.1:64671/json
+12:29:38.126 [HttpClient@18c4e34a-430] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6139060f] Response 200 OK
+12:29:38.137 [HttpClient@18c4e34a-430] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6139060f] Decoded [org.springframework.web.reactive.function.client.WebClientIntegrationTests$ValueContainer@7f287315]
+12:29:38.147 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1741e29f] HTTP GET http://127.0.0.1:64677/json
+12:29:38.281 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1741e29f] Response 200 OK
+12:29:38.283 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1741e29f] Decoded [org.springframework.web.reactive.function.client.WebClientIntegrationTests$ValueContainer@563e912b]
+12:29:38.348 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6eddd941] HTTP GET http://127.0.0.1:64679/json
+12:29:38.471 [HttpClient@3d2399c7-445] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6eddd941] Response 200 OK
+12:29:38.485 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [171d80ff] HTTP GET http://127.0.0.1:64700/json
+12:29:38.592 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [171d80ff] Response 200 OK
+12:29:38.639 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [101038e] HTTP GET http://127.0.0.1:64706/unknownPage
+12:29:38.677 [HttpClient@195b02c8-458] DEBUG o.s.w.r.f.c.ExchangeFunctions - [101038e] Response 555
+12:29:38.685 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [63e8ee4e] HTTP GET http://127.0.0.1:64712/unknownPage
+12:29:38.876 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [63e8ee4e] Response 555
+12:29:39.069 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7b50c3db] HTTP GET http://127.0.0.1:64714/json
+12:29:39.109 [HttpClient@76064b5a-472] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7b50c3db] Response 200 OK
+12:29:39.112 [HttpClient@76064b5a-472] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7b50c3db] Decoded [Pojo[foo='foofoo', bar='barbar']]
+12:29:39.117 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2fa09767] HTTP GET http://127.0.0.1:64725/json
+12:29:39.197 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2fa09767] Response 200 OK
+12:29:39.200 [reactor-http-nio-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [2fa09767] Decoded [Pojo[foo='foofoo', bar='barbar']]
+12:29:39.363 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2df228c2] HTTP GET http://127.0.0.1:64730/pojos
+12:29:39.479 [HttpClient@35d42bf7-485] DEBUG o.s.w.r.f.c.ExchangeFunctions - [2df228c2] Response 200 OK
+12:29:39.481 [HttpClient@35d42bf7-485] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [2df228c2] Decoded [Pojo[foo='foo1', bar='bar1']]
+12:29:39.481 [HttpClient@35d42bf7-485] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [2df228c2] Decoded [Pojo[foo='foo2', bar='bar2']]
+12:29:39.488 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7ab3fc88] HTTP GET http://127.0.0.1:64742/pojos
+12:29:39.519 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7ab3fc88] Response 200 OK
+12:29:39.521 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7ab3fc88] Decoded [Pojo[foo='foo1', bar='bar1']]
+12:29:39.521 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7ab3fc88] Decoded [Pojo[foo='foo2', bar='bar2']]
+12:29:39.702 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [9a97a63] HTTP GET http://127.0.0.1:64746/greeting
+12:29:39.905 [HttpClient@39b2e52a-497] DEBUG o.s.w.r.f.c.ExchangeFunctions - [9a97a63] Response 200 OK
+12:29:39.905 [HttpClient@39b2e52a-497] DEBUG o.s.w.r.f.c.ExchangeFunctions - [9a97a63] Cancel signal (to close connection)
+12:29:39.907 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7a5be5f8] HTTP GET http://127.0.0.1:64746/greeting
+12:29:40.146 [HttpClient@39b2e52a-491] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7a5be5f8] Response 200 OK
+12:29:40.148 [HttpClient@39b2e52a-491] DEBUG o.s.c.c.StringDecoder - [7a5be5f8] Decoded "Hello Spring!"
+12:29:40.160 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [42fe92e9] HTTP GET http://127.0.0.1:64759/greeting
+12:29:40.189 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [42fe92e9] Response 200 OK
+12:29:40.189 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [42fe92e9] Cancel signal (to close connection)
+12:29:40.189 [reactor-http-nio-1] DEBUG o.s.h.c.r.ReactorClientHttpResponse - [dea8fcd1] Releasing body, not yet subscribed.
+12:29:40.199 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [672fcb6b] HTTP GET http://127.0.0.1:64759/greeting
+12:29:40.203 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [672fcb6b] Response 200 OK
+12:29:40.204 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [672fcb6b] Decoded "Hello Spring!"
+12:29:40.232 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5ab7fcac] HTTP GET http://127.0.0.1:64761/json
+12:29:40.242 [HttpClient@7c37aa04-510] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5ab7fcac] Response 500 INTERNAL_SERVER_ERROR
+12:29:40.246 [HttpClient@7c37aa04-510] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [5ab7fcac] Decoded [Pojo[foo='foofoo', bar='barbar']]
+12:29:40.252 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6826918c] HTTP GET http://127.0.0.1:64767/json
+12:29:40.272 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6826918c] Response 500 INTERNAL_SERVER_ERROR
+12:29:40.274 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6826918c] Decoded [Pojo[foo='foofoo', bar='barbar']]
+12:29:40.343 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [61e9282d] HTTP POST http://127.0.0.1:64769/
+12:29:40.344 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.390 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.400 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.403 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.406 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.407 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.408 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.409 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.409 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.411 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.412 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.416 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.418 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.420 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.422 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.423 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.424 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.425 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.426 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.427 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.428 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.430 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.434 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.435 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.438 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.439 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.440 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.440 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.441 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.441 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.442 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.442 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.443 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.443 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.444 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.444 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.444 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.445 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.446 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.446 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.447 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.447 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.448 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.449 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.449 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.451 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.452 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.454 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.455 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.456 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.457 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.458 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.458 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.459 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.459 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.460 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.461 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.462 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.462 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.463 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.464 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.465 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.465 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.466 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.467 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.471 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.472 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.473 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.474 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.475 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.476 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.477 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.478 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.479 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.480 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.481 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.482 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.482 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.483 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.485 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.487 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.488 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.488 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.490 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.490 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.490 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.491 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.491 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.492 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.492 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.493 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.493 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.494 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.494 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.495 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.505 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.506 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.507 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.508 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.508 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.508 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.519 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.521 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.523 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.523 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.524 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.525 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.525 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.526 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.526 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.527 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.527 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.528 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.528 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.529 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.529 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.530 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.530 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.531 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.531 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.532 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.532 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.533 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.533 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.534 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.534 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.535 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.539 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.540 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.541 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.541 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.542 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.542 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.542 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.543 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.544 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.544 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.544 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.545 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.545 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.546 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.547 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.549 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.550 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.551 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.551 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.552 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.553 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.555 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.555 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.556 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.557 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.558 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.558 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.559 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.559 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.559 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.560 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.560 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.561 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.562 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.563 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.563 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.564 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.564 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.565 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.565 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.565 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.566 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.566 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.567 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.567 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.568 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.568 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.569 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.569 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.570 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.571 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.571 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.571 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.572 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.572 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.572 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.573 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.573 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.574 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.574 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.575 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.575 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.576 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.576 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.577 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.577 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.578 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.578 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.579 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.579 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.580 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.580 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.581 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.581 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.582 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.582 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.582 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.582 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.583 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.583 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.584 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.584 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.584 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.585 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.586 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.587 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.587 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.588 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.590 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.591 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.592 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.592 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.593 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.594 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.594 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.595 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.595 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.596 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.599 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.600 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.637 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.638 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.638 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.639 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.640 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 4096 bytes
+12:29:40.640 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [61e9282d] Writing 2206 bytes
+12:29:40.646 [HttpClient@66bc7635-523] DEBUG o.s.w.r.f.c.ExchangeFunctions - [61e9282d] Response 200 OK
+12:29:40.668 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [8cfd5de] HTTP POST http://127.0.0.1:64775/
+12:29:40.711 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.712 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.713 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.714 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.714 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.714 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.714 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.714 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.714 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.718 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.720 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.721 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.722 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.723 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.724 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.725 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.726 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.726 [Thread-294] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.727 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.728 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.729 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.730 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.732 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.734 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.735 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.737 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.737 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.738 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.739 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.739 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.739 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.740 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.742 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.744 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.745 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.747 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.747 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.748 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.748 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.751 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.754 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.756 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.757 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.759 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.760 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.761 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.761 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.762 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.763 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.763 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.763 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.764 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.764 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.765 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.765 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.765 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.766 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.766 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.766 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.766 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.766 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.766 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.767 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.767 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.768 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.768 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.768 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.770 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.771 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.772 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.772 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.772 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.772 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.772 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.773 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.773 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.773 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.773 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.776 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.777 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.779 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.780 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.781 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.782 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.784 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.785 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.788 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.793 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.795 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.796 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.798 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.800 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.801 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.803 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.805 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.806 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.807 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.808 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.808 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.809 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.810 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.811 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.812 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.812 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.812 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.813 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.813 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.813 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.814 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.814 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.815 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.815 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.815 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.815 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.815 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.815 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.816 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.816 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.816 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.816 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.816 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.817 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.817 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.818 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.819 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.820 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.820 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.820 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.821 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.821 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.821 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.822 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.822 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.822 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.822 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.822 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.822 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.823 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.823 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.823 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.824 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.824 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.825 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.826 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.828 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.829 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.829 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.830 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.830 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.832 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.832 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.833 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.833 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.833 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.834 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.834 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.834 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.834 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.834 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.835 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.835 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.835 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.835 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.836 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.836 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.837 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.838 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.838 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.838 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.838 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.839 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.839 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.840 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.840 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.841 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.841 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.842 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.842 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.842 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.843 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.843 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.844 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.845 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.846 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.846 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.847 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.847 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.847 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.847 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.848 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.848 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.848 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.848 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.849 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.850 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.851 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.852 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.852 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.852 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.852 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.852 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.853 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.854 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.854 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.854 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.854 [Thread-295] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 4096 bytes
+12:29:40.855 [Thread-293] DEBUG o.s.c.c.DataBufferEncoder - [8cfd5de] Writing 2206 bytes
+12:29:40.863 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [8cfd5de] Response 200 OK
+12:29:40.884 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [52045d57] HTTP GET http://127.0.0.1:64777/
+12:29:40.897 [HttpClient@20907ee1-541] DEBUG o.s.w.r.f.c.ExchangeFunctions - [52045d57] Response 500 INTERNAL_SERVER_ERROR
+12:29:40.913 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [686ed2d0] HTTP GET http://127.0.0.1:64783/
+12:29:40.924 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [686ed2d0] Response 500 INTERNAL_SERVER_ERROR
+12:29:40.946 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7387ee01] HTTP GET http://127.0.0.1:64785/json
+12:29:40.960 [HttpClient@3b2cc783-553] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7387ee01] Response 200 OK
+12:29:40.962 [HttpClient@3b2cc783-553] DEBUG o.s.c.c.StringDecoder - [7387ee01] Decoded "{"bar":"barbar","foo":"foofoo"}"
+12:29:40.970 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [62889ebd] HTTP GET http://127.0.0.1:64791/json
+12:29:41.003 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [62889ebd] Response 200 OK
+12:29:41.004 [reactor-http-nio-1] DEBUG o.s.c.c.StringDecoder - [62889ebd] Decoded "{"bar":"barbar","foo":"foofoo"}"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

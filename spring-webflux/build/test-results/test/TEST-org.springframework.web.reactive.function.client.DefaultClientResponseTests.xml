@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.DefaultClientResponseTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:29:07" hostname="DESKTOP-TMNPDT1" time="0.318">
+  <properties/>
+  <testcase name="toEntityListTypeReference()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.191"/>
+  <testcase name="bodyToFluxTypeReference()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.025"/>
+  <testcase name="header()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.006"/>
+  <testcase name="rawStatusCode()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.006"/>
+  <testcase name="bodyToFlux()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.005"/>
+  <testcase name="bodyToMono()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.003"/>
+  <testcase name="toEntityWithUnknownStatusCode()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.013"/>
+  <testcase name="body()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.003"/>
+  <testcase name="statusCode()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.003"/>
+  <testcase name="bodyToMonoTypeReference()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.004"/>
+  <testcase name="toEntityList()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.013"/>
+  <testcase name="cookies()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.016"/>
+  <testcase name="toEntityTypeReference()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.012"/>
+  <testcase name="toEntityListWithUnknownStatusCode()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.004"/>
+  <testcase name="toEntity()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseTests" time="0.003"/>
+  <system-out><![CDATA[12:29:07.927 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:07.962 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:07.982 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:07.987 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.000 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.005 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.012 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.025 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.046 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.059 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+12:29:08.064 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

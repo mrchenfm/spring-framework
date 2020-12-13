@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.RequestContextListenerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:37" hostname="DESKTOP-TMNPDT1" time="0.038">
+  <properties/>
+  <testcase name="requestContextListenerWithSameThread()" classname="org.springframework.web.context.request.RequestContextListenerTests" time="0.004"/>
+  <testcase name="requestContextListenerWithDifferentThread()" classname="org.springframework.web.context.request.RequestContextListenerTests" time="0.034"/>
+  <testcase name="requestContextListenerWithSameThreadAndAttributesGone()" classname="org.springframework.web.context.request.RequestContextListenerTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

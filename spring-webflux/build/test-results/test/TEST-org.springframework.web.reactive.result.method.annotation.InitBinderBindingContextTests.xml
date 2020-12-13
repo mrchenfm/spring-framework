@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-12-12T04:30:46" hostname="DESKTOP-TMNPDT1" time="0.05">
+  <properties/>
+  <testcase name="createBinderNullAttrName()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.016"/>
+  <testcase name="createBinderWithAttrNameNoMatch()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.001"/>
+  <testcase name="createBinderWithGlobalInitialization()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.003"/>
+  <testcase name="createBinderTypeConversion()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.013"/>
+  <testcase name="returnValueNotExpected()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.002"/>
+  <testcase name="createBinder()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.013"/>
+  <testcase name="createBinderWithAttrName()" classname="org.springframework.web.reactive.result.method.annotation.InitBinderBindingContextTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

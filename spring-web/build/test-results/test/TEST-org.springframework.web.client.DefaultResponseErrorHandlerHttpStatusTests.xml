@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" tests="32" skipped="0" failures="0" errors="0" timestamp="2020-12-11T19:56:31" hostname="DESKTOP-TMNPDT1" time="0.116">
+  <properties/>
+  <testcase name="hasErrorTrue(HttpStatus)[1]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[2]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[3]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[4]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[5]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[6]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[7]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.0"/>
+  <testcase name="hasErrorTrue(HttpStatus)[8]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[9]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.0"/>
+  <testcase name="hasErrorTrue(HttpStatus)[10]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[11]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[12]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="hasErrorTrue(HttpStatus)[13]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.0"/>
+  <testcase name="hasErrorTrue(HttpStatus)[14]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.0"/>
+  <testcase name="hasErrorTrue(HttpStatus)[15]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.002"/>
+  <testcase name="hasErrorTrue(HttpStatus)[16]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[1]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.002"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[2]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.005"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[3]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.004"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[4]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.009"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[5]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[6]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[7]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.002"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[8]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.002"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[9]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.002"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[10]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.001"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[11]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.002"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[12]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.003"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[13]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.003"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[14]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.003"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[15]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.015"/>
+  <testcase name="handleErrorException(HttpStatus, Class)[16]" classname="org.springframework.web.client.DefaultResponseErrorHandlerHttpStatusTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
