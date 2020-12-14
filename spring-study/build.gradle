@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.2.11.RELEASE'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(project(":spring-context"))
+    compile(project(":spring-aspects"))
+    compile(project(":spring-aop"))
+    implementation 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    //导入slf4j依赖包，导入下面的两个包，其中logback-classic会导入slf4j包到项目的ExternalLibraries。 logback-core知识可以百度。
+    compile('ch.qos.logback:logback-core:1.2.3')
+    compile('ch.qos.logback:logback-classic:1.2.3')
+
+    //导入slf4j包，不导入这个包会报错：SLF4J: Failed to load class
+    //"org.slf4j.impl.StaticLoggerBinder"
+
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+}
